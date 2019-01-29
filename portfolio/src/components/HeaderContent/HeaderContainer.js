@@ -5,19 +5,19 @@ import lambdaLogo from "../../images/lambda-logo.png";
 
 const hoverLink = keyframes`
   0% {
-    color: #ff9697;
+    color: ##5A22DB;
   }
   100% {
-    color: #ffb2b3;
+    color: #AD91ED;
   }
 `;
 
 const hoverPhoto = keyframes`
   0% {
-    opacity: 1;
+    opacity: 0.65;
   }
   100% {
-    opacity: 0.6;
+    opacity: 1;
   }
 `;
 
@@ -32,10 +32,10 @@ const HeaderContainerDiv = styled.div`
 
     a {
       font-size: 3rem;
-      color: #ff9697;
+      color: #6936de;
 
       &:hover {
-        animation: ${hoverLink} 0.35s forwards;
+        animation: ${hoverLink} 0.5s forwards;
       }
     }
   }
@@ -48,9 +48,10 @@ const HeaderContainerDiv = styled.div`
     div {
       margin: 10px 0;
       width: 60%;
+      opacity: 0.65;
 
       &:hover {
-        animation: ${hoverPhoto} 0.35s forwards;
+        animation: ${hoverPhoto} 0.5s forwards;
       }
     }
   }

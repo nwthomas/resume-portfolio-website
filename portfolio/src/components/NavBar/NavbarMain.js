@@ -9,7 +9,7 @@ const hoverLink = keyframes`
     color: black;
   }
   100% {
-    color: #ffb2b3;
+    color: #AD91ED;
   }
 `;
 
@@ -33,7 +33,7 @@ const NavbarLinks = styled.div`
     margin-top: 23px;
 
     &:hover {
-      animation: ${hoverLink} 0.35s forwards;
+      animation: ${hoverLink} 0.5s forwards;
     }
   }
 `;

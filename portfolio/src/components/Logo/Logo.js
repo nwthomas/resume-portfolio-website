@@ -7,7 +7,7 @@ const LogoDiv = styled.div`
   -webkit-border-radius: 50%;
   height: 150px;
   width: 150px;
-  background: #ff9697;
+  background: #845ae4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ const LogoDiv = styled.div`
     -webkit-border-radius: 50%;
     height: 120px;
     width: 120px;
-    background: #ff9697;
+    background: #845ae4;
     display: flex;
     justify-content: center;
     align-items: center;

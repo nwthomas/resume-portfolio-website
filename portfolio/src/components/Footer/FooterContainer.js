@@ -7,7 +7,7 @@ const hoverLink = keyframes`
     color: black;
   }
   100% {
-    color: #ffb2b3;
+    color: #AD91ED;
   }
 `;
 
@@ -18,11 +18,13 @@ const FooterContainerDiv = styled.div`
   flex-direction: column;
 
   p {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
-  p:last-child {
-    color: #ff9697;
+  p:nth-child(even) {
+    color: #6936de;
+    display: block;
+    margin: 60px 0 10px;
   }
 
   a {
@@ -45,7 +47,7 @@ const FooterContainer = () => {
       <p>Looking to start a project?</p>
       <p>Get in contact.</p>
       <a href="https://github.com/nwthomas">GitHub</a>
-      <a href="https://www.linkedin.com/in/nathan-thomas-644b3339/">linkedin</a>
+      <a href="https://www.linkedin.com/in/nathan-thomas-644b3339/">LinkedIn</a>
       <a href="https://medium.com/@nwthomas">Medium</a>
       <a href="https://twitter.com/_nwthomas">Twitter</a>
       <a href="https://www.instagram.com/nwthomas/">Instagram</a>
