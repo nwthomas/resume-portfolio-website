@@ -14,8 +14,15 @@ export const Global = css`
   h2,
   h3,
   h4 {
-    font-size: 3.8rem;
     font-family: "Work Sans", sans-serif;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    opacity: 0.9;
   }
   p {
     font-family: "Work Sans", sans-serif;
@@ -26,6 +33,10 @@ export const Global = css`
     font-size: 2rem;
     font-family: "Work Sans", sans-serif;
     color: black;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
   .App {
     width: 100vw;

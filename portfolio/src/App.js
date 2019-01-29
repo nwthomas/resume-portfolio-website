@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { GlobalStyle } from "./styles";
+import { GlobalStyle } from "./components/styles";
 import { NavbarContainer } from "./components/NavBar";
 import { HomePageContainer } from "./components/HomePage";
 import { Route } from "react-router-dom";
