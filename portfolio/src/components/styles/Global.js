@@ -38,7 +38,12 @@ export const Global = css`
     width: 100%;
     height: auto;
   }
+  .App {
+    width: 100%;
+  }
   #root {
-    width: 100vw;
+    @media (min-width: 500px) {
+      width: 100vw;
+    }
   }
 `;
