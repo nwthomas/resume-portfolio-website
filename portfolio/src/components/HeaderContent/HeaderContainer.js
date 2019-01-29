@@ -12,6 +12,15 @@ const hoverLink = keyframes`
   }
 `;
 
+const hoverPhoto = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+`;
+
 const HeaderContainerDiv = styled.div`
   width: 90%;
   max-width: 1100px;
@@ -39,6 +48,10 @@ const HeaderContainerDiv = styled.div`
     div {
       margin: 10px 0;
       width: 60%;
+
+      &:hover {
+        animation: ${hoverPhoto} 0.35s forwards;
+      }
     }
   }
 `;
@@ -53,7 +66,7 @@ const HeaderContainer = () => {
         <a href="https://lambdaschool.com/">Lambda School</a>.
       </p>
       <div>
-        <h4>CURRENTLY:</h4>
+        <h4>CURRENT STUDENT:</h4>
         <div>
           <a href="https://lambdaschool.com/">
             <img src={lambdaLogo} alt="Current school logo" />
