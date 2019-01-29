@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { HeaderContainer } from "../HeaderContent";
 import { FeaturedWorkContainer } from "../FeaturedWork";
+import { FooterContainer } from "../Footer";
 
 export default class HomePageContainer extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class HomePageContainer extends Component {
       <div>
         <HeaderContainer />
         <FeaturedWorkContainer />
+        <FooterContainer />
       </div>
     );
   }

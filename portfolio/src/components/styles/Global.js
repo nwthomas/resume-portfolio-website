@@ -38,7 +38,7 @@ export const Global = css`
     width: 100%;
     height: auto;
   }
-  .App {
+  #root {
     width: 100vw;
   }
 `;
