@@ -30,7 +30,7 @@ const NavbarLinks = styled.div`
   justify-content: center;
 
   a {
-    margin-top: 20px;
+    margin-top: 23px;
 
     &:hover {
       animation: ${hoverLink} 0.35s forwards;
