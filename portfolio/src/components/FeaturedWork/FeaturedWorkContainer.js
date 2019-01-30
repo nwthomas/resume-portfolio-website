@@ -26,7 +26,7 @@ const FeaturedWorkContainerDiv = styled.div`
 const FeaturedWorkContainer = () => {
   return (
     <FeaturedWorkContainerDiv>
-      <p>Featured Work</p>
+      <p>Featured Projects</p>
       <div>{/* <div /> */}</div>
       <div>{/* <div /> */}</div>
     </FeaturedWorkContainerDiv>
