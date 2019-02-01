@@ -19,7 +19,7 @@ const hoverLinkDark = keyframes`
     color: white;
   }
   100% {
-    color: black;
+    color: #b6465f;
   }
 `;
 

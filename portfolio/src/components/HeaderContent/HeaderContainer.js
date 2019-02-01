@@ -12,6 +12,15 @@ const hoverLink = keyframes`
   }
 `;
 
+const hoverLinkDarkMode = keyframes`
+  0% {
+    color: #c3677c;
+  }
+  100% {
+    color: #b6465f;
+  }
+`;
+
 const hoverPhoto = keyframes`
   0% {
     opacity: 0.65;
@@ -44,11 +53,18 @@ const HeaderContainerDiv = styled.div`
       ${props =>
         props.darkmode &&
         css`
-          color: #b6465f;
+          color: #d08999;
         `}
 
       &:hover {
-        animation: ${hoverLink} 0.5s forwards;
+        ${props =>
+          props.darkmode
+            ? css`
+                animation: ${hoverLinkDarkMode} 0.5s forwards;
+              `
+            : css`
+                animation: ${hoverLink} 0.5s forwards;
+              `}
       }
     }
   }
