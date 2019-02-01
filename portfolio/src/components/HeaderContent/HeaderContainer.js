@@ -77,6 +77,7 @@ const HeaderContainerDiv = styled.div`
     div {
       margin: 10px 0;
       width: 60%;
+      max-width: 300px;
       opacity: 0.65;
 
       &:hover {

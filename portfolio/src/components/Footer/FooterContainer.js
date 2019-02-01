@@ -36,7 +36,7 @@ const FooterContainerDiv = styled.div`
     ${props =>
       props.darkmode &&
       css`
-        color: #b6465f;
+        color: #d08999;
       `}
   }
 
