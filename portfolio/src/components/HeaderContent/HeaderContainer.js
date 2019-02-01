@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import ahLogo from "../../images/ah-logo.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 
@@ -22,9 +22,16 @@ const hoverPhoto = keyframes`
 `;
 
 const HeaderContainerDiv = styled.div`
-  width: 90%;
+  width: 100%;
+  padding: 50px 5%;
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 0 auto;
+
+  ${props =>
+    props.darkmode &&
+    css`
+      color: white;
+    `}
 
   p {
     font-size: 3rem;
@@ -33,6 +40,12 @@ const HeaderContainerDiv = styled.div`
     a {
       font-size: 3rem;
       color: #6936de;
+
+      ${props =>
+        props.darkmode &&
+        css`
+          color: #b6465f;
+        `}
 
       &:hover {
         animation: ${hoverLink} 0.5s forwards;
@@ -57,10 +70,10 @@ const HeaderContainerDiv = styled.div`
   }
 `;
 
-const HeaderContainer = () => {
+const HeaderContainer = props => {
   return (
-    <HeaderContainerDiv>
-      <p>
+    <HeaderContainerDiv darkmode={props.darkmode}>
+      <p darkmode={props.darkmode}>
         I'm Nathan Thomas, a{" "}
         <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
         living in the Napa Valley and currently enrolled at{" "}

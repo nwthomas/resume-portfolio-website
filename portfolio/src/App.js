@@ -1,24 +1,37 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { GlobalStyle } from "./components/styles";
 import { NavbarContainer } from "./components/NavBar";
 import { HomePageContainer } from "./components/HomePage";
 import { Route } from "react-router-dom";
+import styled, { css } from "styled-components";
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <GlobalStyle />
-        <NavbarContainer />
+const AppDiv = styled.div`
+  width: 100%;
+  background: white;
+
+  ${props =>
+    props.darkmode &&
+    css`
+      background: #2f3234;
+    `}
+`;
+
+const App = () => {
+  const [darkmode, setDarkmode] = useState(false);
+
+  return (
+    <>
+      <GlobalStyle />
+      <AppDiv darkmode={darkmode} className="App">
+        <NavbarContainer setDarkmode={setDarkmode} darkmode={darkmode} />
         <Route
           exact
           path="/"
-          render={props => <HomePageContainer {...props} />}
+          render={props => <HomePageContainer {...props} darkmode={darkmode} />}
         />
-        <div className="App" />
-      </>
-    );
-  }
-}
+      </AppDiv>
+    </>
+  );
+};
 
 export default App;

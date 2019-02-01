@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { css } from "styled-components";
 
 const hoverLink = keyframes`
   0% {
@@ -17,6 +18,12 @@ const FooterContainerDiv = styled.div`
   display: flex;
   flex-direction: column;
 
+  ${props =>
+    props.darkmode &&
+    css`
+      color: white;
+    `}
+
   p {
     margin-top: 20px;
   }
@@ -25,11 +32,23 @@ const FooterContainerDiv = styled.div`
     color: #6936de;
     display: block;
     margin: 60px 0 10px;
+
+    ${props =>
+      props.darkmode &&
+      css`
+        color: #b6465f;
+      `}
   }
 
   a {
     margin-top: 30px;
     font-size: 1.6rem;
+
+    ${props =>
+      props.darkmode &&
+      css`
+        color: white;
+      `}
 
     &:hover {
       animation: ${hoverLink} 0.35s forwards;
@@ -41,9 +60,9 @@ const FooterContainerDiv = styled.div`
   }
 `;
 
-const FooterContainer = () => {
+const FooterContainer = props => {
   return (
-    <FooterContainerDiv>
+    <FooterContainerDiv darkmode={props.darkmode}>
       <p>Looking to start a project?</p>
       <p>Get in contact.</p>
       <a href="https://github.com/nwthomas">GitHub</a>

@@ -5,12 +5,13 @@ import NavbarMain from "./NavbarMain";
 
 const NavbarContainerDiv = styled.div`
   width: 100%;
+  color: white;
 `;
 
-const NavbarContainer = () => {
+const NavbarContainer = props => {
   return (
-    <NavbarContainerDiv>
-      <NavbarMain />
+    <NavbarContainerDiv darkmode={props.darkmode}>
+      <NavbarMain darkmode={props.darkmode} setDarkmode={props.setDarkmode} />
     </NavbarContainerDiv>
   );
 };

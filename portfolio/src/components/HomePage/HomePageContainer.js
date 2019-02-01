@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import { HeaderContainer } from "../HeaderContent";
 import { FeaturedWorkContainer } from "../FeaturedWork";
 import { FooterContainer } from "../Footer";
 
-export default class HomePageContainer extends Component {
-  render() {
-    return (
-      <div>
-        <HeaderContainer />
-        <FeaturedWorkContainer />
-        <FooterContainer />
-      </div>
-    );
-  }
-}
+const HomePageContainer = props => {
+  return (
+    <div>
+      <HeaderContainer darkmode={props.darkmode} />
+      <FeaturedWorkContainer darkmode={props.darkmode} />
+      <FooterContainer darkmode={props.darkmode} />
+    </div>
+  );
+};
+
+export default HomePageContainer;
