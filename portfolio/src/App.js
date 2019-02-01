@@ -17,7 +17,8 @@ const AppDiv = styled.div`
 `;
 
 const App = () => {
-  const [darkmode, setDarkmode] = useState(false);
+  const pullMode = localStorage.getItem("darkMode") === "true" ? true : false;
+  const [darkmode, setDarkmode] = useState(pullMode);
 
   return (
     <>

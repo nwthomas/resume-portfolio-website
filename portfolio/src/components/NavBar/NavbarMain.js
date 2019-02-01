@@ -110,15 +110,15 @@ const DarkModeTab = styled.div`
 `;
 
 const NavbarMain = props => {
-  console.log(props.darkmode);
+  const setDarkMode = () => {
+    props.setDarkmode(!props.darkmode);
+    localStorage.setItem("darkMode", !props.darkmode);
+  };
   return (
     <NavbarMainDiv darkmode={props.darkmode}>
       <Logo darkmode={props.darkmode} />
       <NavbarLinks darkmode={props.darkmode}>
-        <DarkModeTab
-          darkmode={props.darkmode}
-          onClick={() => props.setDarkmode(!props.darkmode)}
-        >
+        <DarkModeTab darkmode={props.darkmode} onClick={setDarkMode}>
           <div>
             <img src={moon} alt="Dark mode logo" />
           </div>

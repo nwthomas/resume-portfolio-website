@@ -18,8 +18,8 @@ const LogoDiv = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: #181818;
-    `}
+      background: black;
+    `} /*  #181818   */
 
   div {
     border-radius: 50%;
@@ -35,7 +35,7 @@ const LogoDiv = styled.div`
     ${props =>
       props.darkmode &&
       css`
-        background: #181818;
+        background: black;
       `}
 
     p {
