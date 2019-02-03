@@ -25,12 +25,9 @@ const hoverLinkDark = keyframes`
 
 const hoverDarkMode = keyframes`
   0% {
-    background: #474a4c;
-    border: 0;
     opacity: 0.8;
   }
   100% {
-    background: #35383b;
     opacity: 1;
   }
 `;
@@ -82,7 +79,7 @@ const DarkModeTab = styled.div`
   padding-bottom: 10px;
   height: 60px;
   width: 55px;
-  background: #474a4c;
+  background: black;
   opacity: 0.8;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -97,12 +94,6 @@ const DarkModeTab = styled.div`
   &:hover {
     animation: ${hoverDarkMode} 0.5s forwards;
   }
-
-  ${props =>
-    props.darkmode &&
-    css`
-      background: black;
-    `}
 
   div {
     width: 25px;

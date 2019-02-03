@@ -1,9 +1,15 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const FeaturedWorkContainerDiv = styled.div`
   width: 90%;
   margin: 90px 5%;
+
+  ${props =>
+    props.darkmode &&
+    css`
+      color: white;
+    `}
 
   div {
     height: 300px;
@@ -23,9 +29,9 @@ const FeaturedWorkContainerDiv = styled.div`
   }
 `;
 
-const FeaturedWorkContainer = () => {
+const FeaturedWorkContainer = props => {
   return (
-    <FeaturedWorkContainerDiv>
+    <FeaturedWorkContainerDiv darkmode={props.darkmode}>
       <p>Featured Projects</p>
       <div>{/* <div /> */}</div>
       <div>{/* <div /> */}</div>
