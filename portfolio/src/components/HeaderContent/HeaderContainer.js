@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import ahLogo from "../../images/ah-logo.png";
 import lambdaLogo from "../../images/lambda-logo.png";
+import lambdaLogoWhite from "../../images/lambda-logo-white.png";
 
 const hoverLink = keyframes`
   0% {
@@ -66,6 +67,17 @@ const HeaderContainerDiv = styled.div`
                 animation: ${hoverLink} 0.5s forwards;
               `}
       }
+
+      &:active {
+        ${props =>
+          props.darkmode
+            ? css`
+                color: #b6465f;
+              `
+            : css`
+                color: #ad91ed;
+              `}
+      }
     }
   }
 
@@ -78,10 +90,13 @@ const HeaderContainerDiv = styled.div`
       margin: 10px 0;
       width: 60%;
       max-width: 300px;
-      opacity: 0.65;
 
-      &:hover {
-        animation: ${hoverPhoto} 0.5s forwards;
+      @media (min-width: 800px) {
+        opacity: 0.65;
+
+        &:hover {
+          animation: ${hoverPhoto} 0.5s forwards;
+        }
       }
     }
   }
@@ -100,7 +115,10 @@ const HeaderContainer = props => {
         <h4>CURRENT STUDENT:</h4>
         <div>
           <a href="https://lambdaschool.com/">
-            <img src={lambdaLogo} alt="Current school logo" />
+            <img
+              src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
+              alt="Current school logo"
+            />
           </a>
         </div>
         <h4>PREVIOUSLY:</h4>

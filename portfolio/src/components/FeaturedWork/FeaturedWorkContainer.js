@@ -16,7 +16,7 @@ const FeaturedWorkContainerDiv = styled.div`
     width: 100%;
     margin: 25px 0;
     padding: 50px 0;
-    border: 1px solid #6936de;
+    border: 1px solid white;
 
     &:hover {
       -webkit-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);

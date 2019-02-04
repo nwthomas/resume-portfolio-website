@@ -64,6 +64,17 @@ const NavbarLinks = styled.div`
             `}
     }
 
+    &:active {
+      ${props =>
+        props.darkmode
+          ? css`
+              color: black;
+            `
+          : css`
+              color: #ad91ed;
+            `}
+    }
+
     ${props =>
       props.darkmode &&
       css`
@@ -93,6 +104,11 @@ const DarkModeTab = styled.div`
 
   &:hover {
     animation: ${hoverDarkMode} 0.5s forwards;
+  }
+
+  &:active {
+    background: black;
+    opacity: 1;
   }
 
   div {
