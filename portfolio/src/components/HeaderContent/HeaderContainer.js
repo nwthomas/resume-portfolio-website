@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import ahLogo from "../../images/ah-logo.png";
+import ahLogoWhite from "../../images/ah-logo-white.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 import lambdaLogoWhite from "../../images/lambda-logo-white.png";
 
@@ -124,7 +125,10 @@ const HeaderContainer = props => {
         <h4>PREVIOUSLY:</h4>
         <div>
           <a href="https://www.adventisthealth.org/">
-            <img src={ahLogo} alt="Former employer logo" />
+            <img
+              src={props.darkmode ? ahLogoWhite : ahLogo}
+              alt="Former employer logo"
+            />
           </a>
         </div>
       </div>
