@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
+import instaSample from "../../images/instagram-macbook.png";
+import tipprSample from "../../images/tippr-macbook.png";
 
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
@@ -17,19 +19,18 @@ const FeaturedWorkContainerDiv = styled.div`
   }
 
   div {
-    height: 350px;
     width: 100%;
-    margin: 25px 0;
-    padding: 50px 0;
-    border: 1px solid white;
+    margin: 70px 0;
 
-    &:hover {
+    /* &:hover {
       -webkit-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
       -moz-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
       box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
-    }
+    } */
 
     div {
+      margin: 20px 5%;
+      width: 90%;
     }
   }
 `;
@@ -38,8 +39,20 @@ const FeaturedWorkContainer = props => {
   return (
     <FeaturedWorkContainerDiv darkmode={props.darkmode}>
       <p>Featured Projects</p>
-      <div>{/* <div /> */}</div>
-      <div>{/* <div /> */}</div>
+      <div>
+        <div>
+          <a href="https://github.com/nwthomas/instagram-clone">
+            <img src={tipprSample} alt="tippr portfolio samples" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="https://github.com/nwthomas/instagram-clone">
+            <img src={instaSample} alt="Instagram portfolio samples" />
+          </a>
+        </div>
+      </div>
     </FeaturedWorkContainerDiv>
   );
 };
