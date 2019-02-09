@@ -12,7 +12,16 @@ const hoverLink = keyframes`
   }
 `;
 
-const FooterContainerDiv = styled.div`
+const hoverLinkDark = keyframes`
+  0% {
+    color: white;
+  }
+  100% {
+    color: #c3677c;
+  }
+`;
+
+const FooterContainer = styled.div`
   width: 90%;
   margin: 40px 5% 0;
   display: flex;
@@ -36,7 +45,7 @@ const FooterContainerDiv = styled.div`
     ${props =>
       props.darkmode &&
       css`
-        color: #d08999;
+        color: #b6465f;
       `}
   }
 
@@ -51,7 +60,14 @@ const FooterContainerDiv = styled.div`
       `}
 
     &:hover {
-      animation: ${hoverLink} 0.35s forwards;
+      ${props =>
+        props.darkmode
+          ? css`
+              animation: ${hoverLinkDark} 0.5s forwards;
+            `
+          : css`
+              animation: ${hoverLink} 0.5s forwards;
+            `}
     }
   }
 
@@ -60,9 +76,9 @@ const FooterContainerDiv = styled.div`
   }
 `;
 
-const FooterContainer = props => {
+const Footer = props => {
   return (
-    <FooterContainerDiv darkmode={props.darkmode}>
+    <FooterContainer darkmode={props.darkmode}>
       <p>Looking to start a project?</p>
       <p>Get in contact.</p>
       <a href="https://github.com/nwthomas">GitHub</a>
@@ -71,8 +87,8 @@ const FooterContainer = props => {
       <a href="https://twitter.com/_nwthomas">Twitter</a>
       <a href="https://www.instagram.com/nwthomas/">Instagram</a>
       <Link to="/contact">Email</Link>
-    </FooterContainerDiv>
+    </FooterContainer>
   );
 };
 
-export default FooterContainer;
+export default Footer;

@@ -16,19 +16,19 @@ const hoverLink = keyframes`
 
 const hoverLinkDarkMode = keyframes`
   0% {
-    color: #c3677c;
+    color: #b6465f;
   }
   100% {
-    color: #b6465f;
+    color: #c3677c;
   }
 `;
 
 const hoverPhoto = keyframes`
   0% {
-    opacity: 0.65;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0.65;
   }
 `;
 
@@ -55,7 +55,7 @@ const HeaderContainerDiv = styled.div`
       ${props =>
         props.darkmode &&
         css`
-          color: #d08999;
+          color: #b6465f;
         `}
 
       &:hover {
@@ -92,12 +92,8 @@ const HeaderContainerDiv = styled.div`
       width: 60%;
       max-width: 300px;
 
-      @media (min-width: 800px) {
-        opacity: 0.65;
-
-        &:hover {
-          animation: ${hoverPhoto} 0.5s forwards;
-        }
+      &:hover {
+        animation: ${hoverPhoto} 0.5s forwards;
       }
     }
   }

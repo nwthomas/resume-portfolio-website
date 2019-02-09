@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled, { css, keyframes } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";

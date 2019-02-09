@@ -19,7 +19,7 @@ const hoverLinkDark = keyframes`
     color: white;
   }
   100% {
-    color: #b6465f;
+    color: #c3677c;
   }
 `;
 
@@ -99,9 +99,9 @@ const DarkModeTab = styled.div`
   -moz-border-bottom-left-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
-  -webkit-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 14px 111px -1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 14px 111px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 14px 111px -1px rgba(0, 0, 0, 0.35);
 
   ${props =>
     !props.darkmode &&
