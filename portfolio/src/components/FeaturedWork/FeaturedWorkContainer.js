@@ -3,6 +3,15 @@ import styled, { css, keyframes } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
 
+const sampleHover = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+`;
+
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
   margin: 90px 0;
@@ -21,12 +30,11 @@ const FeaturedWorkContainerDiv = styled.div`
   div {
     width: 100%;
     margin: 70px 0;
+    position: relative;
 
-    /* &:hover {
-      -webkit-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
-      -moz-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
-      box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.23);
-    } */
+    &:hover {
+      animation: ${sampleHover} 0.5s forwards;
+    }
 
     div {
       margin: 20px 5%;

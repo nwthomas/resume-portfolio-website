@@ -49,6 +49,7 @@ const NavbarLinks = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  margin-bottom: 30px;
 
   a {
     margin-top: 20px;
@@ -87,8 +88,8 @@ const DarkModeTab = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 10px;
-  height: 60px;
+  padding-bottom: 12px;
+  height: 70px;
   width: 55px;
   background: black;
   opacity: 0.8;
@@ -102,9 +103,13 @@ const DarkModeTab = styled.div`
   -moz-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
   box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
 
-  &:hover {
-    animation: ${hoverDarkMode} 0.5s forwards;
-  }
+  ${props =>
+    !props.darkmode &&
+    css`
+      &:hover {
+        animation: ${hoverDarkMode} 0.5s forwards;
+      }
+    `}
 
   &:active {
     background: black;
@@ -134,7 +139,6 @@ const NavbarMain = props => {
           Work
         </NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/resume">Resume</NavLink>
       </NavbarLinks>
     </NavbarMainDiv>
   );
