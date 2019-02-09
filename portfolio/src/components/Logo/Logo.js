@@ -11,9 +11,9 @@ const LogoDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.18);
 
   ${props =>
     props.darkmode &&
