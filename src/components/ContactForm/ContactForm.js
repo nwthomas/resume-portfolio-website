@@ -4,10 +4,19 @@ import styled, { css, keyframes } from "styled-components";
 
 const buttonHover = keyframes`
   0% {
-
+    opacity: 1;
   }
   100% {
+    opacity: 0.8;
+  }
+`;
 
+const buttonHoverDark = keyframes`
+  0% {
+    background: black;
+  }
+  100% {
+    background: #030303;
   }
 `;
 
@@ -96,12 +105,12 @@ const ContactFormContainer = styled.div`
           `}
 
         &:hover {
-          opacity: 0.8;
+          animation: ${buttonHover} 0.2s forwards;
 
           ${props =>
             props.darkmode &&
             css`
-              background: #030303;
+              animation: ${buttonHoverDark} 0.2s forwards;
             `}
         }
       }
@@ -116,9 +125,9 @@ const ContactForm = props => {
   return (
     <ContactFormContainer darkmode={props.darkmode}>
       <form>
-        <h4>Your Name</h4>
+        <h4>Name</h4>
         <input required type="text" name="contactName" placeholder="Name" />
-        <h4>Your Email</h4>
+        <h4>Email</h4>
         <input required type="text" name="contactEmail" placeholder="Email" />
         <h4>Subject</h4>
         <input
@@ -127,7 +136,7 @@ const ContactForm = props => {
           name="contactSubject"
           placeholder="Subject"
         />
-        <h4>Your Message</h4>
+        <h4>Message</h4>
         <textarea required rows="12" name="contactSubject" />
         <div>
           <button type="submit">Submit</button>

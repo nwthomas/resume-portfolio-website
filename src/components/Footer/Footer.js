@@ -101,24 +101,57 @@ const FooterContainer = styled.div`
   }
 `;
 
+const Copyright = styled.div`
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 80px;
+    color: black;
+
+    @media (min-width: 500px) {
+      font-size: 1.6rem;
+    }
+
+    ${props =>
+      props.darkmode &&
+      css`
+        color: white;
+      `}
+  }
+`;
+
 const Footer = props => {
   return (
-    <FooterContainer darkmode={props.darkmode}>
-      <div>
-        <p>Looking to start a project?</p>
-        <p>Get in contact.</p>
-      </div>
-      <div>
-        <a href="https://github.com/nwthomas">GitHub</a>
-        <a href="https://www.linkedin.com/in/nathan-thomas-644b3339/">
-          LinkedIn
-        </a>
-        <a href="https://medium.com/@nwthomas">Medium</a>
-        <a href="https://twitter.com/_nwthomas">Twitter</a>
-        <a href="https://www.instagram.com/nwthomas/">Instagram</a>
-        <Link to="/contact">Email</Link>
-      </div>
-    </FooterContainer>
+    <>
+      <FooterContainer darkmode={props.darkmode}>
+        <div>
+          <p>Looking to start a project?</p>
+          <p>Get in contact.</p>
+        </div>
+        <div>
+          <a href="https://github.com/nwthomas">GitHub</a>
+          <a href="https://www.linkedin.com/in/nathan-thomas-644b3339/">
+            LinkedIn
+          </a>
+          <a href="https://medium.com/@nwthomas">Medium</a>
+          <a href="https://twitter.com/_nwthomas">Twitter</a>
+          <a href="https://www.instagram.com/nwthomas/">Instagram</a>
+          <Link to="/contact">Email</Link>
+        </div>
+      </FooterContainer>
+      <Copyright darkmode={props.darkmode}>
+        <h4>Copyright © 2019 Nathan Thomas</h4>
+      </Copyright>
+    </>
   );
 };
 

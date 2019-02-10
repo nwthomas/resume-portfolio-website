@@ -141,7 +141,9 @@ const NavbarMain = props => {
             <img src={props.darkmode ? sun : moon} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
-        <NavLink to="/">Work</NavLink>
+        <NavLink exact to="/">
+          Work
+        </NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </NavbarLinks>
     </NavbarMainDiv>
