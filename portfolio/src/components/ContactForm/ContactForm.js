@@ -24,7 +24,7 @@ const ContactFormContainer = styled.div`
       margin-bottom: 15px;
       height: 40px;
       border: 1px solid #2f3234;
-      border-radius: 3px;
+      /* border-radius: 3px; */
       padding: 5px;
       font-size: 1.4rem;
       font-family: "Work Sans", sans-serif;
@@ -33,21 +33,24 @@ const ContactFormContainer = styled.div`
 `;
 
 const ContactForm = props => {
+  (function onLoadSetTop() {
+    window.scrollTo(0, 0);
+  })();
   return (
     <ContactFormContainer darkmode={props.darkmode}>
       <form>
-        <p>Your Name</p>
+        <h4>Your Name</h4>
         <input required type="text" name="contactName" placeholder="Name" />
-        <p>Your Email</p>
+        <h4>Your Email</h4>
         <input required type="text" name="contactEmail" placeholder="Email" />
-        <p>Subject</p>
+        <h4>Subject</h4>
         <input
           required
           type="text"
           name="contactSubject"
           placeholder="Subject"
         />
-        <p>Your Message</p>
+        <h4>Your Message</h4>
         <textarea required rows="10" name="contactSubject" />
         <button type="submit">SUBMIT</button>
         <button type="button">CLEAR</button>

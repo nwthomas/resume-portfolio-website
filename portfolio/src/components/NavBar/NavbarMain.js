@@ -101,9 +101,14 @@ const DarkModeTab = styled.div`
   -moz-border-bottom-left-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
-  -webkit-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
-  box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
+
+  ${props =>
+    !props.darkmode &&
+    css`
+      -webkit-box-shadow: 8px 10px 37px -14px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 8px 10px 37px -14px rgba(0, 0, 0, 0.42);
+      box-shadow: 8px 10px 37px -14px rgba(0, 0, 0, 0.42);
+    `}
 
   ${props =>
     !props.darkmode &&
