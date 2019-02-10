@@ -60,6 +60,8 @@ const ContactForm = props => {
   );
 };
 
-ContactForm.propTypes = {};
+ContactForm.propTypes = {
+  darkmode: PropTypes.bool.isRequired
+};
 
 export default ContactForm;

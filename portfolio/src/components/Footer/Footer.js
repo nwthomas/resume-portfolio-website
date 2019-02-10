@@ -115,7 +115,8 @@ const Footer = props => {
         <a href="https://medium.com/@nwthomas">Medium</a>
         <a href="https://twitter.com/_nwthomas">Twitter</a>
         <a href="https://www.instagram.com/nwthomas/">Instagram</a>
-        <Link to="/contact">Email</Link>
+        {/* <Link to="/contact">Email</Link> */}
+        <a href="mailto:nwthomas@me.com">Email</a>
       </div>
     </FooterContainer>
   );

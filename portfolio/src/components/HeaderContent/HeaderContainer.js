@@ -86,7 +86,12 @@ const CurrentPreviousWork = styled.div`
     h4 {
       letter-spacing: 4px;
       margin-top: 50px;
+
+      @media (min-width: 800px) {
+        margin-top: 100px;
+      }
     }
+
     div {
       padding: 10px 0;
       width: 60%;
@@ -108,7 +113,7 @@ const CurrentPreviousWork = styled.div`
 
   div:first-child {
     @media (min-width: 800px) {
-      padding-right: 10%;
+      padding-right: 40%;
     }
   }
 `;
