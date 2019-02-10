@@ -77,7 +77,7 @@ const FeaturedWorkContainer = props => {
             <a href="https://github.com/nwthomas/tippr">
               <img src={tipprSample} alt="tippr portfolio samples" />
             </a>
-            <h4>TIPPR PAYMENT APP</h4>
+            <h4>tippr Payment Appp</h4>
           </div>
         </div>
         <div>
@@ -85,7 +85,7 @@ const FeaturedWorkContainer = props => {
             <a href="https://github.com/nwthomas/instagram-clone">
               <img src={instaSample} alt="Instagram portfolio samples" />
             </a>
-            <h4>INSTAGRAM CLONE</h4>
+            <h4>Instagram Clone</h4>
           </div>
         </div>
         <div>
@@ -93,7 +93,7 @@ const FeaturedWorkContainer = props => {
             <a href="https://github.com/nwthomas/fylo-landing-page">
               <img src={fyloSample} alt="Fylo portfolio samples" />
             </a>
-            <h4>FYLO LANDING PAGE</h4>
+            <h4>Fylo Landing Page</h4>
           </div>
         </div>
       </div>

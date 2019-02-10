@@ -20,6 +20,8 @@ export const Global = css`
     font-size: 1.6rem;
     font-weight: 200;
     opacity: 0.9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
   }
   p {
     font-family: "Work Sans", sans-serif;
@@ -35,6 +37,11 @@ export const Global = css`
   input,
   button {
     -webkit-appearance: none;
+    font-family: "Work Sans", sans-serif;
+  }
+  input,
+  textarea {
+    color: #929292;
   }
   img {
     width: 100%;

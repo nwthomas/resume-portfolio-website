@@ -56,10 +56,10 @@ const NavbarLinks = styled.div`
       ${props =>
         props.darkmode
           ? css`
-              animation: ${hoverLinkDark} 0.5s forwards;
+              animation: ${hoverLinkDark} 0.2s forwards;
             `
           : css`
-              animation: ${hoverLink} 0.5s forwards;
+              animation: ${hoverLink} 0.2s forwards;
             `}
     }
 
@@ -112,7 +112,7 @@ const DarkModeTab = styled.div`
     !props.darkmode &&
     css`
       &:hover {
-        animation: ${hoverDarkMode} 0.5s forwards;
+        animation: ${hoverDarkMode} 0.2s forwards;
       }
     `}
 
@@ -140,9 +140,7 @@ const NavbarMain = props => {
             <img src={moon} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
-        <NavLink exact to="/">
-          Work
-        </NavLink>
+        <NavLink to="/">Work</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </NavbarLinks>
     </NavbarMainDiv>

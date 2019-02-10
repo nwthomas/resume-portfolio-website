@@ -113,8 +113,12 @@ const CurrentPreviousWork = styled.div`
   }
 
   div:first-child {
+    @media (min-width: 500px) {
+      padding-right: 5%;
+    }
+
     @media (min-width: 800px) {
-      padding-right: 40%;
+      padding-right: 25%;
     }
   }
 `;
@@ -130,7 +134,7 @@ const HeaderContainer = props => {
       </p>
       <CurrentPreviousWork>
         <div>
-          <h4>CURRENT STUDENT:</h4>
+          <h4>Current Student:</h4>
           <div>
             <a href="https://lambdaschool.com/">
               <img
@@ -141,7 +145,7 @@ const HeaderContainer = props => {
           </div>
         </div>
         <div>
-          <h4>PREVIOUSLY:</h4>
+          <h4>Previously:</h4>
           <div>
             <a href="https://www.adventisthealth.org/">
               <img

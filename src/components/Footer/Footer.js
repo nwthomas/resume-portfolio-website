@@ -74,7 +74,7 @@ const FooterContainer = styled.div`
       font-size: 1.6rem;
 
       @media (min-width: 800px) {
-        margin: 50px 3% 100px 0;
+        margin: 50px 3% 120px 0;
       }
 
       ${props =>
@@ -87,10 +87,10 @@ const FooterContainer = styled.div`
         ${props =>
           props.darkmode
             ? css`
-                animation: ${hoverLinkDark} 0.5s forwards;
+                animation: ${hoverLinkDark} 0.2s forwards;
               `
             : css`
-                animation: ${hoverLink} 0.5s forwards;
+                animation: ${hoverLink} 0.2s forwards;
               `}
       }
     }
@@ -116,8 +116,7 @@ const Footer = props => {
         <a href="https://medium.com/@nwthomas">Medium</a>
         <a href="https://twitter.com/_nwthomas">Twitter</a>
         <a href="https://www.instagram.com/nwthomas/">Instagram</a>
-        {/* <Link to="/contact">Email</Link> */}
-        <a href="mailto:nwthomas@me.com">Email</a>
+        <Link to="/contact">Email</Link>
       </div>
     </FooterContainer>
   );

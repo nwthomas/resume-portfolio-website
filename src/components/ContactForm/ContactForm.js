@@ -17,18 +17,46 @@ const ContactFormContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    p {
-      margin-bottom: 15px;
+    h4 {
+      margin-bottom: 10px;
     }
 
     input {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       height: 40px;
       border: 1px solid #2f3234;
-      /* border-radius: 3px; */
       padding: 5px;
       font-size: 1.4rem;
       font-family: "Work Sans", sans-serif;
+      background: #f7f7f7;
+      /* border-radius: 3px; */
+
+      ${props =>
+        props.darkmode &&
+        css`
+          background: white;
+        `}
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 47%;
+        height: 50px;
+        margin-top: 30px;
+        border: 1px solid #b6465f;
+        border-radius: 8px;
+        background: #b6465f;
+        color: white;
+        font-size: 1.6rem;
+
+        &:hover {
+          background: white;
+          color: #b6465f;
+        }
+      }
     }
   }
 `;
@@ -53,8 +81,10 @@ const ContactForm = props => {
         />
         <h4>Your Message</h4>
         <textarea required rows="10" name="contactSubject" />
-        <button type="submit">SUBMIT</button>
-        <button type="button">CLEAR</button>
+        <div>
+          <button type="submit">SUBMIT</button>
+          <button type="button">CLEAR</button>
+        </div>
       </form>
     </ContactFormContainer>
   );
