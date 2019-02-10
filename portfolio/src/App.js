@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { GlobalStyle } from "./components/styles";
-import { NavbarContainer } from "./components/NavBar";
-import { HomePageContainer } from "./components/HomePage";
 import { Route } from "react-router-dom";
 import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+
+import { NavbarContainer } from "./components/NavBar";
+import { HomePageContainer } from "./components/HomePage";
+import { ContactForm } from "./components/ContactForm";
 
 const AppDiv = styled.div`
   width: 100%;
+  min-height: 100vh;
   background: white;
 
   ${props =>
@@ -30,9 +34,18 @@ const App = () => {
           path="/"
           render={props => <HomePageContainer {...props} darkmode={darkmode} />}
         />
+        <Route
+          path="/contact"
+          render={props => <ContactForm {...props} darkmode={darkmode} />}
+        />
       </AppDiv>
     </>
   );
+};
+
+App.propTypes = {
+  darkmode: PropTypes.bool,
+  setDarkmode: PropTypes.func
 };
 
 export default App;

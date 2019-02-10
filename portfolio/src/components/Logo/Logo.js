@@ -11,9 +11,14 @@ const LogoDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
-  box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
+
+  ${props =>
+    !props.darkmode &&
+    css`
+      -webkit-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
+      -moz-box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
+      box-shadow: 9px 11px 79px -11px rgba(0, 0, 0, 0.28);
+    `}
 
   ${props =>
     props.darkmode &&
