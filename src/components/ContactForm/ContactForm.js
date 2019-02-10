@@ -29,7 +29,20 @@ const ContactFormContainer = styled.div`
       font-size: 1.4rem;
       font-family: "Work Sans", sans-serif;
       background: #f7f7f7;
-      /* border-radius: 3px; */
+
+      ${props =>
+        props.darkmode &&
+        css`
+          background: white;
+        `}
+    }
+
+    textarea {
+      background: #f7f7f7;
+      border: 1px solid #2f3234;
+      width: 100%;
+      padding: 5px;
+      font-size: 1.4rem;
 
       ${props =>
         props.darkmode &&
@@ -44,17 +57,27 @@ const ContactFormContainer = styled.div`
 
       button {
         width: 47%;
-        height: 50px;
-        margin-top: 30px;
-        border: 1px solid #b6465f;
+        height: 45px;
+        margin: 30px 0 120px;
+        border: 0;
         border-radius: 8px;
-        background: #b6465f;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        background: #ad91ed;
+        /* #b6465f */
         color: white;
         font-size: 1.6rem;
+        transition: 0.2s;
+        text-transform: capitalize;
+
+        ${props =>
+          props.darkmode &&
+          css`
+            background: #c3677c;
+          `}
 
         &:hover {
-          background: white;
-          color: #b6465f;
+          opacity: 0.8;
         }
       }
     }
@@ -80,10 +103,10 @@ const ContactForm = props => {
           placeholder="Subject"
         />
         <h4>Your Message</h4>
-        <textarea required rows="10" name="contactSubject" />
+        <textarea required rows="12" name="contactSubject" />
         <div>
-          <button type="submit">SUBMIT</button>
-          <button type="button">CLEAR</button>
+          <button type="submit">Submit</button>
+          <button type="button">Clear</button>
         </div>
       </form>
     </ContactFormContainer>

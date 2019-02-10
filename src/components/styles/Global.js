@@ -35,6 +35,7 @@ export const Global = css`
     color: black;
   }
   input,
+  textarea,
   button {
     -webkit-appearance: none;
     font-family: "Work Sans", sans-serif;
