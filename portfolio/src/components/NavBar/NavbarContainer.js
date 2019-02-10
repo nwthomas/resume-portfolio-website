@@ -4,7 +4,7 @@ import styled from "styled-components";
 import NavbarMain from "./NavbarMain";
 
 const NavbarContainerDiv = styled.div`
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   color: white;
   margin: 0 auto;

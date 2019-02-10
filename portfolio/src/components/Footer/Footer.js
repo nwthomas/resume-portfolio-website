@@ -22,9 +22,9 @@ const hoverLinkDark = keyframes`
 `;
 
 const FooterContainer = styled.div`
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  margin: 40px auto 0;
+  margin: 70px auto 0;
   display: flex;
   flex-direction: column;
 

@@ -36,8 +36,8 @@ const HeaderContainerDiv = styled.div`
     `}
 
   p {
-    margin: 0 5%;
-
+    max-width: 900px;
+    width: 100%;
     a {
       font-size: 3rem;
       color: #6936de;
@@ -71,10 +71,18 @@ const HeaderContainerDiv = styled.div`
       }
     }
   }
+`;
+
+const CurrentPreviousWork = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 
   div {
-    margin: 0 5%;
-
     h4 {
       letter-spacing: 4px;
       margin-top: 50px;
@@ -87,10 +95,20 @@ const HeaderContainerDiv = styled.div`
       transition: 0.2s;
       margin: 0;
 
+      @media (min-width: 800px) {
+        width: 100%;
+      }
+
       &:hover {
         opacity: 0.8;
         padding: 6px 0 14px;
       }
+    }
+  }
+
+  div:first-child {
+    @media (min-width: 800px) {
+      padding-right: 10%;
     }
   }
 `;
@@ -104,26 +122,30 @@ const HeaderContainer = props => {
         living in the Napa Valley and currently attending{" "}
         <a href="https://lambdaschool.com/">Lambda School</a>.
       </p>
-      <div>
-        <h4>CURRENT STUDENT:</h4>
+      <CurrentPreviousWork>
         <div>
-          <a href="https://lambdaschool.com/">
-            <img
-              src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
-              alt="Current school logo"
-            />
-          </a>
+          <h4>CURRENT STUDENT:</h4>
+          <div>
+            <a href="https://lambdaschool.com/">
+              <img
+                src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
+                alt="Current school logo"
+              />
+            </a>
+          </div>
         </div>
-        <h4>PREVIOUSLY:</h4>
         <div>
-          <a href="https://www.adventisthealth.org/">
-            <img
-              src={props.darkmode ? ahLogoWhite : ahLogo}
-              alt="Former employer logo"
-            />
-          </a>
+          <h4>PREVIOUSLY:</h4>
+          <div>
+            <a href="https://www.adventisthealth.org/">
+              <img
+                src={props.darkmode ? ahLogoWhite : ahLogo}
+                alt="Former employer logo"
+              />
+            </a>
+          </div>
         </div>
-      </div>
+      </CurrentPreviousWork>
     </HeaderContainerDiv>
   );
 };

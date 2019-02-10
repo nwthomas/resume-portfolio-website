@@ -7,7 +7,7 @@ import fyloSample from "../../images/fylo-macbook.png";
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
   max-width: 1200px;
-  margin: 60px auto 0;
+  margin: 60px auto 60px;
 
   ${props =>
     props.darkmode &&
@@ -17,20 +17,31 @@ const FeaturedWorkContainerDiv = styled.div`
 
   p {
     display: flex;
-    margin: 0 5%;
   }
 
   div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+
     div {
       width: 100%;
-      margin: 60px 0 0;
+      margin: 40px 0 0;
 
-      @media (max-width: 800px) {
-        max-width: 550px;
+      @media (min-width: 500px) {
+        max-width: 800px;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 500px;
       }
 
       div {
-        padding: 20px 5%;
+        padding: 20px 0;
         width: 100%;
         opacity: 1;
         transition: 0.2s;
@@ -40,7 +51,7 @@ const FeaturedWorkContainerDiv = styled.div`
 
         &:hover {
           opacity: 0.8;
-          padding: 16px 5% 24px;
+          padding: 16px 0 24px;
         }
 
         h4 {

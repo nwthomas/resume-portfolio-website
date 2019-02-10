@@ -36,7 +36,6 @@ const NavbarMainDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 1100px;
   width: 100%;
   height: 180px;
   margin: 0 auto;

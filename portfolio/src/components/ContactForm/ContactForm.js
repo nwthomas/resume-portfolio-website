@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
 const ContactFormContainer = styled.div`
-  margin: 50px 5% 0;
-  width: 90%;
+  margin: 50px auto 0;
+  width: 100%;
+  max-width: 1200px;
 
   ${props =>
     props.darkmode &&
