@@ -1,6 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const buttonHover = keyframes`
+  0% {
+
+  }
+  100% {
+
+  }
+`;
 
 const ContactFormContainer = styled.div`
   margin: 50px auto 0;
@@ -23,7 +32,7 @@ const ContactFormContainer = styled.div`
 
     input {
       margin-bottom: 30px;
-      height: 40px;
+      height: 45px;
       border: 1px solid #2f3234;
       padding: 5px;
       font-size: 1.4rem;
@@ -53,12 +62,18 @@ const ContactFormContainer = styled.div`
 
     div {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 120px;
+
+      @media (min-width: 500px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
       button {
-        width: 47%;
+        width: 100%;
         height: 45px;
-        margin: 30px 0 120px;
+        margin: 30px 0 0;
         border: 0;
         border-radius: 8px;
         -moz-border-radius: 8px;
@@ -67,17 +82,27 @@ const ContactFormContainer = styled.div`
         /* #b6465f */
         color: white;
         font-size: 1.6rem;
-        transition: 0.2s;
         text-transform: capitalize;
+        cursor: pointer;
+
+        @media (min-width: 500px) {
+          width: 47%;
+        }
 
         ${props =>
           props.darkmode &&
           css`
-            background: #c3677c;
+            background: black;
           `}
 
         &:hover {
           opacity: 0.8;
+
+          ${props =>
+            props.darkmode &&
+            css`
+              background: #030303;
+            `}
         }
       }
     }

@@ -3,6 +3,7 @@ import styled, { keyframes, css } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../Logo";
 import moon from "../../images/moon.svg";
+import sun from "../../images/sun.svg";
 import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
@@ -137,7 +138,7 @@ const NavbarMain = props => {
       <NavbarLinks darkmode={props.darkmode}>
         <DarkModeTab darkmode={props.darkmode} onClick={setDarkMode}>
           <div>
-            <img src={moon} alt="Dark mode logo" />
+            <img src={props.darkmode ? sun : moon} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
         <NavLink to="/">Work</NavLink>
