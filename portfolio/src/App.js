@@ -27,17 +27,21 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <AppDiv darkmode={darkmode} className="App">
-        <NavbarContainer setDarkmode={setDarkmode} darkmode={darkmode} />
-        <Route
-          exact
-          path="/"
-          render={props => <HomePageContainer {...props} darkmode={darkmode} />}
-        />
-        <Route
-          path="/contact"
-          render={props => <ContactForm {...props} darkmode={darkmode} />}
-        />
+      <AppDiv darkmode={darkmode}>
+        <div>
+          <NavbarContainer setDarkmode={setDarkmode} darkmode={darkmode} />
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <HomePageContainer {...props} darkmode={darkmode} />
+            )}
+          />
+          <Route
+            path="/contact"
+            render={props => <ContactForm {...props} darkmode={darkmode} />}
+          />
+        </div>
       </AppDiv>
     </>
   );

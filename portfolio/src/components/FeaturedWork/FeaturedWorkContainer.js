@@ -6,7 +6,8 @@ import fyloSample from "../../images/fylo-macbook.png";
 
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
-  margin: 90px 0;
+  max-width: 1200px;
+  margin: 60px auto 0;
 
   ${props =>
     props.darkmode &&
@@ -20,30 +21,35 @@ const FeaturedWorkContainerDiv = styled.div`
   }
 
   div {
-    width: 100%;
-    margin: 60px 0;
-    position: relative;
-
     div {
-      padding: 20px 5%;
       width: 100%;
-      opacity: 1;
-      transition: 0.2s;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      margin: 60px 0 0;
 
-      &:hover {
-        opacity: 0.8;
-        padding: 16px 5% 24px;
+      @media (max-width: 800px) {
+        max-width: 550px;
       }
 
-      h4 {
+      div {
+        padding: 20px 5%;
         width: 100%;
-        text-align: center;
-        display: block;
-        letter-spacing: 4px;
-        margin-top: 20px;
+        opacity: 1;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &:hover {
+          opacity: 0.8;
+          padding: 16px 5% 24px;
+        }
+
+        h4 {
+          width: 100%;
+          text-align: center;
+          display: block;
+          letter-spacing: 4px;
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -55,26 +61,28 @@ const FeaturedWorkContainer = props => {
       <p>Featured Projects</p>
       <div>
         <div>
-          <a href="https://github.com/nwthomas/tippr">
-            <img src={tipprSample} alt="tippr portfolio samples" />
-          </a>
-          <h4>TIPPR PAYMENT APP</h4>
+          <div>
+            <a href="https://github.com/nwthomas/tippr">
+              <img src={tipprSample} alt="tippr portfolio samples" />
+            </a>
+            <h4>TIPPR PAYMENT APP</h4>
+          </div>
         </div>
-      </div>
-      <div>
         <div>
-          <a href="https://github.com/nwthomas/instagram-clone">
-            <img src={instaSample} alt="Instagram portfolio samples" />
-          </a>
-          <h4>INSTAGRAM CLONE</h4>
+          <div>
+            <a href="https://github.com/nwthomas/instagram-clone">
+              <img src={instaSample} alt="Instagram portfolio samples" />
+            </a>
+            <h4>INSTAGRAM CLONE</h4>
+          </div>
         </div>
-      </div>
-      <div>
         <div>
-          <a href="https://github.com/nwthomas/fylo-landing-page">
-            <img src={fyloSample} alt="Fylo portfolio samples" />
-          </a>
-          <h4>FYLO LANDING PAGE</h4>
+          <div>
+            <a href="https://github.com/nwthomas/fylo-landing-page">
+              <img src={fyloSample} alt="Fylo portfolio samples" />
+            </a>
+            <h4>FYLO LANDING PAGE</h4>
+          </div>
         </div>
       </div>
     </FeaturedWorkContainerDiv>

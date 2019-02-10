@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
 const ContactFormContainer = styled.div`
-  margin: 50px 5%;
+  margin: 50px 5% 0;
   width: 90%;
 
   ${props =>

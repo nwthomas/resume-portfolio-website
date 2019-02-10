@@ -25,8 +25,8 @@ const hoverLinkDarkMode = keyframes`
 
 const HeaderContainerDiv = styled.div`
   width: 100%;
-  padding: 50px 5%;
-  max-width: 1100px;
+  max-width: 1200px;
+  padding: 50px 0;
   margin: 0 auto;
 
   ${props =>
@@ -36,8 +36,7 @@ const HeaderContainerDiv = styled.div`
     `}
 
   p {
-    font-size: 3rem;
-    line-height: 1.8;
+    margin: 0 5%;
 
     a {
       font-size: 3rem;
@@ -74,6 +73,8 @@ const HeaderContainerDiv = styled.div`
   }
 
   div {
+    margin: 0 5%;
+
     h4 {
       letter-spacing: 4px;
       margin-top: 50px;
@@ -84,6 +85,7 @@ const HeaderContainerDiv = styled.div`
       max-width: 300px;
       opacity: 1;
       transition: 0.2s;
+      margin: 0;
 
       &:hover {
         opacity: 0.8;
@@ -99,7 +101,7 @@ const HeaderContainer = props => {
       <p darkmode={props.darkmode}>
         I'm Nathan Thomas, a{" "}
         <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
-        living in the Napa Valley and currently enrolled at{" "}
+        living in the Napa Valley and currently attending{" "}
         <a href="https://lambdaschool.com/">Lambda School</a>.
       </p>
       <div>

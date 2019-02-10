@@ -24,6 +24,7 @@ export const Global = css`
   p {
     font-family: "Work Sans", sans-serif;
     font-size: 3rem;
+    line-height: 1.8;
   }
   a {
     text-decoration: none;
