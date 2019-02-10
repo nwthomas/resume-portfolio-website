@@ -39,6 +39,7 @@ const HeaderContainerDiv = styled.div`
   p {
     max-width: 900px;
     width: 100%;
+
     a {
       font-size: 3rem;
       color: #6936de;
