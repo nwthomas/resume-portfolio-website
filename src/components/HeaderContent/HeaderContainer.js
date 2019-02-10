@@ -118,7 +118,7 @@ const CurrentPreviousWork = styled.div`
     }
 
     @media (min-width: 800px) {
-      padding-right: 25%;
+      padding-right: 30%;
     }
   }
 `;
