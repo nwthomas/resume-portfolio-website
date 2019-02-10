@@ -23,15 +23,6 @@ const hoverLinkDarkMode = keyframes`
   }
 `;
 
-const hoverPhoto = keyframes`
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.65;
-  }
-`;
-
 const HeaderContainerDiv = styled.div`
   width: 100%;
   padding: 50px 5%;
@@ -88,12 +79,15 @@ const HeaderContainerDiv = styled.div`
       margin-top: 50px;
     }
     div {
-      margin: 10px 0;
+      padding: 10px 0;
       width: 60%;
       max-width: 300px;
+      opacity: 1;
+      transition: 0.2s;
 
       &:hover {
-        animation: ${hoverPhoto} 0.5s forwards;
+        opacity: 0.8;
+        padding: 6px 0 14px;
       }
     }
   }

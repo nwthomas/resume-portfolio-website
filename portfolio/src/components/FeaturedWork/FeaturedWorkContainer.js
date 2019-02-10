@@ -1,16 +1,7 @@
 import React from "react";
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
-
-const sampleHover = keyframes`
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.8;
-  }
-`;
 
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
@@ -32,13 +23,16 @@ const FeaturedWorkContainerDiv = styled.div`
     margin: 70px 0;
     position: relative;
 
-    &:hover {
-      animation: ${sampleHover} 0.5s forwards;
-    }
-
     div {
-      margin: 20px 5%;
-      width: 90%;
+      padding: 20px 5%;
+      width: 100%;
+      opacity: 1;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+        padding: 16px 5% 24px;
+      }
     }
   }
 `;

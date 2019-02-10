@@ -7,9 +7,6 @@ export const Global = css`
   html {
     font-size: 62.5%;
   }
-  input {
-    -webkit-appearance: none;
-  }
   h1,
   h2,
   h3,
@@ -33,6 +30,10 @@ export const Global = css`
     font-size: 2rem;
     font-family: "Work Sans", sans-serif;
     color: black;
+  }
+  input,
+  button {
+    -webkit-appearance: none;
   }
   img {
     width: 100%;
