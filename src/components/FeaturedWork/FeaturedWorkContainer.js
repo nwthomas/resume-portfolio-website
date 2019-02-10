@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
 import fyloSample from "../../images/fylo-macbook.png";
+import PropTypes from "prop-types";
 
 const FeaturedWorkContainerDiv = styled.div`
   width: 100%;
@@ -98,6 +99,13 @@ const FeaturedWorkContainer = props => {
       </div>
     </FeaturedWorkContainerDiv>
   );
+};
+
+FeaturedWorkContainer.propTypes = {
+  darkmode: PropTypes.bool.isRequired,
+  tipprSample: PropTypes.string.isRequired,
+  instaSample: PropTypes.string.isRequired,
+  fyloSample: PropTypes.string.isRequired
 };
 
 export default FeaturedWorkContainer;

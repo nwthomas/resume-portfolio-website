@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
 
 const LogoDiv = styled.div`
   border-radius: 50%;
@@ -60,6 +61,10 @@ const Logo = props => {
       </div>
     </LogoDiv>
   );
+};
+
+Logo.propTypes = {
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default Logo;

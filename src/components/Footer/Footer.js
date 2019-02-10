@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { css } from "styled-components";
+import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
   0% {
@@ -120,6 +121,10 @@ const Footer = props => {
       </div>
     </FooterContainer>
   );
+};
+
+Footer.propTypes = {
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default Footer;

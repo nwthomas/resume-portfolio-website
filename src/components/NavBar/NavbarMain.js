@@ -1,9 +1,9 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import { NavLink } from "react-router-dom";
-
 import { Logo } from "../Logo";
 import moon from "../../images/moon.svg";
+import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
   0% {
@@ -147,6 +147,12 @@ const NavbarMain = props => {
       </NavbarLinks>
     </NavbarMainDiv>
   );
+};
+
+NavbarMain.propTypes = {
+  darkmode: PropTypes.bool.isRequired,
+  setDarkmode: PropTypes.func.isRequired,
+  moon: PropTypes.string.isRequired
 };
 
 export default NavbarMain;

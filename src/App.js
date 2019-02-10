@@ -3,7 +3,6 @@ import { GlobalStyle } from "./components/styles";
 import { Route } from "react-router-dom";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-
 import { NavbarContainer } from "./components/NavBar";
 import { HomePageContainer } from "./components/HomePage";
 import { ContactForm } from "./components/ContactForm";

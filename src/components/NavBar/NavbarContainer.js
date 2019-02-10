@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
 import NavbarMain from "./NavbarMain";
+import PropTypes from "prop-types";
 
 const NavbarContainerDiv = styled.div`
   width: 100%;
@@ -16,6 +16,11 @@ const NavbarContainer = props => {
       <NavbarMain darkmode={props.darkmode} setDarkmode={props.setDarkmode} />
     </NavbarContainerDiv>
   );
+};
+
+NavbarContainer.propTypes = {
+  darkmode: PropTypes.bool.isRequired,
+  setDarkmode: PropTypes.func.isRequired
 };
 
 export default NavbarContainer;

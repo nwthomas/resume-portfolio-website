@@ -4,6 +4,7 @@ import ahLogo from "../../images/ah-logo.png";
 import ahLogoWhite from "../../images/ah-logo-white.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 import lambdaLogoWhite from "../../images/lambda-logo-white.png";
+import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
   0% {
@@ -153,6 +154,14 @@ const HeaderContainer = props => {
       </CurrentPreviousWork>
     </HeaderContainerDiv>
   );
+};
+
+HeaderContainer.propTypes = {
+  darkmode: PropTypes.bool.isRequired,
+  ahLogo: PropTypes.string.isRequired,
+  ahLogoWhite: PropTypes.string.isRequired,
+  lambdaLogo: PropTypes.string.isRequired,
+  lambdaLogoWhite: PropTypes.string.isRequired
 };
 
 export default HeaderContainer;
