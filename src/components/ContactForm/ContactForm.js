@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
+import axios from "axios";
 
 const buttonHover = keyframes`
   0% {
@@ -44,7 +45,7 @@ const ContactFormContainer = styled.div`
       height: 45px;
       border: 1px solid #2f3234;
       padding: 5px;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-family: "Work Sans", sans-serif;
       background: #f7f7f7;
 
@@ -60,7 +61,7 @@ const ContactFormContainer = styled.div`
       border: 1px solid #2f3234;
       width: 100%;
       padding: 5px;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
 
       ${props =>
         props.darkmode &&
@@ -143,9 +144,16 @@ const ContactForm = props => {
       contactMessage: ""
     });
   };
+  const sendEmail = e => {
+    e.preventDefault();
+    axios
+      .post("insert URL here", value)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  };
   return (
     <ContactFormContainer darkmode={props.darkmode}>
-      <form>
+      <form onSubmit={sendEmail}>
         <h4>Name</h4>
         <input
           required
@@ -193,7 +201,22 @@ const ContactForm = props => {
 };
 
 ContactForm.propTypes = {
-  darkmode: PropTypes.bool.isRequired
+  darkmode: PropTypes.bool.isRequired,
+  value: PropTypes.shape({
+    contactName: PropTypes.string,
+    contactEmail: PropTypes.string,
+    contactSubject: PropTypes.string,
+    contactMessage: PropTypes.string
+  })
+};
+
+ContactForm.defaultProps = {
+  value: PropTypes.shape({
+    contactName: "",
+    contactEmail: "",
+    contactSubject: "",
+    contactMessage: ""
+  })
 };
 
 export default ContactForm;
