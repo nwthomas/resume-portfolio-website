@@ -119,29 +119,73 @@ const ContactFormContainer = styled.div`
 `;
 
 const ContactForm = props => {
-  const [contactName, setContactName] = useState("");
   (function onLoadSetTop() {
     window.scrollTo(0, 0);
   })();
+  const [value, setValue] = useState({
+    contactName: "",
+    contactEmail: "",
+    contactSubject: "",
+    contactMessage: ""
+  });
+  const handleChange = e => {
+    setValue({
+      ...value,
+      [e.target.name]: e.target.value
+    });
+  };
+  const clearForm = e => {
+    e.preventDefault();
+    setValue({
+      contactName: "",
+      contactEmail: "",
+      contactSubject: "",
+      contactMessage: ""
+    });
+  };
   return (
     <ContactFormContainer darkmode={props.darkmode}>
       <form>
         <h4>Name</h4>
-        <input required type="text" name="contactName" placeholder="Name" />
+        <input
+          required
+          type="text"
+          name="contactName"
+          placeholder="Name"
+          value={value.contactName}
+          onChange={handleChange}
+        />
         <h4>Email</h4>
-        <input required type="text" name="contactEmail" placeholder="Email" />
+        <input
+          required
+          type="text"
+          name="contactEmail"
+          placeholder="Email"
+          value={value.contactEmail}
+          onChange={handleChange}
+        />
         <h4>Subject</h4>
         <input
           required
           type="text"
           name="contactSubject"
           placeholder="Subject"
+          value={value.contacSubject}
+          onChange={handleChange}
         />
         <h4>Message</h4>
-        <textarea required rows="12" name="contactSubject" />
+        <textarea
+          required
+          rows="12"
+          name="contactMessage"
+          value={value.contactMessage}
+          onChange={handleChange}
+        />
         <div>
           <button type="submit">Submit</button>
-          <button type="button">Clear</button>
+          <button type="button" onClick={clearForm}>
+            Clear
+          </button>
         </div>
       </form>
     </ContactFormContainer>
