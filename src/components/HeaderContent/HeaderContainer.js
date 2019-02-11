@@ -5,6 +5,7 @@ import ahLogoWhite from "../../images/ah-logo-white.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 import lambdaLogoWhite from "../../images/lambda-logo-white.png";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const hoverLink = keyframes`
   0% {
@@ -131,7 +132,8 @@ const HeaderContainer = props => {
         I'm Nathan Thomas, a{" "}
         <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
         living in the Napa Valley and currently attending{" "}
-        <a href="https://lambdaschool.com/">Lambda School</a>.
+        <a href="https://lambdaschool.com/">Lambda School</a>. Let's get in{" "}
+        <Link to="/contact">touch</Link>.
       </p>
       <CurrentPreviousWork>
         <div>

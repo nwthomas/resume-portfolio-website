@@ -132,13 +132,15 @@ const NavbarMain = props => {
     props.setDarkmode(!props.darkmode);
     localStorage.setItem("darkMode", !props.darkmode);
   };
+  const sunImg = sun;
+  const moonImg = moon;
   return (
     <NavbarMainDiv darkmode={props.darkmode}>
       <Logo darkmode={props.darkmode} />
       <NavbarLinks darkmode={props.darkmode}>
         <DarkModeTab darkmode={props.darkmode} onClick={setDarkMode}>
           <div>
-            <img src={props.darkmode ? sun : moon} alt="Dark mode logo" />
+            <img src={props.darkmode ? sunImg : moonImg} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
         <NavLink exact to="/">
