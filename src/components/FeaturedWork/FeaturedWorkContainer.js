@@ -102,10 +102,7 @@ const FeaturedWorkContainer = props => {
 };
 
 FeaturedWorkContainer.propTypes = {
-  darkmode: PropTypes.bool.isRequired,
-  tipprSample: PropTypes.string.isRequired,
-  instaSample: PropTypes.string.isRequired,
-  fyloSample: PropTypes.string.isRequired
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default FeaturedWorkContainer;

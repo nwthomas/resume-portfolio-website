@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const LogoDiv = styled.div`
   border-radius: 50%;
@@ -55,11 +56,13 @@ const LogoDiv = styled.div`
 
 const Logo = props => {
   return (
-    <LogoDiv darkmode={props.darkmode}>
-      <div darkmode={props.darkmode}>
-        <p>N</p>
-      </div>
-    </LogoDiv>
+    <Link to="/">
+      <LogoDiv darkmode={props.darkmode}>
+        <div>
+          <p>N</p>
+        </div>
+      </LogoDiv>
+    </Link>
   );
 };
 

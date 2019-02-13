@@ -128,7 +128,7 @@ const CurrentPreviousWork = styled.div`
 const HeaderContainer = props => {
   return (
     <HeaderContainerDiv darkmode={props.darkmode}>
-      <p darkmode={props.darkmode}>
+      <p>
         I'm Nathan Thomas, a{" "}
         <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
         living in the Napa Valley and currently attending{" "}
@@ -164,11 +164,7 @@ const HeaderContainer = props => {
 };
 
 HeaderContainer.propTypes = {
-  darkmode: PropTypes.bool.isRequired,
-  ahLogo: PropTypes.string.isRequired,
-  ahLogoWhite: PropTypes.string.isRequired,
-  lambdaLogo: PropTypes.string.isRequired,
-  lambdaLogoWhite: PropTypes.string.isRequired
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default HeaderContainer;

@@ -130,6 +130,7 @@ const ContactForm = props => {
     contactMessage: ""
   });
   const handleChange = e => {
+    e.preventDefault();
     setValue({
       ...value,
       [e.target.name]: e.target.value
@@ -146,8 +147,14 @@ const ContactForm = props => {
   };
   const sendEmail = e => {
     e.preventDefault();
+    const email = {
+      name: value.contactName,
+      email: value.contactEmail,
+      subject: value.contactSubject,
+      message: value.contactMessage
+    };
     axios
-      .post("insert URL here", value)
+      .post("http://localhost:5000/", email)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };
@@ -157,6 +164,7 @@ const ContactForm = props => {
         <h4>Name</h4>
         <input
           required
+          autoComplete="off"
           type="text"
           name="contactName"
           placeholder="Name"
@@ -166,6 +174,7 @@ const ContactForm = props => {
         <h4>Email</h4>
         <input
           required
+          autoComplete="off"
           type="text"
           name="contactEmail"
           placeholder="Email"
@@ -175,15 +184,17 @@ const ContactForm = props => {
         <h4>Subject</h4>
         <input
           required
+          autoComplete="off"
           type="text"
           name="contactSubject"
           placeholder="Subject"
-          value={value.contacSubject}
+          value={value.contactSubject}
           onChange={handleChange}
         />
         <h4>Message</h4>
         <textarea
           required
+          autoComplete="off"
           rows="12"
           name="contactMessage"
           value={value.contactMessage}
@@ -200,23 +211,25 @@ const ContactForm = props => {
   );
 };
 
-ContactForm.propTypes = {
-  darkmode: PropTypes.bool.isRequired,
-  value: PropTypes.shape({
-    contactName: PropTypes.string,
-    contactEmail: PropTypes.string,
-    contactSubject: PropTypes.string,
-    contactMessage: PropTypes.string
-  })
-};
+// ContactForm.propTypes = {
+//   darkmode: PropTypes.bool.isRequired,
+//   value: PropTypes.arrayOf({
+//     contactName: PropTypes.string,
+//     contactEmail: PropTypes.string,
+//     contactSubject: PropTypes.string,
+//     contactMessage: PropTypes.string
+//   })
+// };
 
 ContactForm.defaultProps = {
-  value: PropTypes.shape({
-    contactName: "",
-    contactEmail: "",
-    contactSubject: "",
-    contactMessage: ""
-  })
+  value: PropTypes.shape(
+    PropTypes.shape({
+      contactName: "",
+      contactEmail: "",
+      contactSubject: "",
+      contactMessage: ""
+    })
+  )
 };
 
 export default ContactForm;

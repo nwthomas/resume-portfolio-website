@@ -154,8 +154,7 @@ const NavbarMain = props => {
 
 NavbarMain.propTypes = {
   darkmode: PropTypes.bool.isRequired,
-  setDarkmode: PropTypes.func.isRequired,
-  moon: PropTypes.string.isRequired
+  setDarkmode: PropTypes.func.isRequired
 };
 
 export default NavbarMain;

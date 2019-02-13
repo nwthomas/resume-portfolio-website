@@ -12,13 +12,17 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 
 ## Getting Started
 
-- Fork or clone this repository
-- `cd` into the root directory of the project and use the `yarn` command to install dependencies which include:
+- Fork or directly clone this repository to your local machine
+- `cd` into the root directory of the project and use the `yarn` command to install client-side dependencies including:
   - `React`
   - `React Router`
   - `React Hooks`
   - `Styled Components`
-- Once the dependencies are finished installing, use the `yarn start` command to open the portfolio app in your local browser of choice
+- `cd` into the `server` file directory and use the command `yarn` to install server-side dependencies including:
+  - `Express`
+  - `Axios`
+  - `NodeMailer`
+- Once the dependencies are finished installing, use the `yarn start` command inside both the server and the client directories to open the portfolio app in your local browser of choice
 
 ## Built With
 
@@ -26,6 +30,10 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - [React Router](https://github.com/ReactTraining/react-router)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Styled Components](https://www.styled-components.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Express](https://expressjs.com/)
+- [NodeMailer](https://nodemailer.com/about/)
+- [CORS](https://github.com/expressjs/cors)
 
 ## Author
 
