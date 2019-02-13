@@ -13,12 +13,12 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 ## Getting Started
 
 - Fork or directly clone this repository to your local machine
-- `cd` into the root directory of the project and use the `yarn` command to install client-side dependencies including:
+- `cd` into the `client` directory of the project and use the `yarn` command to install client-side dependencies including:
   - `React`
   - `React Router`
   - `React Hooks`
   - `Styled Components`
-- `cd` into the `server` file directory and use the command `yarn` to install server-side dependencies including:
+- `cd` into the `server` file directory and use the `yarn` command to install server-side dependencies including:
   - `Express`
   - `Axios`
   - `NodeMailer`
