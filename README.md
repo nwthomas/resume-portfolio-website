@@ -18,9 +18,9 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
   - `React Router`
   - `React Hooks`
   - `Styled Components`
+  - `Axios`
 - `cd` into the `server` file directory and use the `yarn` command to install server-side dependencies including:
   - `Express`
-  - `Axios`
   - `NodeMailer`
 - Once the dependencies are finished installing, use the `yarn start` command inside both the server and the client directories to open the portfolio app in your local browser of choice
 
