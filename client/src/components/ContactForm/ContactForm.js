@@ -122,7 +122,7 @@ const ContactFormContainer = styled.div`
 
 const componentDidMount = props => {
   window.scrollTo(0, 0);
-  fetch("/");
+  // fetch("/");
 };
 
 const methods = {

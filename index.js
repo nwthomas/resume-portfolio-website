@@ -13,22 +13,21 @@ server.use(cors());
 server.use(helmet());
 server.use(morgan());
 
-// // Static file declaration
-// server.use(express.static(path.join(_dirname, "client/build")));
+// Static file declaration
+server.use(express.static(path.join(__dirname, "client/build")));
 
 // Production mode
 if (process.env.NODE_ENV === "production") {
   server.use(express.static(path.join(__dirname, "client/build")));
-
   server.get("*", (req, res) => {
     res.sendFile(path.join((__dirname = "client/build/index.html")));
   });
 }
 
-// // Build mode
-// server.get("*", (req, res) => {
-//   res.sendFile(path.join(_dirname + "/client/public/index.html"));
-// });
+// Build mode
+server.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/public/index.html"));
+});
 
 // Uses /mail/nathan route for new email from client
 server.post("/mail/nathan", (req, res) => {
