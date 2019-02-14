@@ -94,12 +94,12 @@ const DarkModeTab = styled.div`
   opacity: 0.8;
   cursor: pointer;
   color: black;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-border-bottom-right-radius: 10px;
-  -moz-border-bottom-left-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -moz-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
 
   ${props =>
     !props.darkmode &&

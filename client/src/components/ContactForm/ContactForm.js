@@ -18,7 +18,7 @@ const buttonHoverDark = keyframes`
     background: black;
   }
   100% {
-    background: #030303;
+    opacity: 1;
   }
 `;
 
@@ -33,6 +33,13 @@ const ContactFormContainer = styled.div`
       color: white;
     `}
 
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 3rem;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -45,6 +52,9 @@ const ContactFormContainer = styled.div`
       margin-bottom: 30px;
       height: 45px;
       border: 1px solid #2f3234;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
       padding: 5px;
       font-size: 1.6rem;
       font-family: "Work Sans", sans-serif;
@@ -55,6 +65,10 @@ const ContactFormContainer = styled.div`
         css`
           background: white;
         `}
+
+      &:last-of-type {
+        display: none !important;
+      }
     }
 
     textarea {
@@ -63,6 +77,9 @@ const ContactFormContainer = styled.div`
       width: 100%;
       padding: 5px;
       font-size: 1.6rem;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
 
       ${props =>
         props.darkmode &&
@@ -86,9 +103,9 @@ const ContactFormContainer = styled.div`
         height: 45px;
         margin: 30px 0 0;
         border: 0;
-        border-radius: 8px;
-        -moz-border-radius: 8px;
-        -webkit-border-radius: 8px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
         background: #ad91ed;
         /* #b6465f */
         color: white;
@@ -104,6 +121,7 @@ const ContactFormContainer = styled.div`
           props.darkmode &&
           css`
             background: black;
+            opacity: 0.6;
           `}
 
         &:hover {
@@ -134,7 +152,8 @@ const ContactForm = props => {
     contactName: "",
     contactEmail: "",
     contactSubject: "",
-    contactMessage: ""
+    contactMessage: "",
+    contact_me_by_fax_only: "" // Filters out spam
   });
   const handleChange = e => {
     e.preventDefault();
@@ -149,7 +168,8 @@ const ContactForm = props => {
       contactName: "",
       contactEmail: "",
       contactSubject: "",
-      contactMessage: ""
+      contactMessage: "",
+      contact_me_by_fax_only: ""
     });
   };
   const sendEmail = e => {
@@ -158,15 +178,17 @@ const ContactForm = props => {
       name: value.contactName,
       email: value.contactEmail,
       subject: value.contactSubject,
-      message: value.contactMessage
+      message: value.contactMessage,
+      honeyField: value.contact_me_by_fax_only
     };
     axios
-      .post("/", email)
+      .post("https://nathan-portfolio-backend.herokuapp.com/", email)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };
   return (
     <ContactFormContainer darkmode={props.darkmode}>
+      <h1>Get in Contact</h1>
       <form onSubmit={sendEmail}>
         <h4>Name</h4>
         <input
@@ -206,6 +228,14 @@ const ContactForm = props => {
           name="contactMessage"
           value={value.contactMessage}
           onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="contact_me_by_fax_only"
+          value={value.faxField}
+          onChange={handleChange}
+          tabIndex="-1"
+          autoComplete="off"
         />
         <div>
           <button type="submit">Submit</button>

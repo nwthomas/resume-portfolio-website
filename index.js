@@ -31,9 +31,9 @@ server.get("*", (req, res) => {
 
 // Uses /mail/nathan route for new email from client
 server.post("/", (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message, honeyField } = req.body;
   const response = res;
-  if (!name || !email || !subject || !message)
+  if (!name || !email || !subject || !message || honeyField)
     return res.status(400).json({
       message: "Please provide a name, email, subject, and bio for the email."
     });
