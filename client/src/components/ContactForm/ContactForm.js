@@ -160,7 +160,7 @@ const ContactForm = props => {
       message: value.contactMessage
     };
     axios
-      .post("http://localhost:5000/", email)
+      .post("https://nathan-thomas-portfolio.herokuapp.com/mail/nathan", email)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };

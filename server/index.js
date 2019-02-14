@@ -12,7 +12,7 @@ server.use(cors());
 server.use(helmet());
 server.use(morgan());
 
-server.post("/", (req, res) => {
+server.post("/mail/nathan", (req, res) => {
   const { name, email, subject, message } = req.body;
   const response = res;
   if (!name || !email || !subject || !message)
@@ -32,7 +32,7 @@ server.post("/", (req, res) => {
     });
     let mailOptions = {
       from: process.env.EMAIL,
-      to: "cjbtantay@gmail.com",
+      to: process.env.EMAIL,
       subject: `${subject} from ${name}`,
       text: `${email}\n${message}`
     };
