@@ -77,7 +77,7 @@ const FeaturedWorkContainer = props => {
             <a href="https://github.com/nwthomas/tippr">
               <img src={tipprSample} alt="tippr portfolio samples" />
             </a>
-            <h4>tippr Payment Appp</h4>
+            <h4>tippr Payment App</h4>
           </div>
         </div>
         <div>
