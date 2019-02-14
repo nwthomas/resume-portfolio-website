@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
+import lifecycle from "react-pure-lifecycle";
 
 const buttonHover = keyframes`
   0% {
@@ -119,10 +120,15 @@ const ContactFormContainer = styled.div`
   }
 `;
 
+const componentDidMount = props => {
+  window.scrollTo(0, 0);
+};
+
+const methods = {
+  componentDidMount
+};
+
 const ContactForm = props => {
-  (function onLoadSetTop() {
-    window.scrollTo(0, 0);
-  })();
   const [value, setValue] = useState({
     contactName: "",
     contactEmail: "",
@@ -211,15 +217,15 @@ const ContactForm = props => {
   );
 };
 
-// ContactForm.propTypes = {
-//   darkmode: PropTypes.bool.isRequired,
-//   value: PropTypes.arrayOf({
-//     contactName: PropTypes.string,
-//     contactEmail: PropTypes.string,
-//     contactSubject: PropTypes.string,
-//     contactMessage: PropTypes.string
-//   })
-// };
+ContactForm.propTypes = {
+  darkmode: PropTypes.bool.isRequired,
+  value: PropTypes.arrayOf({
+    contactName: PropTypes.string,
+    contactEmail: PropTypes.string,
+    contactSubject: PropTypes.string,
+    contactMessage: PropTypes.string
+  })
+};
 
 ContactForm.defaultProps = {
   value: PropTypes.shape(
@@ -232,4 +238,4 @@ ContactForm.defaultProps = {
   )
 };
 
-export default ContactForm;
+export default lifecycle(methods)(ContactForm);
