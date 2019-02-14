@@ -6,6 +6,7 @@ const server = express();
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config();
+const port = process.env.PORT || 4000;
 server.use(express.json());
 server.use(cors());
 server.use(helmet());
@@ -22,7 +23,7 @@ server.post("/", (req, res) => {
   async function main() {
     let transporter = nodemailer.createTransport({
       host: process.env.HOST_NAME,
-      port: process.env.PORT,
+      port: process.env.EMAIL_PORT,
       tls: process.env.TLS,
       auth: {
         user: process.env.USERNAME,
@@ -31,7 +32,7 @@ server.post("/", (req, res) => {
     });
     let mailOptions = {
       from: process.env.EMAIL,
-      to: process.env.EMAIL,
+      to: "cjbtantay@gmail.com",
       subject: `${subject} from ${name}`,
       text: `${email}\n${message}`
     };
@@ -46,6 +47,6 @@ server.post("/", (req, res) => {
     .catch(emailErr => response.status(400).json({ success: false }));
 });
 
-server.listen(5000, () =>
-  console.log("\n***** Listening on Port 5000 *****\n")
+server.listen(port, () =>
+  console.log(`\n***** Listening on Port ${port} *****\n`)
 );
