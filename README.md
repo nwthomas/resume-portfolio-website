@@ -22,6 +22,10 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - `cd` into the `server` file directory and use the `yarn` command to install server-side dependencies including:
   - `Express`
   - `NodeMailer`
+  - `Helmet`
+  - `Morgan`
+  - `CORS`
+  - `DOTENV`
 - Once the dependencies are finished installing, use the `yarn start` command inside both the server and the client directories to open the portfolio app in your local browser of choice
 
 ## Built With
@@ -34,6 +38,8 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - [Express](https://expressjs.com/)
 - [NodeMailer](https://nodemailer.com/about/)
 - [CORS](https://github.com/expressjs/cors)
+- [Helmet](https://helmetjs.github.io/)
+- [Morgan](https://www.npmjs.com/package/morgan)
 
 ## Author
 

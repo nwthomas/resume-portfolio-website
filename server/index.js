@@ -1,11 +1,15 @@
 const express = require("express");
 const cors = require("cors");
+const helmet = require("helmet");
+const morgan = require("morgan");
 const server = express();
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config();
 server.use(express.json());
 server.use(cors());
+server.use(helmet());
+server.use(morgan());
 
 server.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
