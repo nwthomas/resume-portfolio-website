@@ -30,7 +30,7 @@ server.get("*", (req, res) => {
 });
 
 // Uses /mail/nathan route for new email from client
-server.post("/mail/nathan", (req, res) => {
+server.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
   const response = res;
   if (!name || !email || !subject || !message)

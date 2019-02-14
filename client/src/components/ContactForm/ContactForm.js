@@ -161,7 +161,7 @@ const ContactForm = props => {
       message: value.contactMessage
     };
     axios
-      .post("/mail/nathan", email)
+      .post("/", email)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };
