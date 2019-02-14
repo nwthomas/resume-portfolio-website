@@ -122,6 +122,7 @@ const ContactFormContainer = styled.div`
 
 const componentDidMount = props => {
   window.scrollTo(0, 0);
+  fetch("/");
 };
 
 const methods = {
@@ -160,7 +161,7 @@ const ContactForm = props => {
       message: value.contactMessage
     };
     axios
-      .post("https://nathan-thomas-portfolio.herokuapp.com/mail/nathan", email)
+      .post("/mail/nathan", email)
       .then(res => console.log(res))
       .catch(err => console.log(err));
   };

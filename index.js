@@ -1,8 +1,9 @@
 const express = require("express");
+const server = express();
+const path = require("path"); // Path module import from Node.js
 const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
-const server = express();
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config();
@@ -12,6 +13,24 @@ server.use(cors());
 server.use(helmet());
 server.use(morgan());
 
+// // Static file declaration
+// server.use(express.static(path.join(_dirname, "client/build")));
+
+// Production mode
+if (process.env.NODE_ENV === "production") {
+  server.use(express.static(path.join(__dirname, "client/build")));
+
+  server.get("*", (req, res) => {
+    res.sendFile(path.join((__dirname = "client/build/index.html")));
+  });
+}
+
+// // Build mode
+// server.get("*", (req, res) => {
+//   res.sendFile(path.join(_dirname + "/client/public/index.html"));
+// });
+
+// Uses /mail/nathan route for new email from client
 server.post("/mail/nathan", (req, res) => {
   const { name, email, subject, message } = req.body;
   const response = res;
@@ -21,6 +40,7 @@ server.post("/mail/nathan", (req, res) => {
     });
 
   async function main() {
+    // Settings to connect to Apple Mail per NodeMailer docs
     let transporter = nodemailer.createTransport({
       host: process.env.HOST_NAME,
       port: process.env.EMAIL_PORT,
@@ -30,16 +50,17 @@ server.post("/mail/nathan", (req, res) => {
         pass: process.env.PASSWORD
       }
     });
+    // Structure of the email message
     let mailOptions = {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: `${subject} from ${name}`,
       text: `${email}\n${message}`
     };
+    // Sends email
     let info = await transporter.sendMail(mailOptions);
-    console.log("MessageId", info.messageId);
   }
-
+  // Calls mailing function that resolves to promise of success/error
   main()
     .then(emailRes => {
       response.status(200).json({ success: true });
