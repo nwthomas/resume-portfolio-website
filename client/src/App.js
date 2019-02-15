@@ -7,6 +7,7 @@ import { NavbarContainer } from "./components/NavBar";
 import { HomePageContainer } from "./components/HomePage";
 import { ContactForm } from "./components/ContactForm";
 import { EmailModal } from "./components/EmailModal";
+import { SendingModal } from "./components/SendingModal";
 
 const AppDiv = styled.div`
   width: 100%;
@@ -26,6 +27,7 @@ const App = props => {
   const pullMode = localStorage.getItem("darkMode") === "true" ? true : false;
   const [darkmode, setDarkmode] = useState(pullMode);
   const [emailValues, setEmailValues] = useState({
+    sending: false,
     success: props.null,
     displayModal: false,
     modalText: ""
@@ -44,6 +46,7 @@ const App = props => {
             history={props.history}
           />
         )}
+        {emailValues.sending && <SendingModal darkmode={darkmode} />}
         <div>
           <NavbarContainer setDarkmode={setDarkmode} darkmode={darkmode} />
           <Route
@@ -59,6 +62,7 @@ const App = props => {
               <ContactForm
                 {...props}
                 darkmode={darkmode}
+                emailValues={emailValues}
                 setEmailValues={setEmailValues}
               />
             )}

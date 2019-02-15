@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const hoverLink = keyframes`
   0% {
-    color: ##5A22DB;
+    color: #5A22DB;
   }
   100% {
     color: #AD91ED;

@@ -40,9 +40,8 @@ const Modal = styled.div`
     height: 150px;
     max-width: 400px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30vh auto 0;
     z-index: 51;
-    margin-top: 30vh;
     display: flex;
     flex-direction: column;
 

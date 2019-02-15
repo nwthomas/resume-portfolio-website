@@ -166,6 +166,10 @@ const ContactForm = props => {
   };
   const sendEmail = e => {
     e.preventDefault();
+    props.setEmailValues({
+      ...props.emailValues,
+      sending: true
+    });
     const email = {
       name: value.contactName,
       email: value.contactEmail,
@@ -179,12 +183,14 @@ const ContactForm = props => {
         window.scrollTo(0, 0);
         if (res.statusText === "OK") {
           props.setEmailValues({
+            sending: false,
             success: true,
             displayModal: true,
             modalText: "Message sent successfully."
           });
         } else {
           props.setEmailValues({
+            sending: false,
             success: false,
             displayModal: false,
             modalText: "Message did not go through."
@@ -194,6 +200,7 @@ const ContactForm = props => {
       .catch(err => {
         window.scrollTo(0, 0);
         props.setEmailValues({
+          sending: false,
           success: false,
           displayModal: false,
           modalText: "Message did not go through."
