@@ -15,10 +15,10 @@ const buttonHover = keyframes`
 
 const buttonHoverDark = keyframes`
   0% {
-    background: black;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0.6;
   }
 `;
 
@@ -121,7 +121,6 @@ const ContactFormContainer = styled.div`
           props.darkmode &&
           css`
             background: black;
-            opacity: 0.6;
           `}
 
         &:hover {
@@ -183,8 +182,30 @@ const ContactForm = props => {
     };
     axios
       .post("https://nathan-portfolio-backend.herokuapp.com/", email)
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+      .then(res => {
+        window.scrollTo(0, 0);
+        if (res.statusText === "OK") {
+          props.setEmailValues({
+            success: true,
+            displayModal: true,
+            modalText: "Message sent successfully."
+          });
+        } else {
+          props.setEmailValues({
+            success: false,
+            displayModal: false,
+            modalText: "Message did not go through."
+          });
+        }
+      })
+      .catch(err => {
+        window.scrollTo(0, 0);
+        props.setEmailValues({
+          success: false,
+          displayModal: false,
+          modalText: "Message did not go through."
+        });
+      });
   };
   return (
     <ContactFormContainer darkmode={props.darkmode}>
@@ -250,21 +271,12 @@ const ContactForm = props => {
 
 ContactForm.propTypes = {
   darkmode: PropTypes.bool.isRequired,
-  value: PropTypes.arrayOf({
-    contactName: PropTypes.string,
-    contactEmail: PropTypes.string,
-    contactSubject: PropTypes.string,
-    contactMessage: PropTypes.string
-  })
-};
-
-ContactForm.defaultProps = {
-  value: PropTypes.shape(
+  value: PropTypes.arrayOf(
     PropTypes.shape({
-      contactName: "",
-      contactEmail: "",
-      contactSubject: "",
-      contactMessage: ""
+      contactName: PropTypes.string,
+      contactEmail: PropTypes.string,
+      contactSubject: PropTypes.string,
+      contactMessage: PropTypes.string
     })
   )
 };

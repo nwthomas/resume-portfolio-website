@@ -129,8 +129,8 @@ const DarkModeTab = styled.div`
 
 const NavbarMain = props => {
   const setDarkMode = () => {
-    props.setDarkmode(!props.darkmode);
-    localStorage.setItem("darkMode", !props.darkmode);
+    props.setDarkmode(props.darkmode ? false : true);
+    localStorage.setItem("darkMode", props.darkmode ? false : true);
   };
   const sunImg = sun;
   const moonImg = moon;
