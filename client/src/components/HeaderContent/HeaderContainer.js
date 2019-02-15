@@ -132,8 +132,8 @@ const HeaderContainer = props => {
         I'm Nathan Thomas, a{" "}
         <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
         living in the Napa Valley and currently attending{" "}
-        <a href="https://lambdaschool.com/">Lambda School</a>. Let's get in{" "}
-        <Link to="/contact">touch</Link>.
+        <a href="https://lambdaschool.com/">Lambda School</a>. Let's{" "}
+        <Link to="/contact">talk</Link>.
       </p>
       <CurrentPreviousWork>
         <div>
