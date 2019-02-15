@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
-import lifecycle from "react-pure-lifecycle";
 
 const buttonHover = keyframes`
   0% {
@@ -137,16 +136,10 @@ const ContactFormContainer = styled.div`
   }
 `;
 
-const componentDidMount = props => {
-  window.scrollTo(0, 0);
-  // fetch("/");
-};
-
-const methods = {
-  componentDidMount
-};
-
 const ContactForm = props => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [value, setValue] = useState({
     contactName: "",
     contactEmail: "",
@@ -281,4 +274,4 @@ ContactForm.propTypes = {
   )
 };
 
-export default lifecycle(methods)(ContactForm);
+export default ContactForm;

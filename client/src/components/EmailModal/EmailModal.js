@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 
@@ -35,6 +35,7 @@ const Modal = styled.div`
     css`
       background: #2f3234;
     `}
+
   div {
     height: 150px;
     max-width: 400px;
@@ -91,14 +92,29 @@ const Modal = styled.div`
   }
 `;
 
+// Stops scroll on modal open
+function useLockBodyScroll() {
+  useLayoutEffect(() => {
+    // Prevent scrolling on mount
+    document.body.style.overflow = "hidden";
+    // Re-enable scrolling when component unmounts
+    return () => (document.body.style.overflow = "visible");
+  }, []); // Empty array ensures effect is only run on mount and unmount
+}
+
 const EmailModal = props => {
+  useEffect(() => {
+    useLockBodyScroll();
+  }, []);
   const clickBtn = e => {
     e.preventDefault();
     props.setEmailValues({
       success: null,
       displayModal: false
     });
-    props.history.push("/");
+    if (props.emailValues.success) {
+      props.history.push("/");
+    }
   };
   return (
     <Modal darkmode={props.darkmode}>
