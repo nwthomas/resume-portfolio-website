@@ -22,11 +22,11 @@ const AppDiv = styled.div`
     `}
 `;
 
-const App = () => {
+const App = props => {
   const pullMode = localStorage.getItem("darkMode") === "true" ? true : false;
   const [darkmode, setDarkmode] = useState(pullMode);
   const [emailValues, setEmailValues] = useState({
-    success: null,
+    success: props.null,
     displayModal: false,
     modalText: ""
   });
@@ -40,6 +40,8 @@ const App = () => {
             emailValues={emailValues}
             setEmailValues={setEmailValues}
             darkmode={darkmode}
+            match={props.match}
+            history={props.history}
           />
         )}
         <div>

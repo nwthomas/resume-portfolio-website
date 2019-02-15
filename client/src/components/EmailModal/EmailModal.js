@@ -98,6 +98,7 @@ const EmailModal = props => {
       success: null,
       displayModal: false
     });
+    props.history.push("/");
   };
   return (
     <Modal darkmode={props.darkmode}>
