@@ -39,7 +39,7 @@ const Modal = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: #2f3234;
+      background: #1a2431;
     `}
 
   div {
@@ -84,8 +84,7 @@ const BoxOne = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: black;
-      opacity: 0.6;
+      background: #1a97f0;
     `}
 `;
 
@@ -102,8 +101,7 @@ const BoxTwo = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: black;
-      opacity: 0.6;
+      background: #1a97f0;
     `}
 `;
 
@@ -120,7 +118,7 @@ const BoxThree = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: black;
+      background: #6dbcf5;
     `}
 `;
 
@@ -137,7 +135,7 @@ const BoxFour = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: black;
+      background: #6dbcf5;
     `}
 `;
 

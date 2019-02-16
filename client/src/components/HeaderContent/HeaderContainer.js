@@ -18,10 +18,10 @@ const hoverLink = keyframes`
 
 const hoverLinkDarkMode = keyframes`
   0% {
-    color: #b6465f;
+    color: #1a97f0;
   }
   100% {
-    color: #c3677c;
+    color: #6DBCF5;
   }
 `;
 
@@ -48,7 +48,7 @@ const HeaderContainerDiv = styled.div`
       ${props =>
         props.darkmode &&
         css`
-          color: #b6465f;
+          color: #1a97f0;
         `}
 
       &:hover {

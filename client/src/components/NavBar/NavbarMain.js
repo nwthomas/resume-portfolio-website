@@ -20,7 +20,7 @@ const hoverLinkDark = keyframes`
     color: white;
   }
   100% {
-    color: #c3677c;
+    color: #6DBCF5;
   }
 `;
 
@@ -93,7 +93,7 @@ const DarkModeTab = styled.div`
   background: black;
   opacity: 0.8;
   cursor: pointer;
-  color: black;
+  color: 111720;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   -moz-border-bottom-right-radius: 6px;

@@ -33,7 +33,7 @@ const Modal = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: #2f3234;
+      background: #1a2431;
     `}
 
   div {
