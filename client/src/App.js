@@ -21,6 +21,13 @@ const AppDiv = styled.div`
     css`
       background: #1a2431;
     `}
+
+  ${props =>
+    (props.displayModal || props.sending) &&
+    css`
+      overflow: hidden;
+      position: fixed;
+    `}
 `;
 
 const App = props => {
@@ -36,7 +43,11 @@ const App = props => {
   return (
     <>
       <GlobalStyle />
-      <AppDiv darkmode={darkmode}>
+      <AppDiv
+        darkmode={darkmode}
+        sending={emailValues.sending}
+        displayModal={emailValues.displayModal}
+      >
         {emailValues.displayModal && (
           <EmailModal
             emailValues={emailValues}
