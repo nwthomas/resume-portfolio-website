@@ -139,11 +139,9 @@ const Footer = props => {
         </div>
         <div>
           <a href="https://github.com/nwthomas">GitHub</a>
-          <a href="https://www.linkedin.com/in/nathan-thomas-644b3339/">
-            LinkedIn
-          </a>
+          <a href="https://www.linkedin.com/in/nwthomas-profile/">LinkedIn</a>
           <a href="https://medium.com/@nwthomas">Medium</a>
-          <a href="https://twitter.com/_nwthomas">Twitter</a>
+          <a href="https://twitter.com/nwthomas_">Twitter</a>
           <a href="https://www.instagram.com/nwthomas/">Instagram</a>
           <Link to="/contact">Email</Link>
         </div>
