@@ -33,7 +33,7 @@ const Modal = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: #1a2431;
+      background: #1b2331;
     `}
 
   div {
@@ -44,6 +44,7 @@ const Modal = styled.div`
     z-index: 51;
     display: flex;
     flex-direction: column;
+    background: none;
 
     p {
       width: 100%;
@@ -66,7 +67,6 @@ const Modal = styled.div`
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
       background: #ad91ed;
-      /* #b6465f */
       color: white;
       font-size: 1.6rem;
       text-transform: capitalize;

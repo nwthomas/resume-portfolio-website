@@ -19,7 +19,7 @@ const AppDiv = styled.div`
   ${props =>
     props.darkmode &&
     css`
-      background: #1a2431;
+      background: #1b2331;
     `}
 
   ${props =>
