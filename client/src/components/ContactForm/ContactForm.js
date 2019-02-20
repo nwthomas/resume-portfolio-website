@@ -24,7 +24,7 @@ const buttonHoverDark = keyframes`
 const ContactFormContainer = styled.div`
   margin: 50px auto 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
 
   ${props =>
     props.darkmode &&
