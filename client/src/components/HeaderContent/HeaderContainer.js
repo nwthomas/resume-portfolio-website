@@ -16,7 +16,7 @@ const hoverLink = keyframes`
   }
 `;
 
-const hoverLinkDarkMode = keyframes`
+const hoverLinkDarkmode = keyframes`
   0% {
     color: #1a97f0;
   }
@@ -55,7 +55,7 @@ const HeaderContainerDiv = styled.div`
         ${props =>
           props.darkmode
             ? css`
-                animation: ${hoverLinkDarkMode} 0.5s forwards;
+                animation: ${hoverLinkDarkmode} 0.5s forwards;
               `
             : css`
                 animation: ${hoverLink} 0.5s forwards;

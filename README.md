@@ -52,4 +52,4 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 ## Acknowledgements
 
 - Thanks to [Daniel Destefanis](http://danielrd.com/) for the layout inspiration.
-- _Huge_ thanks to the career counselors at [Lambda School](https://lambdaschool.com/) for never turning me away all during any of the many, many, many times I dropped by your digital office for advice.
+- _Huge_ thanks to the career counselors at [Lambda School](https://lambdaschool.com/) for never turning me away all during any of the many, many, many times I dropped by your digital office asking for advice.

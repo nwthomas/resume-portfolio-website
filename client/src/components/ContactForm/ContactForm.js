@@ -43,7 +43,7 @@ const ContactFormContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    h4 {
+    label {
       margin-bottom: 10px;
     }
 
@@ -90,7 +90,6 @@ const ContactFormContainer = styled.div`
     div {
       display: flex;
       flex-direction: column;
-      margin-bottom: 120px;
 
       @media (min-width: 500px) {
         flex-direction: row;
@@ -154,15 +153,8 @@ const ContactForm = props => {
       [e.target.name]: e.target.value
     });
   };
-  const clearForm = e => {
-    e.preventDefault();
-    setValue({
-      contactName: "",
-      contactEmail: "",
-      contactSubject: "",
-      contactMessage: "",
-      contact_me_by_fax_only: ""
-    });
+  const cancelForm = e => {
+    props.history.push("/");
   };
   const sendEmail = e => {
     e.preventDefault();
@@ -211,38 +203,39 @@ const ContactForm = props => {
     <ContactFormContainer darkmode={props.darkmode}>
       <h1>Get in Contact</h1>
       <form onSubmit={sendEmail}>
-        <h4>Name</h4>
+        <label for="name">Name</label>
         <input
+          id="name"
           required
           autoComplete="off"
           type="text"
           name="contactName"
-          placeholder="Name"
           value={value.contactName}
           onChange={handleChange}
         />
-        <h4>Email</h4>
+        <label for="email">Email</label>
         <input
+          id="email"
           required
           autoComplete="off"
           type="text"
           name="contactEmail"
-          placeholder="Email"
           value={value.contactEmail}
           onChange={handleChange}
         />
-        <h4>Subject</h4>
+        <label for="subject">Subject</label>
         <input
+          id="subject"
           required
           autoComplete="off"
           type="text"
           name="contactSubject"
-          placeholder="Subject"
           value={value.contactSubject}
           onChange={handleChange}
         />
-        <h4>Message</h4>
+        <label for="message">Message</label>
         <textarea
+          id="message"
           required
           autoComplete="off"
           rows="12"
@@ -251,6 +244,7 @@ const ContactForm = props => {
           onChange={handleChange}
         />
         <input
+          id="fax"
           type="text"
           name="contact_me_by_fax_only"
           value={value.faxField}
@@ -260,8 +254,8 @@ const ContactForm = props => {
         />
         <div>
           <button type="submit">Submit</button>
-          <button type="button" onClick={clearForm}>
-            Clear
+          <button type="button" onClick={cancelForm}>
+            Cancel
           </button>
         </div>
       </form>

@@ -13,9 +13,27 @@ const hoverLink = keyframes`
   }
 `;
 
-const hoverLinkDark = keyframes`
+const hoverLinkDarkmode = keyframes`
   0% {
     color: white;
+  }
+  100% {
+    color: #6DBCF5;
+  }
+`;
+
+const contactHover = keyframes`
+  0% {
+    color: #5A22DB;
+  }
+  100% {
+    color: #AD91ED;
+  }
+`;
+
+const contactHoverDarkmode = keyframes`
+  0% {
+    color: #1a97f0;
   }
   100% {
     color: #6DBCF5;
@@ -44,10 +62,12 @@ const FooterContainer = styled.div`
       margin-top: 20px;
     }
 
-    p:nth-child(even) {
+    a {
       color: #6936de;
       display: block;
       margin: 30px 0 10px;
+      font-size: 3rem;
+      line-height: 1.8;
 
       @media (min-width: 800px) {
         margin: 20px 10px 0;
@@ -58,6 +78,28 @@ const FooterContainer = styled.div`
         css`
           color: #1a97f0;
         `}
+
+      &:hover {
+        ${props =>
+          props.darkmode
+            ? css`
+                animation: ${contactHoverDarkmode} 0.5s forwards;
+              `
+            : css`
+                animation: ${contactHover} 0.5s forwards;
+              `}
+      }
+
+      &:active {
+        ${props =>
+          props.darkmode
+            ? css`
+                color: #b6465f;
+              `
+            : css`
+                color: #ad91ed;
+              `}
+      }
     }
   }
 
@@ -87,7 +129,7 @@ const FooterContainer = styled.div`
         ${props =>
           props.darkmode
             ? css`
-                animation: ${hoverLinkDark} 0.2s forwards;
+                animation: ${hoverLinkDarkmode} 0.2s forwards;
               `
             : css`
                 animation: ${hoverLink} 0.2s forwards;
@@ -135,7 +177,7 @@ const Footer = props => {
       <FooterContainer darkmode={props.darkmode}>
         <div>
           <p>Looking to start a project?</p>
-          <p>Get in contact.</p>
+          <Link to="/contact">Get in contact.</Link>
         </div>
         <div>
           <a href="https://github.com/nwthomas">GitHub</a>
