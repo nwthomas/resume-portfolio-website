@@ -104,7 +104,7 @@ const CurrentPreviousWork = styled.div`
       margin: 0;
 
       @media (min-width: 800px) {
-        width: 100%;
+        width: 300px;
       }
 
       &:hover {
@@ -120,7 +120,7 @@ const CurrentPreviousWork = styled.div`
     }
 
     @media (min-width: 800px) {
-      padding-right: 30%;
+      padding-right: 6.5%;
     }
   }
 `;
