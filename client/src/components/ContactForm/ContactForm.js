@@ -90,6 +90,7 @@ const ContactFormContainer = styled.div`
     div {
       display: flex;
       flex-direction: column;
+      padding-bottom: 100px;
 
       @media (min-width: 500px) {
         flex-direction: row;
