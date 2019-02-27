@@ -38,7 +38,7 @@ const HeaderContainerDiv = styled.div`
     `}
 
   p {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 
     a {
