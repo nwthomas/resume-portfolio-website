@@ -5,7 +5,6 @@ import { Logo } from "../Logo";
 import moon from "../../images/moon.svg";
 import sun from "../../images/sun.svg";
 import PropTypes from "prop-types";
-import { Link as ScrollLink } from "react-scroll";
 
 const hoverLink = keyframes`
   0% {
@@ -144,17 +143,9 @@ const NavbarMain = props => {
             <img src={props.darkmode ? sunImg : moonImg} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
-        <ScrollLink
-          to="featuredProjects"
-          spy={true}
-          smooth={true}
-          duration={600}
-        >
-          {/* Allows smooth scroll to featured work when on home page */}
-          <NavLink exact to="/">
-            Work
-          </NavLink>
-        </ScrollLink>
+        <NavLink exact to="/">
+          Work
+        </NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </NavbarLinks>
     </NavbarMainDiv>
