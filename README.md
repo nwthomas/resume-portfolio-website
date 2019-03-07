@@ -13,7 +13,7 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 ## Table of Conents
 
 - [Getting Started](#getting-started)
-- [Built With](#built-with)
+- [Stack](#stack)
 - [Unit Testing](#unit-testing)
 - [Project Management](#project-management)
 - [Author](#author)
@@ -37,7 +37,7 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
   - `DOTENV`
 - Once the dependencies are finished installing, use the `yarn start` command inside both the server and the client directories to open the portfolio app in your local browser of choice
 
-## Built With
+## Stack
 
 - [React](https://reactjs.org/)
 - [React Router](https://github.com/ReactTraining/react-router)
