@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = `
+<div
+  className="sc-bdVaJa cXGtYS"
+>
+  <p>
+    I'm Nathan Thomas, a
+     
+    <a
+      href="https://github.com/nwthomas"
+    >
+      full stack software engineer
+    </a>
+     
+    living in the Napa Valley and currently attending
+     
+    <a
+      href="https://lambdaschool.com/"
+    >
+      Lambda School
+    </a>
+    . Let's
+     
+    <a
+      href="/contact"
+      onClick={[Function]}
+    >
+      talk
+    </a>
+    .
+  </p>
+  <div
+    className="sc-bwzfXH dunKYn"
+  >
+    <div>
+      <h4>
+        Current Student:
+      </h4>
+      <div>
+        <a
+          href="https://lambdaschool.com/"
+        >
+          <img
+            alt="Current school logo"
+            data-testid="schoolLogo"
+            src="lambda-logo-white.png"
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>
+        Previously:
+      </h4>
+      <div>
+        <a
+          href="https://www.adventisthealth.org/"
+        >
+          <img
+            alt="Former employer logo"
+            data-testid="workLogo"
+            src="ah-logo-white.png"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

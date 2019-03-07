@@ -141,6 +141,7 @@ const HeaderContainer = props => {
           <div>
             <a href="https://lambdaschool.com/">
               <img
+                data-testid="schoolLogo"
                 src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
                 alt="Current school logo"
               />
@@ -152,6 +153,7 @@ const HeaderContainer = props => {
           <div>
             <a href="https://www.adventisthealth.org/">
               <img
+                data-testid="workLogo"
                 src={props.darkmode ? ahLogoWhite : ahLogo}
                 alt="Former employer logo"
               />

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa cXGtYS"
+  >
+    <p>
+      I'm Nathan Thomas, a
+       
+      <a
+        href="https://github.com/nwthomas"
+      >
+        full stack software engineer
+      </a>
+       
+      living in the Napa Valley and currently attending
+       
+      <a
+        href="https://lambdaschool.com/"
+      >
+        Lambda School
+      </a>
+      . Let's
+       
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        talk
+      </a>
+      .
+    </p>
+    <div
+      className="sc-bwzfXH dunKYn"
+    >
+      <div>
+        <h4>
+          Current Student:
+        </h4>
+        <div>
+          <a
+            href="https://lambdaschool.com/"
+          >
+            <img
+              alt="Current school logo"
+              data-testid="schoolLogo"
+              src="lambda-logo-white.png"
+            />
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>
+          Previously:
+        </h4>
+        <div>
+          <a
+            href="https://www.adventisthealth.org/"
+          >
+            <img
+              alt="Former employer logo"
+              data-testid="workLogo"
+              src="ah-logo-white.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat eVjSDE"
+  >
+    <p
+      name="featuredProjects"
+    >
+      Featured Projects
+    </p>
+    <div>
+      <div>
+        <div>
+          <a
+            href="https://github.com/nwthomas/tippr"
+          >
+            <img
+              alt="tippr portfolio samples"
+              data-testid="tipprPicture"
+              src="tippr-macbook.png"
+            />
+          </a>
+          <h4>
+            tippr Payment App
+          </h4>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a
+            href="https://github.com/nwthomas/instagram-clone"
+          >
+            <img
+              alt="Instagram portfolio samples"
+              data-testid="instagramPicture"
+              src="instagram-macbook.png"
+            />
+          </a>
+          <h4>
+            Instagram Clone
+          </h4>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a
+            href="https://github.com/nwthomas/fylo-landing-page"
+          >
+            <img
+              alt="Fylo portfolio samples"
+              data-testid="fyloPicture"
+              src="fylo-macbook.png"
+            />
+          </a>
+          <h4>
+            Fylo Landing Page
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-bxivhb hxeZyy"
+  >
+    <div>
+      <p>
+        Looking to start a project?
+      </p>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Get in contact.
+      </a>
+    </div>
+    <div>
+      <a
+        href="https://github.com/nwthomas"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwthomas-profile/"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="https://medium.com/@nwthomas"
+      >
+        Medium
+      </a>
+      <a
+        href="https://twitter.com/nwthomas_"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://www.instagram.com/nwthomas/"
+      >
+        Instagram
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Email
+      </a>
+    </div>
+  </div>
+  <div
+    className="sc-ifAKCX cDtCJA"
+  >
+    <h4>
+      Copyright © 2019 Nathan Thomas
+    </h4>
+  </div>
+</div>
+`;

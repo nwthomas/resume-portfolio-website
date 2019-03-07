@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkContainer 1`] = `
+<div
+  className="sc-bdVaJa ckjWSq"
+>
+  <p
+    name="featuredProjects"
+  >
+    Featured Projects
+  </p>
+  <div>
+    <div>
+      <div>
+        <a
+          href="https://github.com/nwthomas/tippr"
+        >
+          <img
+            alt="tippr portfolio samples"
+            data-testid="tipprPicture"
+            src="tippr-macbook.png"
+          />
+        </a>
+        <h4>
+          tippr Payment App
+        </h4>
+      </div>
+    </div>
+    <div>
+      <div>
+        <a
+          href="https://github.com/nwthomas/instagram-clone"
+        >
+          <img
+            alt="Instagram portfolio samples"
+            data-testid="instagramPicture"
+            src="instagram-macbook.png"
+          />
+        </a>
+        <h4>
+          Instagram Clone
+        </h4>
+      </div>
+    </div>
+    <div>
+      <div>
+        <a
+          href="https://github.com/nwthomas/fylo-landing-page"
+        >
+          <img
+            alt="Fylo portfolio samples"
+            data-testid="fyloPicture"
+            src="fylo-macbook.png"
+          />
+        </a>
+        <h4>
+          Fylo Landing Page
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+`;
