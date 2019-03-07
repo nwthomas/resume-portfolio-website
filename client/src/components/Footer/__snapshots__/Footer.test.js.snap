@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match the snapshot of Footer 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa jiHoLe"
+  >
+    <div>
+      <p>
+        Looking to start a project?
+      </p>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Get in contact.
+      </a>
+    </div>
+    <div>
+      <a
+        href="https://github.com/nwthomas"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwthomas-profile/"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="https://medium.com/@nwthomas"
+      >
+        Medium
+      </a>
+      <a
+        href="https://twitter.com/nwthomas_"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://www.instagram.com/nwthomas/"
+      >
+        Instagram
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Email
+      </a>
+    </div>
+  </div>,
+  <div
+    className="sc-bwzfXH eZzmTa"
+  >
+    <h4>
+      Copyright © 2019 Nathan Thomas
+    </h4>
+  </div>,
+]
+`;

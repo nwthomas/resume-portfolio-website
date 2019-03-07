@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SendingModal /> should match the snapshot of SendingModal 1`] = `
+<div
+  className="sc-bdVaJa beyHxW"
+>
+  <div>
+    <div
+      className="sc-bwzfXH fIAauJ"
+    />
+    <div
+      className="sc-htpNat kwGggQ"
+    />
+    <div
+      className="sc-bxivhb kMnXOu"
+    />
+    <div
+      className="sc-ifAKCX gYgLJU"
+    />
+  </div>
+  <p>
+    Sending
+  </p>
+</div>
+`;
