@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarContainer /> matches the snapshot of NavbarContainer component 1`] = `
+<div
+  className="sc-ifAKCX iSFgrr"
+>
+  <div
+    className="sc-bwzfXH hyjEOv"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-bdVaJa istZpN"
+      >
+        <div>
+          <p>
+            N
+          </p>
+        </div>
+      </div>
+    </a>
+    <div
+      className="sc-htpNat jYdygF"
+    >
+      <div
+        className="sc-bxivhb NNymt"
+        data-testid="darkmodeTab"
+        onClick={[Function]}
+      >
+        <div>
+          <img
+            alt="Dark mode logo"
+            src="moon.svg"
+          />
+        </div>
+      </div>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Work
+      </a>
+      <a
+        aria-current={null}
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+</div>
+`;

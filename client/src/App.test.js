@@ -1,5 +1,4 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import "react-testing-library/cleanup-after-each";
 import "jest-dom/extend-expect";
 import { renderWithRouter, rendererWithRouter } from "./testHelpers"; // Necessary to simulate React Router

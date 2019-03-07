@@ -30,6 +30,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         >
           <div
             className="sc-bxivhb NNymt"
+            data-testid="darkmodeTab"
             onClick={[Function]}
           >
             <div>

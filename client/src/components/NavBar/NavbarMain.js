@@ -138,7 +138,11 @@ const NavbarMain = props => {
     <NavbarMainDiv darkmode={props.darkmode}>
       <Logo darkmode={props.darkmode} />
       <NavbarLinks darkmode={props.darkmode}>
-        <DarkModeTab darkmode={props.darkmode} onClick={setDarkMode}>
+        <DarkModeTab
+          darkmode={props.darkmode}
+          onClick={setDarkMode}
+          data-testid="darkmodeTab"
+        >
           <div>
             <img src={props.darkmode ? sunImg : moonImg} alt="Dark mode logo" />
           </div>
