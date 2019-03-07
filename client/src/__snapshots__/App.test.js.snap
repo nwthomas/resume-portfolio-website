@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches the snapshot of App 1`] = `
+<div
+  className="sc-cSHVUG bwEByw"
+>
+  <div>
+    <div
+      className="sc-ifAKCX iSFgrr"
+    >
+      <div
+        className="sc-bwzfXH hyjEOv"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-bdVaJa istZpN"
+          >
+            <div>
+              <p>
+                N
+              </p>
+            </div>
+          </div>
+        </a>
+        <div
+          className="sc-htpNat jYdygF"
+        >
+          <div
+            className="sc-bxivhb NNymt"
+            onClick={[Function]}
+          >
+            <div>
+              <img
+                alt="Dark mode logo"
+                src="moon.svg"
+              />
+            </div>
+          </div>
+          <a
+            aria-current="page"
+            className="active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Work
+          </a>
+          <a
+            aria-current={null}
+            href="/contact"
+            onClick={[Function]}
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="sc-EHOje cHEDNC"
+      >
+        <p>
+          I'm Nathan Thomas, a
+           
+          <a
+            href="https://github.com/nwthomas"
+          >
+            full stack software engineer
+          </a>
+           
+          living in the Napa Valley and currently attending
+           
+          <a
+            href="https://lambdaschool.com/"
+          >
+            Lambda School
+          </a>
+          . Let's
+           
+          <a
+            href="/contact"
+            onClick={[Function]}
+          >
+            talk
+          </a>
+          .
+        </p>
+        <div
+          className="sc-bZQynM kIarEe"
+        >
+          <div>
+            <h4>
+              Current Student:
+            </h4>
+            <div>
+              <a
+                href="https://lambdaschool.com/"
+              >
+                <img
+                  alt="Current school logo"
+                  src="lambda-logo.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4>
+              Previously:
+            </h4>
+            <div>
+              <a
+                href="https://www.adventisthealth.org/"
+              >
+                <img
+                  alt="Former employer logo"
+                  src="ah-logo.png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-gzVnrw kufNtn"
+      >
+        <p
+          name="featuredProjects"
+        >
+          Featured Projects
+        </p>
+        <div>
+          <div>
+            <div>
+              <a
+                href="https://github.com/nwthomas/tippr"
+              >
+                <img
+                  alt="tippr portfolio samples"
+                  src="tippr-macbook.png"
+                />
+              </a>
+              <h4>
+                tippr Payment App
+              </h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
+                href="https://github.com/nwthomas/instagram-clone"
+              >
+                <img
+                  alt="Instagram portfolio samples"
+                  src="instagram-macbook.png"
+                />
+              </a>
+              <h4>
+                Instagram Clone
+              </h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
+                href="https://github.com/nwthomas/fylo-landing-page"
+              >
+                <img
+                  alt="Fylo portfolio samples"
+                  src="fylo-macbook.png"
+                />
+              </a>
+              <h4>
+                Fylo Landing Page
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-htoDjs bnNaEF"
+      >
+        <div>
+          <p>
+            Looking to start a project?
+          </p>
+          <a
+            href="/contact"
+            onClick={[Function]}
+          >
+            Get in contact.
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/nwthomas"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nwthomas-profile/"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://medium.com/@nwthomas"
+          >
+            Medium
+          </a>
+          <a
+            href="https://twitter.com/nwthomas_"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://www.instagram.com/nwthomas/"
+          >
+            Instagram
+          </a>
+          <a
+            href="/contact"
+            onClick={[Function]}
+          >
+            Email
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-dnqmqq dMVQnI"
+      >
+        <h4>
+          Copyright © 2019 Nathan Thomas
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+`;
