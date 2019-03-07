@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmailModal /> should match the snapshot of EmailModal 1`] = `
+<div
+  className="sc-bdVaJa lnxrCL"
+>
+  <div>
+    <p>
+      Message sent
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Okay
+    </button>
+  </div>
+</div>
+`;

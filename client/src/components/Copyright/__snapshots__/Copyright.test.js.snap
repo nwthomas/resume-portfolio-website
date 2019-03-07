@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Copyright /> should match the snapshot of Copyright 1`] = `
+<div
+  className="sc-bdVaJa dSOURw"
+>
+  <h4>
+    Copyright © 2019 Nathan Thomas
+  </h4>
+</div>
+`;
