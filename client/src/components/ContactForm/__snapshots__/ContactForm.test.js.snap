@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactForm /> should match the snapshot of ContactForm 1`] = `
+<div
+  className="sc-bdVaJa ecVACE"
+>
+  <h1>
+    Get in Contact
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      autoComplete="off"
+      data-testid="nameInput"
+      id="name"
+      name="contactName"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      autoComplete="off"
+      data-testid="emailInput"
+      id="email"
+      name="contactEmail"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="subject"
+    >
+      Subject
+    </label>
+    <input
+      autoComplete="off"
+      data-testid="subjectInput"
+      id="subject"
+      name="contactSubject"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="message"
+    >
+      Message
+    </label>
+    <textarea
+      autoComplete="off"
+      data-testid="contactInput"
+      id="message"
+      name="contactMessage"
+      onChange={[Function]}
+      required={true}
+      rows="12"
+      value=""
+    />
+    <input
+      autoComplete="off"
+      id="fax"
+      name="contact_me_by_fax_only"
+      onChange={[Function]}
+      tabIndex="-1"
+      type="text"
+    />
+    <div>
+      <button
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
+`;

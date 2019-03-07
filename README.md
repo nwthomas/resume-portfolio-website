@@ -10,6 +10,15 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 ![Portfolio Site Example Shot](./assets/readme-screenshot.png)
 <br>
 
+## Table of Conents
+
+- [Getting Started](#getting-started)
+- [Built With](#built-with)
+- [Unit Testing](#unit-testing)
+- [Project Management](#project-management)
+- [Author](#author)
+- [Acknowledgements](#acknowledgements)
+
 ## Getting Started
 
 - Fork or directly clone this repository to your local machine
@@ -40,6 +49,15 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - [CORS](https://github.com/expressjs/cors)
 - [Helmet](https://helmetjs.github.io/)
 - [Morgan](https://www.npmjs.com/package/morgan)
+- [Jest-DOM](https://www.npmjs.com/package/jest-dom)
+- [React Test Renderer](https://reactjs.org/docs/test-renderer.html)
+- [React Testing Library](https://testing-library.com/)
+
+## Unit Testing
+
+- `cd` into the `client` directory
+- Ensure that all appropriate dependencies for testing are installed by running `yarn` to install them
+- Run the `yarn test` command to run the testing suites
 
 ## Project Management
 

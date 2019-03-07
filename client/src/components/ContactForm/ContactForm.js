@@ -204,8 +204,9 @@ const ContactForm = props => {
     <ContactFormContainer darkmode={props.darkmode}>
       <h1>Get in Contact</h1>
       <form onSubmit={sendEmail}>
-        <label for="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
+          data-testid="nameInput"
           id="name"
           required
           autoComplete="off"
@@ -214,8 +215,9 @@ const ContactForm = props => {
           value={value.contactName}
           onChange={handleChange}
         />
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
+          data-testid="emailInput"
           id="email"
           required
           autoComplete="off"
@@ -224,8 +226,9 @@ const ContactForm = props => {
           value={value.contactEmail}
           onChange={handleChange}
         />
-        <label for="subject">Subject</label>
+        <label htmlFor="subject">Subject</label>
         <input
+          data-testid="subjectInput"
           id="subject"
           required
           autoComplete="off"
@@ -234,8 +237,9 @@ const ContactForm = props => {
           value={value.contactSubject}
           onChange={handleChange}
         />
-        <label for="message">Message</label>
+        <label htmlFor="message">Message</label>
         <textarea
+          data-testid="contactInput"
           id="message"
           required
           autoComplete="off"
