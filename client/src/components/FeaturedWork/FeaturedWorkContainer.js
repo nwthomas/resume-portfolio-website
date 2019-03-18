@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
 import fyloSample from "../../images/fylo-macbook.png";
+import weightLiftingSample from "../../images/weight-lifting-journal.png";
 import PropTypes from "prop-types";
 
 const FeaturedWorkContainerDiv = styled.div`
@@ -74,6 +75,18 @@ const FeaturedWorkContainer = props => {
       <div>
         <div>
           <div>
+            <a href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas">
+              <img
+                data-testid="weightLiftingJournalPicture"
+                src={weightLiftingSample}
+                alt="weight lifting journal samples"
+              />
+            </a>
+            <h4>Weight Lifting Journal</h4>
+          </div>
+        </div>
+        <div>
+          <div>
             <a href="https://github.com/nwthomas/tippr">
               <img
                 data-testid="tipprPicture"
@@ -81,7 +94,7 @@ const FeaturedWorkContainer = props => {
                 alt="tippr portfolio samples"
               />
             </a>
-            <h4>tippr Payment App</h4>
+            <h4>Weight</h4>
           </div>
         </div>
         <div>
