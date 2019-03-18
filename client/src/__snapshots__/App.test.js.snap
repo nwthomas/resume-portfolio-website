@@ -138,6 +138,22 @@ exports[`<App /> matches the snapshot of App 1`] = `
           <div>
             <div>
               <a
+                href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
+              >
+                <img
+                  alt="weight lifting journal samples"
+                  data-testid="weightLiftingJournalPicture"
+                  src="weight-lifting-journal.png"
+                />
+              </a>
+              <h4>
+                Weight Lifting Journal
+              </h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
                 href="https://github.com/nwthomas/tippr"
               >
                 <img
@@ -147,7 +163,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 />
               </a>
               <h4>
-                tippr Payment App
+                tippr payment app
               </h4>
             </div>
           </div>

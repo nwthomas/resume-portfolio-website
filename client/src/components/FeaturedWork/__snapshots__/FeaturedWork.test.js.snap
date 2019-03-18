@@ -13,6 +13,22 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
     <div>
       <div>
         <a
+          href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
+        >
+          <img
+            alt="weight lifting journal samples"
+            data-testid="weightLiftingJournalPicture"
+            src="weight-lifting-journal.png"
+          />
+        </a>
+        <h4>
+          Weight Lifting Journal
+        </h4>
+      </div>
+    </div>
+    <div>
+      <div>
+        <a
           href="https://github.com/nwthomas/tippr"
         >
           <img
@@ -22,7 +38,7 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
           />
         </a>
         <h4>
-          tippr Payment App
+          tippr payment app
         </h4>
       </div>
     </div>

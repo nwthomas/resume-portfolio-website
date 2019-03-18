@@ -94,7 +94,7 @@ const FeaturedWorkContainer = props => {
                 alt="tippr portfolio samples"
               />
             </a>
-            <h4>Weight</h4>
+            <h4>tippr payment app</h4>
           </div>
         </div>
         <div>
