@@ -2,6 +2,12 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { css } from "styled-components";
+import githubLogo from "./../../images/github.svg";
+import githubLogoWhite from "./../../images/github-white.svg";
+import linkedIn from "./../../images/linkedin.svg";
+import linkedInWhite from "./../../images/linkedin-white.svg";
+import medium from "./../../images/medium.svg";
+import mediumWhite from "./../../images/medium-white.svg";
 import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
@@ -102,43 +108,57 @@ const FooterContainer = styled.div`
       }
     }
   }
+`;
 
-  div:last-child {
+const DesktopLinks = styled.div`
+  display: none;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
     display: flex;
     flex-direction: column;
+  }
+
+  a {
+    margin-top: 30px;
+    font-size: 1.6rem;
 
     @media (min-width: 800px) {
-      flex-direction: row;
+      margin: 50px 3% 120px 0;
     }
 
-    a {
-      margin-top: 30px;
-      font-size: 1.6rem;
+    ${props =>
+      props.darkmode &&
+      css`
+        color: white;
+      `}
 
-      @media (min-width: 800px) {
-        margin: 50px 3% 120px 0;
-      }
-
+    &:hover {
       ${props =>
-        props.darkmode &&
-        css`
-          color: white;
-        `}
-
-      &:hover {
-        ${props =>
-          props.darkmode
-            ? css`
-                animation: ${hoverLinkDarkmode} 0.2s forwards;
-              `
-            : css`
-                animation: ${hoverLink} 0.2s forwards;
-              `}
-      }
+        props.darkmode
+          ? css`
+              animation: ${hoverLinkDarkmode} 0.2s forwards;
+            `
+          : css`
+              animation: ${hoverLink} 0.2s forwards;
+            `}
     }
+  }
 
-    a:last-child {
-      margin-bottom: 80px;
+  a:last-child {
+    margin-bottom: 80px;
+  }
+`;
+
+const MobileLinks = styled.div`
+  width: 10%;
+
+  a {
+    display: inline-block;
+    margin: 10px 0;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 `;
@@ -179,14 +199,37 @@ const Footer = props => {
           <p>Looking to start a project?</p>
           <Link to="/contact">Get in contact.</Link>
         </div>
-        <div>
+        <DesktopLinks>
           <a href="https://github.com/nwthomas">GitHub</a>
           <a href="https://www.linkedin.com/in/nwthomas-profile/">LinkedIn</a>
           <a href="https://medium.com/@nwthomas">Medium</a>
           <a href="https://twitter.com/nwthomas_">Twitter</a>
           <a href="https://www.instagram.com/nwthomas/">Instagram</a>
           <Link to="/contact">Email</Link>
-        </div>
+        </DesktopLinks>
+        <MobileLinks>
+          <a href="https://github.com/nwthomas">
+            <img
+              src={props.darkmode ? githubLogoWhite : githubLogo}
+              alt="Github logo"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/nwthomas-profile/">
+            <img
+              src={props.darkmode ? linkedInWhite : linkedIn}
+              alt="LinkedIn logo"
+            />
+          </a>
+          <a href="https://medium.com/@nwthomas">
+            <img
+              src={props.darkmode ? mediumWhite : medium}
+              alt="Medium logo"
+            />
+          </a>
+          <a href="https://twitter.com/nwthomas_">Twitter</a>
+          <a href="https://www.instagram.com/nwthomas/">Instagram</a>
+          <Link to="/contact">Email</Link>
+        </MobileLinks>
       </FooterContainer>
       <Copyright darkmode={props.darkmode}>
         <h4>Copyright © 2019 Nathan Thomas</h4>

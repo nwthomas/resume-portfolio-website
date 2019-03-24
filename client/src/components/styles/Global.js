@@ -6,6 +6,7 @@ export const Global = css`
   }
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
   h1,
   h2,

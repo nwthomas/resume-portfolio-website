@@ -59,7 +59,11 @@ const App = props => {
         )}
         {emailValues.sending && <SendingModal darkmode={darkmode} />}
         <div>
-          <NavbarContainer setDarkmode={setDarkmode} darkmode={darkmode} />
+          <NavbarContainer
+            setDarkmode={setDarkmode}
+            darkmode={darkmode}
+            history={props.history}
+          />
           <Route
             exact
             path="/"

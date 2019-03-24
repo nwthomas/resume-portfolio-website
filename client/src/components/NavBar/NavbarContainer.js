@@ -13,7 +13,11 @@ const NavbarContainerDiv = styled.div`
 const NavbarContainer = props => {
   return (
     <NavbarContainerDiv darkmode={props.darkmode}>
-      <NavbarMain darkmode={props.darkmode} setDarkmode={props.setDarkmode} />
+      <NavbarMain
+        darkmode={props.darkmode}
+        setDarkmode={props.setDarkmode}
+        history={props.history}
+      />
     </NavbarContainerDiv>
   );
 };

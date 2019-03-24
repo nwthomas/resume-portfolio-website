@@ -71,7 +71,7 @@ const FeaturedWorkContainerDiv = styled.div`
 const FeaturedWorkContainer = props => {
   return (
     <FeaturedWorkContainerDiv darkmode={props.darkmode}>
-      <p name="featuredProjects">Featured Projects</p>
+      <p id="featured-work">Featured Projects</p>
       <div>
         <div>
           <div>

@@ -134,6 +134,7 @@ const NavbarMain = props => {
   };
   const sunImg = sun;
   const moonImg = moon;
+  console.log(props.history);
   return (
     <NavbarMainDiv darkmode={props.darkmode}>
       <Logo darkmode={props.darkmode} />
@@ -147,9 +148,13 @@ const NavbarMain = props => {
             <img src={props.darkmode ? sunImg : moonImg} alt="Dark mode logo" />
           </div>
         </DarkModeTab>
-        <NavLink exact to="/">
-          Work
-        </NavLink>
+        {props.history.location.pathname === "/" ? (
+          <a href="#featured-work">Work</a>
+        ) : (
+          <NavLink exact to="/">
+            Work
+          </NavLink>
+        )}
         <NavLink to="/contact">Contact</NavLink>
       </NavbarLinks>
     </NavbarMainDiv>
