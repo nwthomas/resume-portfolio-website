@@ -8,6 +8,12 @@ import linkedIn from "./../../images/linkedin.svg";
 import linkedInWhite from "./../../images/linkedin-white.svg";
 import medium from "./../../images/medium.svg";
 import mediumWhite from "./../../images/medium-white.svg";
+import twitter from "./../../images/twitter.svg";
+import twitterWhite from "./../../images/twitter-white.svg";
+import instagram from "./../../images/instagram.svg";
+import instagramWhite from "./../../images/instagram-white.svg";
+import mail from "./../../images/envelope.svg";
+import mailWhite from "./../../images/envelope-white.svg";
 import PropTypes from "prop-types";
 
 const hoverLink = keyframes`
@@ -116,42 +122,43 @@ const DesktopLinks = styled.div`
   @media (min-width: 800px) {
     flex-direction: row;
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row;
 
-  a {
-    margin-top: 30px;
-    font-size: 1.6rem;
+    a {
+      margin-top: 30px;
+      font-size: 1.6rem;
 
-    @media (min-width: 800px) {
-      margin: 50px 3% 120px 0;
-    }
+      @media (min-width: 800px) {
+        margin: 50px 3% 120px 0;
+      }
 
-    ${props =>
-      props.darkmode &&
-      css`
-        color: white;
-      `}
-
-    &:hover {
       ${props =>
-        props.darkmode
-          ? css`
-              animation: ${hoverLinkDarkmode} 0.2s forwards;
-            `
-          : css`
-              animation: ${hoverLink} 0.2s forwards;
-            `}
-    }
-  }
+        props.darkmode &&
+        css`
+          color: white;
+        `}
 
-  a:last-child {
-    margin-bottom: 80px;
+      &:hover {
+        ${props =>
+          props.darkmode
+            ? css`
+                animation: ${hoverLinkDarkmode} 0.2s forwards;
+              `
+            : css`
+                animation: ${hoverLink} 0.2s forwards;
+              `}
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 80px;
+    }
   }
 `;
 
 const MobileLinks = styled.div`
-  width: 10%;
+  width: 60px;
+  margin-bottom: 10px;
 
   a {
     display: inline-block;
@@ -160,6 +167,14 @@ const MobileLinks = styled.div`
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  a:last-child {
+    margin-top: 5px;
+  }
+
+  @media (min-width: 800px) {
+    display: none;
   }
 `;
 
@@ -199,7 +214,7 @@ const Footer = props => {
           <p>Looking to start a project?</p>
           <Link to="/contact">Get in contact.</Link>
         </div>
-        <DesktopLinks>
+        <DesktopLinks darkmode={props.darkmode}>
           <a href="https://github.com/nwthomas">GitHub</a>
           <a href="https://www.linkedin.com/in/nwthomas-profile/">LinkedIn</a>
           <a href="https://medium.com/@nwthomas">Medium</a>
@@ -226,9 +241,21 @@ const Footer = props => {
               alt="Medium logo"
             />
           </a>
-          <a href="https://twitter.com/nwthomas_">Twitter</a>
-          <a href="https://www.instagram.com/nwthomas/">Instagram</a>
-          <Link to="/contact">Email</Link>
+          <a href="https://twitter.com/nwthomas_">
+            <img
+              src={props.darkmode ? twitterWhite : twitter}
+              alt="Twitter logo"
+            />
+          </a>
+          <a href="https://www.instagram.com/nwthomas/">
+            <img
+              src={props.darkmode ? instagramWhite : instagram}
+              alt="Instagram logo"
+            />
+          </a>
+          <Link to="/contact">
+            <img src={props.darkmode ? mailWhite : mail} alt="Mail icon" />
+          </Link>
         </MobileLinks>
       </FooterContainer>
       <Copyright darkmode={props.darkmode}>

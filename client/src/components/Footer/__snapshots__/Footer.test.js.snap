@@ -3,7 +3,7 @@
 exports[`<Footer /> should match the snapshot of Footer 1`] = `
 Array [
   <div
-    className="sc-bdVaJa jiHoLe"
+    className="sc-bdVaJa eVrHWl"
   >
     <div>
       <p>
@@ -16,7 +16,9 @@ Array [
         Get in contact.
       </a>
     </div>
-    <div>
+    <div
+      className="sc-bwzfXH jufMgn"
+    >
       <a
         href="https://github.com/nwthomas"
       >
@@ -49,9 +51,53 @@ Array [
         Email
       </a>
     </div>
+    <div
+      className="sc-htpNat dWOiic"
+    >
+      <a
+        href="https://github.com/nwthomas"
+      >
+        <img
+          alt="Github logo"
+          src="github.svg"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwthomas-profile/"
+      >
+        <img
+          alt="LinkedIn logo"
+          src="linkedin.svg"
+        />
+      </a>
+      <a
+        href="https://medium.com/@nwthomas"
+      >
+        <img
+          alt="Medium logo"
+          src="medium.svg"
+        />
+      </a>
+      <a
+        href="https://twitter.com/nwthomas_"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://www.instagram.com/nwthomas/"
+      >
+        Instagram
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Email
+      </a>
+    </div>
   </div>,
   <div
-    className="sc-bwzfXH eZzmTa"
+    className="sc-bxivhb ClIRE"
   >
     <h4>
       Copyright © 2019 Nathan Thomas

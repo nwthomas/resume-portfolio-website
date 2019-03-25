@@ -5,7 +5,7 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
   className="sc-bdVaJa ckjWSq"
 >
   <p
-    name="featuredProjects"
+    id="featured-work"
   >
     Featured Projects
   </p>

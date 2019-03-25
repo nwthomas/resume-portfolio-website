@@ -72,7 +72,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     className="sc-htpNat eVjSDE"
   >
     <p
-      name="featuredProjects"
+      id="featured-work"
     >
       Featured Projects
     </p>
@@ -144,7 +144,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-bxivhb hxeZyy"
+    className="sc-bxivhb gNPtEY"
   >
     <div>
       <p>
@@ -157,7 +157,9 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
         Get in contact.
       </a>
     </div>
-    <div>
+    <div
+      className="sc-ifAKCX kdHAZw"
+    >
       <a
         href="https://github.com/nwthomas"
       >
@@ -190,9 +192,53 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
         Email
       </a>
     </div>
+    <div
+      className="sc-EHOje gVDSXN"
+    >
+      <a
+        href="https://github.com/nwthomas"
+      >
+        <img
+          alt="Github logo"
+          src="github-white.svg"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nwthomas-profile/"
+      >
+        <img
+          alt="LinkedIn logo"
+          src="linkedin-white.svg"
+        />
+      </a>
+      <a
+        href="https://medium.com/@nwthomas"
+      >
+        <img
+          alt="Medium logo"
+          src="medium-white.svg"
+        />
+      </a>
+      <a
+        href="https://twitter.com/nwthomas_"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://www.instagram.com/nwthomas/"
+      >
+        Instagram
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Email
+      </a>
+    </div>
   </div>
   <div
-    className="sc-ifAKCX cDtCJA"
+    className="sc-bZQynM daLbvX"
   >
     <h4>
       Copyright © 2019 Nathan Thomas
