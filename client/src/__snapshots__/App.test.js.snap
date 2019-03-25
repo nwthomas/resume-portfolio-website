@@ -2,7 +2,7 @@
 
 exports[`<App /> matches the snapshot of App 1`] = `
 <div
-  className="sc-cSHVUG bwEByw"
+  className="sc-chPdSV dyseTy"
 >
   <div>
     <div
@@ -41,11 +41,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
             </div>
           </div>
           <a
-            aria-current="page"
-            className="active"
-            href="/"
-            onClick={[Function]}
-            style={Object {}}
+            href="#featured-work"
           >
             Work
           </a>
@@ -130,7 +126,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         className="sc-gzVnrw kufNtn"
       >
         <p
-          name="featuredProjects"
+          id="featured-work"
         >
           Featured Projects
         </p>
@@ -202,7 +198,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-htoDjs bnNaEF"
+        className="sc-htoDjs jAMklx"
       >
         <div>
           <p>
@@ -215,7 +211,9 @@ exports[`<App /> matches the snapshot of App 1`] = `
             Get in contact.
           </a>
         </div>
-        <div>
+        <div
+          className="sc-dnqmqq dzePwl"
+        >
           <a
             href="https://github.com/nwthomas"
           >
@@ -250,7 +248,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-dnqmqq dMVQnI"
+        className="sc-gZMcBi ftGaTO"
       >
         <h4>
           Copyright © 2019 Nathan Thomas

@@ -158,7 +158,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       </a>
     </div>
     <div
-      className="sc-ifAKCX kdHAZw"
+      className="sc-ifAKCX buOxay"
     >
       <a
         href="https://github.com/nwthomas"
@@ -174,50 +174,6 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
         href="https://medium.com/@nwthomas"
       >
         Medium
-      </a>
-      <a
-        href="https://twitter.com/nwthomas_"
-      >
-        Twitter
-      </a>
-      <a
-        href="https://www.instagram.com/nwthomas/"
-      >
-        Instagram
-      </a>
-      <a
-        href="/contact"
-        onClick={[Function]}
-      >
-        Email
-      </a>
-    </div>
-    <div
-      className="sc-EHOje gVDSXN"
-    >
-      <a
-        href="https://github.com/nwthomas"
-      >
-        <img
-          alt="Github logo"
-          src="github-white.svg"
-        />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/nwthomas-profile/"
-      >
-        <img
-          alt="LinkedIn logo"
-          src="linkedin-white.svg"
-        />
-      </a>
-      <a
-        href="https://medium.com/@nwthomas"
-      >
-        <img
-          alt="Medium logo"
-          src="medium-white.svg"
-        />
       </a>
       <a
         href="https://twitter.com/nwthomas_"

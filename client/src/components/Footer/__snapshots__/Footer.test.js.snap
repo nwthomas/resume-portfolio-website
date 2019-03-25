@@ -17,7 +17,7 @@ Array [
       </a>
     </div>
     <div
-      className="sc-bwzfXH jufMgn"
+      className="sc-bwzfXH gNKkdR"
     >
       <a
         href="https://github.com/nwthomas"
@@ -33,50 +33,6 @@ Array [
         href="https://medium.com/@nwthomas"
       >
         Medium
-      </a>
-      <a
-        href="https://twitter.com/nwthomas_"
-      >
-        Twitter
-      </a>
-      <a
-        href="https://www.instagram.com/nwthomas/"
-      >
-        Instagram
-      </a>
-      <a
-        href="/contact"
-        onClick={[Function]}
-      >
-        Email
-      </a>
-    </div>
-    <div
-      className="sc-htpNat dWOiic"
-    >
-      <a
-        href="https://github.com/nwthomas"
-      >
-        <img
-          alt="Github logo"
-          src="github.svg"
-        />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/nwthomas-profile/"
-      >
-        <img
-          alt="LinkedIn logo"
-          src="linkedin.svg"
-        />
-      </a>
-      <a
-        href="https://medium.com/@nwthomas"
-      >
-        <img
-          alt="Medium logo"
-          src="medium.svg"
-        />
       </a>
       <a
         href="https://twitter.com/nwthomas_"

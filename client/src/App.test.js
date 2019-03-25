@@ -10,11 +10,15 @@ describe("<App />", () => {
     const push = jest.fn();
     const scrollToSpy = jest.fn();
     window.scrollTo = scrollToSpy;
-    const helpers = renderWithRouter(<App history={push} />);
+    const helpers = renderWithRouter(
+      <App history={push} history={{ location: { pathname: "/" } }} />
+    );
   });
 
   it("matches the snapshot of App", () => {
-    const tree = rendererWithRouter(<App />);
+    const tree = rendererWithRouter(
+      <App history={{ location: { pathname: "/" } }} />
+    );
     expect(tree.toJSON()).toMatchSnapshot();
   });
 });
