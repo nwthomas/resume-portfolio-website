@@ -117,42 +117,43 @@ const FooterContainer = styled.div`
 `;
 
 const DesktopLinks = styled.div`
-  display: none;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 800px) {
     flex-direction: row;
     display: flex;
     flex-direction: row;
+  }
 
-    a {
-      margin-top: 30px;
-      font-size: 1.6rem;
+  a {
+    margin-top: 30px;
+    font-size: 1.6rem;
 
-      @media (min-width: 800px) {
-        margin: 50px 3% 120px 0;
-      }
+    @media (min-width: 800px) {
+      margin: 50px 3% 120px 0;
+    }
 
+    ${props =>
+      props.darkmode &&
+      css`
+        color: white;
+      `}
+
+    &:hover {
       ${props =>
-        props.darkmode &&
-        css`
-          color: white;
-        `}
-
-      &:hover {
-        ${props =>
-          props.darkmode
-            ? css`
-                animation: ${hoverLinkDarkmode} 0.2s forwards;
-              `
-            : css`
-                animation: ${hoverLink} 0.2s forwards;
-              `}
-      }
+        props.darkmode
+          ? css`
+              animation: ${hoverLinkDarkmode} 0.2s forwards;
+            `
+          : css`
+              animation: ${hoverLink} 0.2s forwards;
+            `}
     }
+  }
 
-    a:last-child {
-      margin-bottom: 80px;
-    }
+  a:last-child {
+    margin-bottom: 50px;
   }
 `;
 
@@ -222,7 +223,7 @@ const Footer = props => {
           <a href="https://www.instagram.com/nwthomas/">Instagram</a>
           <Link to="/contact">Email</Link>
         </DesktopLinks>
-        <MobileLinks>
+        {/* <MobileLinks>
           <a href="https://github.com/nwthomas">
             <img
               src={props.darkmode ? githubLogoWhite : githubLogo}
@@ -256,7 +257,7 @@ const Footer = props => {
           <Link to="/contact">
             <img src={props.darkmode ? mailWhite : mail} alt="Mail icon" />
           </Link>
-        </MobileLinks>
+        </MobileLinks> */}
       </FooterContainer>
       <Copyright darkmode={props.darkmode}>
         <h4>Copyright © 2019 Nathan Thomas</h4>
