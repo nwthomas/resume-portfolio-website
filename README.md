@@ -28,6 +28,10 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
   - `React Hooks`
   - `Styled Components`
   - `Axios`
+  - `Email Validator`
+  - `Jest-DOM`
+  - `React-Test-Renderer`
+  - `React-Testing-Library`
 - `cd` into the `server` file directory and use the `yarn` command to install server-side dependencies including:
   - `Express`
   - `NodeMailer`
@@ -44,14 +48,12 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Styled Components](https://www.styled-components.com/)
 - [Axios](https://www.npmjs.com/package/axios)
+- [Email Validator](https://www.npmjs.com/package/email-validator)
 - [Express](https://expressjs.com/)
 - [NodeMailer](https://nodemailer.com/about/)
 - [CORS](https://github.com/expressjs/cors)
 - [Helmet](https://helmetjs.github.io/)
 - [Morgan](https://www.npmjs.com/package/morgan)
-- [Jest-DOM](https://www.npmjs.com/package/jest-dom)
-- [React Test Renderer](https://reactjs.org/docs/test-renderer.html)
-- [React Testing Library](https://testing-library.com/)
 
 ## Unit Testing
 
