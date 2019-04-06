@@ -44,7 +44,6 @@ export const Global = css`
   label {
     font-size: 1.6rem;
     font-weight: 200;
-    opacity: 0.9;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-family: "Work Sans", sans-serif;

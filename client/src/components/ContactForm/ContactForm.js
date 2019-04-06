@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
+import validator from "email-validator";
 
 const buttonHover = keyframes`
   0% {
@@ -44,6 +45,10 @@ const ContactFormContainer = styled.div`
     flex-direction: column;
 
     label {
+      margin-bottom: 10px;
+    }
+
+    span {
       margin-bottom: 10px;
     }
 
@@ -136,10 +141,17 @@ const ContactFormContainer = styled.div`
   }
 `;
 
+const EmailValidation = styled.p`
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Work Sans", sans-serif;
+  color: #f24b6c;
+  margin-left: 2%;
+  line-height: 1;
+`;
+
 const ContactForm = props => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const [value, setValue] = useState({
     contactName: "",
     contactEmail: "",
@@ -147,8 +159,23 @@ const ContactForm = props => {
     contactMessage: "",
     contact_me_by_fax_only: "" // Filters out spam
   });
+  const [isEmail, setIsEmail] = useState(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const validateEmail = emailValue => {
+    // Validates email or sets value of hook isEmail to null if empty string
+    if (!emailValue) {
+      setIsEmail(null);
+    } else {
+      let validEmail = null;
+      validEmail = validator.validate(emailValue);
+      setIsEmail(validEmail);
+    }
+  };
   const handleChange = e => {
     e.preventDefault();
+    if (e.target.name === "contactEmail") validateEmail(e.target.value);
     setValue({
       ...value,
       [e.target.name]: e.target.value
@@ -159,46 +186,51 @@ const ContactForm = props => {
   };
   const sendEmail = e => {
     e.preventDefault();
-    props.setEmailValues({
-      ...props.emailValues,
-      sending: true
-    });
-    const email = {
-      name: value.contactName,
-      email: value.contactEmail,
-      subject: value.contactSubject,
-      message: value.contactMessage,
-      honeyField: value.contact_me_by_fax_only
-    };
-    axios
-      .post("https://nathan-portfolio-backend.herokuapp.com/", email)
-      .then(res => {
-        window.scrollTo(0, 0);
-        if (res.statusText === "OK") {
-          props.setEmailValues({
-            sending: false,
-            success: true,
-            displayModal: true,
-            modalText: "Message sent successfully."
-          });
-        } else {
+    if (!isEmail) {
+      // Prompt user to input correct email
+    } else {
+      // Send email to server
+      props.setEmailValues({
+        ...props.emailValues,
+        sending: true
+      });
+      const email = {
+        name: value.contactName,
+        email: value.contactEmail,
+        subject: value.contactSubject,
+        message: value.contactMessage,
+        honeyField: value.contact_me_by_fax_only
+      };
+      axios
+        .post("https://nathan-portfolio-backend.herokuapp.com/", email)
+        .then(res => {
+          window.scrollTo(0, 0);
+          if (res.statusText === "OK") {
+            props.setEmailValues({
+              sending: false,
+              success: true,
+              displayModal: true,
+              modalText: "Message sent successfully."
+            });
+          } else {
+            props.setEmailValues({
+              sending: false,
+              success: false,
+              displayModal: false,
+              modalText: "Message did not go through."
+            });
+          }
+        })
+        .catch(err => {
+          window.scrollTo(0, 0);
           props.setEmailValues({
             sending: false,
             success: false,
             displayModal: false,
             modalText: "Message did not go through."
           });
-        }
-      })
-      .catch(err => {
-        window.scrollTo(0, 0);
-        props.setEmailValues({
-          sending: false,
-          success: false,
-          displayModal: false,
-          modalText: "Message did not go through."
         });
-      });
+    }
   };
   return (
     <ContactFormContainer darkmode={props.darkmode}>
@@ -215,7 +247,12 @@ const ContactForm = props => {
           value={value.contactName}
           onChange={handleChange}
         />
-        <label htmlFor="email">Email</label>
+        <span>
+          <label htmlFor="email">Email</label>
+          {!isEmail && isEmail !== null && (
+            <EmailValidation>(Invalid email)</EmailValidation>
+          )}
+        </span>
         <input
           data-testid="emailInput"
           id="email"

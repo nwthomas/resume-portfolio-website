@@ -21,7 +21,7 @@ exports[`<NavbarContainer /> matches the snapshot of NavbarContainer component 1
         </div>
       </div>
     </a>
-    <div
+    <nav
       className="sc-htpNat jYdygF"
     >
       <div
@@ -48,7 +48,7 @@ exports[`<NavbarContainer /> matches the snapshot of NavbarContainer component 1
       >
         Contact
       </a>
-    </div>
+    </nav>
   </div>
 </div>
 `;

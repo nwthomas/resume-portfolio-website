@@ -43,7 +43,7 @@ const NavbarMainDiv = styled.div`
   position: relative;
 `;
 
-const NavbarLinks = styled.div`
+const NavbarLinks = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -134,7 +134,6 @@ const NavbarMain = props => {
   };
   const sunImg = sun;
   const moonImg = moon;
-  console.log(props.history);
   return (
     <NavbarMainDiv darkmode={props.darkmode}>
       <Logo darkmode={props.darkmode} />
