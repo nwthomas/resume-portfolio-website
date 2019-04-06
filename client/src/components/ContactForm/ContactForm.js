@@ -187,7 +187,7 @@ const ContactForm = props => {
   const sendEmail = e => {
     e.preventDefault();
     if (!isEmail) {
-      // Prompt user to input correct email
+      return props.setInvalidEmailModal(true);
     } else {
       // Send email to server
       props.setEmailValues({
@@ -314,7 +314,8 @@ ContactForm.propTypes = {
       contactSubject: PropTypes.string,
       contactMessage: PropTypes.string
     })
-  )
+  ),
+  setInvalidEmailModal: PropTypes.func
 };
 
 export default ContactForm;

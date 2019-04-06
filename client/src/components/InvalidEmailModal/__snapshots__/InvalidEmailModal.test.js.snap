@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InvalidEmailModal /> should match the snapshot of InvalidEmailModal 1`] = `
+<div
+  className="sc-bdVaJa lnxrCL"
+>
+  <div>
+    <p>
+      Enter a valid email.
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Okay
+    </button>
+  </div>
+</div>
+`;

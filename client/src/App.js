@@ -8,6 +8,7 @@ import { HomePageContainer } from "./components/HomePage";
 import { ContactForm } from "./components/ContactForm";
 import { EmailModal } from "./components/EmailModal";
 import { SendingModal } from "./components/SendingModal";
+import { InvalidEmailModal } from "./components/InvalidEmailModal";
 
 const AppDiv = styled.div`
   width: 100%;
@@ -33,6 +34,7 @@ const AppDiv = styled.div`
 const App = props => {
   const pullMode = localStorage.getItem("darkMode") === "true" ? true : false;
   const [darkmode, setDarkmode] = useState(pullMode);
+  const [invalidEmailModal, setInvalidEmailModal] = useState(false);
   const [emailValues, setEmailValues] = useState({
     sending: false,
     success: props.null,
@@ -58,6 +60,12 @@ const App = props => {
           />
         )}
         {emailValues.sending && <SendingModal darkmode={darkmode} />}
+        {invalidEmailModal && (
+          <InvalidEmailModal
+            setInvalidEmailModal={setInvalidEmailModal}
+            darkmode={darkmode}
+          />
+        )}
         <div>
           <NavbarContainer
             setDarkmode={setDarkmode}
@@ -79,6 +87,7 @@ const App = props => {
                 darkmode={darkmode}
                 emailValues={emailValues}
                 setEmailValues={setEmailValues}
+                setInvalidEmailModal={setInvalidEmailModal}
               />
             )}
           />
