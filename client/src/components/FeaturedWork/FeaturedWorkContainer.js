@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
-import fyloSample from "../../images/fylo-macbook.png";
+import huddleSample from "../../images/huddle-landing-page.png";
 import weightLiftingSample from "../../images/weight-lifting-journal.png";
 import PropTypes from "prop-types";
 
@@ -111,14 +111,14 @@ const FeaturedWorkContainer = props => {
         </div>
         <div>
           <div>
-            <a href="https://github.com/nwthomas/fylo-landing-page">
+            <a href="https://github.com/nwthomas/huddle-landing-page">
               <img
-                data-testid="fyloPicture"
-                src={fyloSample}
-                alt="Fylo portfolio samples"
+                data-testid="huddlePicture"
+                src={huddleSample}
+                alt="Huddle portfolio samples"
               />
             </a>
-            <h4>Fylo Landing Page</h4>
+            <h4>Huddle Landing Page</h4>
           </div>
         </div>
       </div>

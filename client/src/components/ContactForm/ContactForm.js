@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
