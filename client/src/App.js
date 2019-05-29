@@ -3,12 +3,14 @@ import { GlobalStyle } from "./components/styles";
 import { Route } from "react-router-dom";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
+import { useStateValue } from "react-conflux";
 import { NavbarContainer } from "./components/NavBar";
 import { HomePageContainer } from "./components/HomePage";
 import { ContactForm } from "./components/ContactForm";
 import { EmailModal } from "./components/EmailModal";
 import { SendingModal } from "./components/SendingModal";
 import { InvalidEmailModal } from "./components/InvalidEmailModal";
+import { darkContext } from "./store/contexts";
 
 const AppDiv = styled.div`
   width: 100%;
@@ -32,8 +34,8 @@ const AppDiv = styled.div`
 `;
 
 const App = props => {
-  const pullMode = localStorage.getItem("darkMode") === "true" ? true : false;
-  const [darkmode, setDarkmode] = useState(pullMode);
+  const [state] = useStateValue(darkContext);
+  const { darkmode } = state;
   const [invalidEmailModal, setInvalidEmailModal] = useState(false);
   const [emailValues, setEmailValues] = useState({
     sending: false,
@@ -67,11 +69,7 @@ const App = props => {
           />
         )}
         <div>
-          <NavbarContainer
-            setDarkmode={setDarkmode}
-            darkmode={darkmode}
-            history={props.history}
-          />
+          <NavbarContainer darkmode={darkmode} history={props.history} />
           <Route
             exact
             path="/"

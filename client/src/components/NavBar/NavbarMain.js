@@ -1,10 +1,13 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import { useStateValue } from "react-conflux";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../Logo";
 import moon from "../../images/moon.svg";
 import sun from "../../images/sun.svg";
 import PropTypes from "prop-types";
+import { darkContext } from "../../store/contexts";
+import { CHANGE_THEME } from "../../store/reducers/globalReducer";
 
 const hoverLink = keyframes`
   0% {
@@ -128,9 +131,10 @@ const DarkModeTab = styled.div`
 `;
 
 const NavbarMain = props => {
-  const setDarkMode = () => {
-    props.setDarkmode(props.darkmode ? false : true);
-    localStorage.setItem("darkMode", props.darkmode ? false : true);
+  const [, dispatch] = useStateValue(darkContext);
+  const setDarkMode = e => {
+    e.preventDefault();
+    dispatch({ type: CHANGE_THEME });
   };
   const sunImg = sun;
   const moonImg = moon;
@@ -161,8 +165,7 @@ const NavbarMain = props => {
 };
 
 NavbarMain.propTypes = {
-  darkmode: PropTypes.bool.isRequired,
-  setDarkmode: PropTypes.func.isRequired
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default NavbarMain;

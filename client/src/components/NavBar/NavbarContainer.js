@@ -23,8 +23,7 @@ const NavbarContainer = props => {
 };
 
 NavbarContainer.propTypes = {
-  darkmode: PropTypes.bool.isRequired,
-  setDarkmode: PropTypes.func.isRequired
+  darkmode: PropTypes.bool.isRequired
 };
 
 export default NavbarContainer;

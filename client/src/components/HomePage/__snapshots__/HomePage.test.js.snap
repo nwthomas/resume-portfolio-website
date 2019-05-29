@@ -128,16 +128,16 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       <div>
         <div>
           <a
-            href="https://github.com/nwthomas/fylo-landing-page"
+            href="https://github.com/nwthomas/huddle-landing-page"
           >
             <img
-              alt="Fylo portfolio samples"
-              data-testid="fyloPicture"
-              src="fylo-macbook.png"
+              alt="Huddle portfolio samples"
+              data-testid="huddlePicture"
+              src="huddle-landing-page.png"
             />
           </a>
           <h4>
-            Fylo Landing Page
+            Huddle Landing Page
           </h4>
         </div>
       </div>
@@ -194,7 +194,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-bZQynM daLbvX"
+    className="sc-EHOje eXingz"
   >
     <h4>
       Copyright © 2019 Nathan Thomas
