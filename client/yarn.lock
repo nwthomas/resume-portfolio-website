@@ -8208,7 +8208,7 @@ react-app-polyfill@^0.2.2:
     raf "3.4.1"
     whatwg-fetch "3.0.0"
 
-react-conflux@^0.0.2-beta.1:
+react-conflux@^0.0.2-beta.6:
   version "0.0.2-beta.6"
   resolved "https://registry.yarnpkg.com/react-conflux/-/react-conflux-0.0.2-beta.6.tgz#560b3abf95f28a281a3c22ca14bf545259db84c8"
   integrity sha512-Qmmn3W6HJVYRZZWV26qUExEVtRUpT3ZDnR8rF3lcSCLj0LpxEUhQb9OI/P+RpgI1zWceMBghw5W0cvAPCIYy6g==
