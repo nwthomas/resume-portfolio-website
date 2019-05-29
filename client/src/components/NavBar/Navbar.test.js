@@ -42,18 +42,4 @@ describe("<NavbarContainer />", () => {
     expect(getByText(/Work/i)).toBeDefined();
     expect(getByText(/Contact/i)).toBeDefined();
   });
-
-  it("should call a function when the darkmode tab is clicked", () => {
-    const mock = jest.fn();
-    const { getByTestId } = renderWithRouter(
-      <NavbarContainer
-        darkmode={false}
-        setDarkmode={mock}
-        history={{ location: { pathname: "/" } }}
-      />
-    );
-    const darkmodeTab = getByTestId("darkmodeTab");
-    fireEvent.click(darkmodeTab);
-    expect(mock).toHaveBeenCalledTimes(1);
-  });
 });

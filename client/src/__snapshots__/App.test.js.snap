@@ -2,7 +2,7 @@
 
 exports[`<App /> matches the snapshot of App 1`] = `
 <div
-  className="sc-kGXeez hiBRRl"
+  className="sc-kgoBCf hNipgW"
 >
   <div>
     <div
@@ -182,16 +182,16 @@ exports[`<App /> matches the snapshot of App 1`] = `
           <div>
             <div>
               <a
-                href="https://github.com/nwthomas/fylo-landing-page"
+                href="https://github.com/nwthomas/huddle-landing-page"
               >
                 <img
-                  alt="Fylo portfolio samples"
-                  data-testid="fyloPicture"
-                  src="fylo-macbook.png"
+                  alt="Huddle portfolio samples"
+                  data-testid="huddlePicture"
+                  src="huddle-landing-page.png"
                 />
               </a>
               <h4>
-                Fylo Landing Page
+                Huddle Landing Page
               </h4>
             </div>
           </div>
@@ -248,7 +248,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-gZMcBi ftGaTO"
+        className="sc-iwsKbI iCFKAU"
       >
         <h4>
           Copyright © 2019 Nathan Thomas

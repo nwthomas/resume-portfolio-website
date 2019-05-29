@@ -31,6 +31,6 @@ describe("<FeaturedWorkContainer />", () => {
     );
     expect(getByTestId("tipprPicture")).toBeDefined();
     expect(getByTestId("instagramPicture")).toBeDefined();
-    expect(getByTestId("fyloPicture")).toBeDefined();
+    expect(getByTestId("huddlePicture")).toBeDefined();
   });
 });

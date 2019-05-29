@@ -2,6 +2,9 @@ import React from "react";
 import { Router } from "react-router-dom";
 import { render } from "react-testing-library";
 import { createMemoryHistory } from "history";
+import { StateProvider } from "react-conflux";
+import { darkContext } from "../store/contexts";
+import { globalReducer } from "../store/reducers/globalReducer";
 
 const renderWithRouter = (
   ui,
@@ -11,7 +14,11 @@ const renderWithRouter = (
   } = {}
 ) => {
   return {
-    ...render(<Router history={history}>{ui}</Router>),
+    ...render(
+      <StateProvider reducer={globalReducer} stateContext={darkContext}>
+        <Router history={history}>{ui}</Router>
+      </StateProvider>
+    ),
     history
   };
 };
