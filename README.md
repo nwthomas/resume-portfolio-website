@@ -25,7 +25,7 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 - `cd` into the `client` directory of the project and use the `yarn` command to install client-side dependencies including:
   - `React`
   - `React Router`
-  - `React Hooks`
+  - `React-Conflux`
   - `Styled Components`
   - `Axios`
   - `Email Validator`
@@ -45,7 +45,7 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 
 - [React](https://reactjs.org/)
 - [React Router](https://github.com/ReactTraining/react-router)
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React Conflux](https://github.com/dustinmyers/react-conflux)
 - [Styled Components](https://www.styled-components.com/)
 - [Axios](https://www.npmjs.com/package/axios)
 - [Email Validator](https://www.npmjs.com/package/email-validator)
