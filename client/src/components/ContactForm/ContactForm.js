@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
 import validator from "email-validator";
+import { useStateValue } from "react-conflux";
+import { formContext } from "../../store/contexts";
+import { HANDLE_FORM_CHANGE } from "../../store/reducers/formReducer";
 
 const buttonHover = keyframes`
   0% {
@@ -152,13 +155,14 @@ const EmailValidation = styled.p`
 `;
 
 const ContactForm = props => {
-  const [value, setValue] = useState({
-    contactName: "",
-    contactEmail: "",
-    contactSubject: "",
-    contactMessage: "",
-    contact_me_by_fax_only: "" // Filters out spam
-  });
+  const [state, dispatch] = useStateValue(formContext);
+  const {
+    contactName,
+    contactEmail,
+    contactSubject,
+    contactMessage,
+    contact_me_by_fax_only
+  } = state;
   const [isEmail, setIsEmail] = useState(null);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -176,9 +180,9 @@ const ContactForm = props => {
   const handleChange = e => {
     e.preventDefault();
     if (e.target.name === "contactEmail") validateEmail(e.target.value);
-    setValue({
-      ...value,
-      [e.target.name]: e.target.value
+    dispatch({
+      type: HANDLE_FORM_CHANGE,
+      payload: { name: e.target.name, value: e.target.value }
     });
   };
   const cancelForm = e => {
@@ -195,11 +199,11 @@ const ContactForm = props => {
         sending: true
       });
       const email = {
-        name: value.contactName,
-        email: value.contactEmail,
-        subject: value.contactSubject,
-        message: value.contactMessage,
-        honeyField: value.contact_me_by_fax_only
+        name: contactName,
+        email: contactEmail,
+        subject: contactSubject,
+        message: contactMessage,
+        honeyField: contact_me_by_fax_only
       };
       axios
         .post("https://nathan-portfolio-backend.herokuapp.com/", email)
@@ -244,7 +248,7 @@ const ContactForm = props => {
           autoComplete="off"
           type="text"
           name="contactName"
-          value={value.contactName}
+          value={contactName}
           onChange={handleChange}
         />
         <span>
@@ -260,7 +264,7 @@ const ContactForm = props => {
           autoComplete="off"
           type="text"
           name="contactEmail"
-          value={value.contactEmail}
+          value={contactEmail}
           onChange={handleChange}
         />
         <label htmlFor="subject">Subject</label>
@@ -271,7 +275,7 @@ const ContactForm = props => {
           autoComplete="off"
           type="text"
           name="contactSubject"
-          value={value.contactSubject}
+          value={contactSubject}
           onChange={handleChange}
         />
         <label htmlFor="message">Message</label>
@@ -282,14 +286,14 @@ const ContactForm = props => {
           autoComplete="off"
           rows="12"
           name="contactMessage"
-          value={value.contactMessage}
+          value={contactMessage}
           onChange={handleChange}
         />
         <input
           id="fax"
           type="text"
           name="contact_me_by_fax_only"
-          value={value.faxField}
+          value={contact_me_by_fax_only}
           onChange={handleChange}
           tabIndex="-1"
           autoComplete="off"
