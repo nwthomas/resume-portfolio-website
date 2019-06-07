@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
 import huddleSample from "../../images/huddle-landing-page.png";
-import weightLiftingSample from "../../images/weight-lifting-journal.png";
+import weightLiftingSample from "../../images/weight-lifting-journal-app.png";
 import PropTypes from "prop-types";
 
 const FeaturedWorkContainerDiv = styled.div`
