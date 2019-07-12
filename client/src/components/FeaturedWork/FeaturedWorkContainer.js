@@ -4,6 +4,7 @@ import instaSample from "../../images/instagram-macbook.png";
 import tipprSample from "../../images/tippr-macbook.png";
 import huddleSample from "../../images/huddle-landing-page.png";
 import weightLiftingSample from "../../images/weight-lifting-journal-app.png";
+import confluxSample from "../../images/conflux-logo.png";
 import PropTypes from "prop-types";
 
 const FeaturedWorkContainerDiv = styled.div`
@@ -75,11 +76,23 @@ const FeaturedWorkContainer = props => {
       <div>
         <div>
           <div>
+            <a href="https://github.com/dustinmyers/react-conflux">
+              <img
+                data-testid="confluxPicture"
+                src={confluxSample}
+                alt="Conflux state management sample"
+              />
+            </a>
+            <h4>Conflux State Management</h4>
+          </div>
+        </div>
+        <div>
+          <div>
             <a href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas">
               <img
                 data-testid="weightLiftingJournalPicture"
                 src={weightLiftingSample}
-                alt="weight lifting journal samples"
+                alt="weight lifting journal sample"
               />
             </a>
             <h4>Weight Lifting Journal</h4>
@@ -91,7 +104,7 @@ const FeaturedWorkContainer = props => {
               <img
                 data-testid="tipprPicture"
                 src={tipprSample}
-                alt="tippr portfolio samples"
+                alt="tippr portfolio sample"
               />
             </a>
             <h4>tippr payment app</h4>
@@ -103,7 +116,7 @@ const FeaturedWorkContainer = props => {
               <img
                 data-testid="instagramPicture"
                 src={instaSample}
-                alt="Instagram portfolio samples"
+                alt="Instagram portfolio sample"
               />
             </a>
             <h4>Instagram Clone</h4>
@@ -115,7 +128,7 @@ const FeaturedWorkContainer = props => {
               <img
                 data-testid="huddlePicture"
                 src={huddleSample}
-                alt="Huddle portfolio samples"
+                alt="Huddle portfolio sample"
               />
             </a>
             <h4>Huddle Landing Page</h4>
