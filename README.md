@@ -11,7 +11,7 @@ A personal portfolio is meant to be a personal touch in the otherwise routine pr
 In that respect, my portfolio follows what I'm passionate about in life; I like clean design, and minimalism has always appealed to me. It is because of these passions that I've developed a stylish-yet-minimal personal portfolio utilizing cutting-edge technology such as React Hooks (used in this portfolio during its alpha state and now in full release).
 <br>
 
-![Portfolio Site Example Shot](./assets/readme-screenshot.png)
+![Portfolio Site Example Shot](./assets/readme-sample.png)
 <br>
 
 ## Table of Conents
