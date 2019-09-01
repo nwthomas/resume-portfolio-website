@@ -7,6 +7,11 @@ import { useStateValue } from "react-conflux";
 import { formContext } from "../../store/contexts";
 import { HANDLE_FORM_CHANGE } from "../../store/reducers/formReducer";
 
+const serverURL =
+  process.env.SERVER_URL ||
+  "http://localhost:4000" ||
+  "https://nathan-portfolio-backend.herokuapp.com/";
+
 const buttonHover = keyframes`
   0% {
     opacity: 1;
@@ -206,7 +211,7 @@ const ContactForm = props => {
         honeyField: contact_me_by_fax_only
       };
       axios
-        .post("https://nathan-portfolio-backend.herokuapp.com/", email)
+        .post(serverURL, email)
         .then(res => {
           window.scrollTo(0, 0);
           if (res.statusText === "OK") {
