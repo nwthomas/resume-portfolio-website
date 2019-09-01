@@ -8,9 +8,7 @@ import { formContext } from "../../store/contexts";
 import { HANDLE_FORM_CHANGE } from "../../store/reducers/formReducer";
 
 const serverURL =
-  process.env.SERVER_URL ||
-  "http://localhost:4000" ||
-  "https://nathan-portfolio-backend.herokuapp.com/";
+  process.env.SERVER_URL || "https://nathan-portfolio-backend.herokuapp.com/";
 
 const buttonHover = keyframes`
   0% {
