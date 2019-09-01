@@ -14,7 +14,7 @@ In that respect, my portfolio follows what I'm passionate about in life; I like 
 ![Portfolio Site Example Shot](./assets/readme-sample.png)
 <br>
 
-## Table of Conents
+## Table of Contents
 
 - [Getting Started](#getting-started)
 - [Stack](#stack)
