@@ -12,12 +12,7 @@ import {
 const serverURL =
   process.env.SERVER_URL || "https://nathan-portfolio-backend.herokuapp.com/";
 
-type Props = {
-  darkmode: number,
-  history: string
-};
-
-const ContactForm = (props: Props) => {
+const ContactForm = props => {
   const [state, dispatch] = useStateValue(globalContext);
   const {
     contactName,
