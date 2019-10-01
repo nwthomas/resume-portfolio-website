@@ -1,6 +1,13 @@
 import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+
+const Copyright = ({ darkmode }) => {
+  return (
+    <CopyrightContainer darkmode={darkmode}>
+      <h4>Copyright © 2019 Nathan Thomas</h4>
+    </CopyrightContainer>
+  );
+};
 
 const CopyrightContainer = styled.div`
   max-width: 1200px;
@@ -29,17 +36,5 @@ const CopyrightContainer = styled.div`
       `}
   }
 `;
-
-const Copyright = props => {
-  return (
-    <CopyrightContainer darkmode={props.darkmode}>
-      <h4>Copyright © 2019 Nathan Thomas</h4>
-    </CopyrightContainer>
-  );
-};
-
-Copyright.propTypes = {
-  darkmode: PropTypes.bool.isRequired
-};
 
 export default Copyright;
