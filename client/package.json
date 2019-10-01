@@ -20,9 +20,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --verbose",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -39,6 +40,9 @@
   ],
   "proxy": "http://localhost:8000",
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-flow": "^7.0.0",
     "jest-dom": "^3.1.2",
     "react-test-renderer": "^16.8.4",
     "react-testing-library": "^6.0.0"

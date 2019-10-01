@@ -1,7 +1,7 @@
 export const CHANGE_THEME = "CHANGE_THEME";
 
 const mode = localStorage.getItem("darkMode");
-const preset = mode ? JSON.parse(mode) : false;
+const preset = mode ? JSON.parse(mode) : true;
 
 const initialState = {
   darkmode: preset
