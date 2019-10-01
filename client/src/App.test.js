@@ -1,6 +1,6 @@
 import React from "react";
-import "react-testing-library/cleanup-after-each";
-import "jest-dom/extend-expect";
+import "@testing-library/react/cleanup-after-each";
+import "@testing-library/jest-dom/extend-expect";
 import { renderWithRouter, rendererWithRouter } from "./testHelpers";
 
 import App from "./App";

@@ -1,10 +1,9 @@
 import React from "react";
 import { Router } from "react-router-dom";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { StateProvider } from "react-conflux";
-import { darkContext } from "../store/contexts";
-import { globalReducer } from "../store/reducers/globalReducer";
+import { globalReducer, globalContext } from "../store/reducers/globalReducer";
 
 const renderWithRouter = (
   ui,
@@ -15,7 +14,7 @@ const renderWithRouter = (
 ) => {
   return {
     ...render(
-      <StateProvider reducer={globalReducer} stateContext={darkContext}>
+      <StateProvider reducer={globalReducer} stateContext={globalContext}>
         <Router history={history}>{ui}</Router>
       </StateProvider>
     ),

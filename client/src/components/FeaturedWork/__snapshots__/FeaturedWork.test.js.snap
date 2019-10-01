@@ -2,7 +2,7 @@
 
 exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkContainer 1`] = `
 <div
-  className="sc-bdVaJa ckjWSq"
+  className="sc-AykKC cWlXST"
 >
   <p
     id="featured-work"
@@ -13,12 +13,28 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
     <div>
       <div>
         <a
+          href="https://github.com/dustinmyers/react-conflux"
+        >
+          <img
+            alt="Conflux state management sample"
+            data-testid="confluxPicture"
+            src="conflux-logo.png"
+          />
+        </a>
+        <h4>
+          Conflux State Management
+        </h4>
+      </div>
+    </div>
+    <div>
+      <div>
+        <a
           href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
         >
           <img
-            alt="weight lifting journal samples"
+            alt="weight lifting journal sample"
             data-testid="weightLiftingJournalPicture"
-            src="weight-lifting-journal.png"
+            src="weight-lifting-journal-app.png"
           />
         </a>
         <h4>
@@ -32,7 +48,7 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
           href="https://github.com/nwthomas/tippr"
         >
           <img
-            alt="tippr portfolio samples"
+            alt="tippr portfolio sample"
             data-testid="tipprPicture"
             src="tippr-macbook.png"
           />
@@ -48,7 +64,7 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
           href="https://github.com/nwthomas/instagram-clone"
         >
           <img
-            alt="Instagram portfolio samples"
+            alt="Instagram portfolio sample"
             data-testid="instagramPicture"
             src="instagram-macbook.png"
           />
@@ -64,7 +80,7 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
           href="https://github.com/nwthomas/huddle-landing-page"
         >
           <img
-            alt="Huddle portfolio samples"
+            alt="Huddle portfolio sample"
             data-testid="huddlePicture"
             src="huddle-landing-page.png"
           />

@@ -2,21 +2,21 @@
 
 exports[`<App /> matches the snapshot of App 1`] = `
 <div
-  className="sc-kgoBCf hNipgW"
+  className="sc-fzXfMw bOiJJp"
 >
   <div>
     <div
-      className="sc-ifAKCX iSFgrr"
+      className="sc-AykKG dBglLC"
     >
       <div
-        className="sc-bwzfXH hyjEOv"
+        className="sc-AykKD etFgRM"
       >
         <a
           href="/"
           onClick={[Function]}
         >
           <div
-            className="sc-bdVaJa istZpN"
+            className="sc-AykKC cyzyoD"
           >
             <div>
               <p>
@@ -26,17 +26,17 @@ exports[`<App /> matches the snapshot of App 1`] = `
           </div>
         </a>
         <nav
-          className="sc-htpNat jYdygF"
+          className="sc-AykKE jttJbe"
         >
           <div
-            className="sc-bxivhb NNymt"
+            className="sc-AykKF bsVgCa"
             data-testid="darkmodeTab"
             onClick={[Function]}
           >
             <div>
               <img
                 alt="Dark mode logo"
-                src="moon.svg"
+                src="sun.svg"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
     </div>
     <div>
       <div
-        className="sc-EHOje cHEDNC"
+        className="sc-AykKH hzIWFd"
       >
         <p>
           I'm Nathan Thomas, a
@@ -86,7 +86,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
           .
         </p>
         <div
-          className="sc-bZQynM kIarEe"
+          className="sc-AykKI doqohS"
         >
           <div>
             <h4>
@@ -99,7 +99,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 <img
                   alt="Current school logo"
                   data-testid="schoolLogo"
-                  src="lambda-logo.png"
+                  src="lambda-logo-white.png"
                 />
               </a>
             </div>
@@ -115,7 +115,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 <img
                   alt="Former employer logo"
                   data-testid="workLogo"
-                  src="ah-logo.png"
+                  src="ah-logo-white.png"
                 />
               </a>
             </div>
@@ -123,7 +123,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-gzVnrw kufNtn"
+        className="sc-AykKJ qzJLa"
       >
         <p
           id="featured-work"
@@ -134,12 +134,28 @@ exports[`<App /> matches the snapshot of App 1`] = `
           <div>
             <div>
               <a
+                href="https://github.com/dustinmyers/react-conflux"
+              >
+                <img
+                  alt="Conflux state management sample"
+                  data-testid="confluxPicture"
+                  src="conflux-logo.png"
+                />
+              </a>
+              <h4>
+                Conflux State Management
+              </h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
                 href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
               >
                 <img
-                  alt="weight lifting journal samples"
+                  alt="weight lifting journal sample"
                   data-testid="weightLiftingJournalPicture"
-                  src="weight-lifting-journal.png"
+                  src="weight-lifting-journal-app.png"
                 />
               </a>
               <h4>
@@ -153,7 +169,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 href="https://github.com/nwthomas/tippr"
               >
                 <img
-                  alt="tippr portfolio samples"
+                  alt="tippr portfolio sample"
                   data-testid="tipprPicture"
                   src="tippr-macbook.png"
                 />
@@ -169,7 +185,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 href="https://github.com/nwthomas/instagram-clone"
               >
                 <img
-                  alt="Instagram portfolio samples"
+                  alt="Instagram portfolio sample"
                   data-testid="instagramPicture"
                   src="instagram-macbook.png"
                 />
@@ -185,7 +201,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
                 href="https://github.com/nwthomas/huddle-landing-page"
               >
                 <img
-                  alt="Huddle portfolio samples"
+                  alt="Huddle portfolio sample"
                   data-testid="huddlePicture"
                   src="huddle-landing-page.png"
                 />
@@ -198,7 +214,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-htoDjs jAMklx"
+        className="sc-AykKK lhiuFw"
       >
         <div>
           <p>
@@ -212,7 +228,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
           </a>
         </div>
         <div
-          className="sc-dnqmqq dzePwl"
+          className="sc-fzXfLO iLqimj"
         >
           <a
             href="https://github.com/nwthomas"
@@ -248,7 +264,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-iwsKbI iCFKAU"
+        className="sc-fzXfLP ctVCpX"
       >
         <h4>
           Copyright © 2019 Nathan Thomas

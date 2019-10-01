@@ -2,7 +2,7 @@
 
 exports[`<Copyright /> should match the snapshot of Copyright 1`] = `
 <div
-  className="sc-bdVaJa dSOURw"
+  className="sc-AykKC bFoCbz"
 >
   <h4>
     Copyright © 2019 Nathan Thomas

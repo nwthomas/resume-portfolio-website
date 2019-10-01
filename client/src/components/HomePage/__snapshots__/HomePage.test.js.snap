@@ -3,7 +3,7 @@
 exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`] = `
 <div>
   <div
-    className="sc-bdVaJa cXGtYS"
+    className="sc-AykKC gvFiiQ"
   >
     <p>
       I'm Nathan Thomas, a
@@ -32,7 +32,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       .
     </p>
     <div
-      className="sc-bwzfXH dunKYn"
+      className="sc-AykKD bZWOgB"
     >
       <div>
         <h4>
@@ -69,7 +69,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-htpNat eVjSDE"
+    className="sc-AykKE iHfZmp"
   >
     <p
       id="featured-work"
@@ -80,12 +80,28 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       <div>
         <div>
           <a
+            href="https://github.com/dustinmyers/react-conflux"
+          >
+            <img
+              alt="Conflux state management sample"
+              data-testid="confluxPicture"
+              src="conflux-logo.png"
+            />
+          </a>
+          <h4>
+            Conflux State Management
+          </h4>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a
             href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
           >
             <img
-              alt="weight lifting journal samples"
+              alt="weight lifting journal sample"
               data-testid="weightLiftingJournalPicture"
-              src="weight-lifting-journal.png"
+              src="weight-lifting-journal-app.png"
             />
           </a>
           <h4>
@@ -99,7 +115,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
             href="https://github.com/nwthomas/tippr"
           >
             <img
-              alt="tippr portfolio samples"
+              alt="tippr portfolio sample"
               data-testid="tipprPicture"
               src="tippr-macbook.png"
             />
@@ -115,7 +131,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
             href="https://github.com/nwthomas/instagram-clone"
           >
             <img
-              alt="Instagram portfolio samples"
+              alt="Instagram portfolio sample"
               data-testid="instagramPicture"
               src="instagram-macbook.png"
             />
@@ -131,7 +147,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
             href="https://github.com/nwthomas/huddle-landing-page"
           >
             <img
-              alt="Huddle portfolio samples"
+              alt="Huddle portfolio sample"
               data-testid="huddlePicture"
               src="huddle-landing-page.png"
             />
@@ -144,7 +160,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-bxivhb gNPtEY"
+    className="sc-AykKF joCMMf"
   >
     <div>
       <p>
@@ -158,7 +174,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       </a>
     </div>
     <div
-      className="sc-ifAKCX buOxay"
+      className="sc-AykKG bjsjyh"
     >
       <a
         href="https://github.com/nwthomas"
@@ -194,7 +210,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-EHOje eXingz"
+    className="sc-AykKH cDjEel"
   >
     <h4>
       Copyright © 2019 Nathan Thomas

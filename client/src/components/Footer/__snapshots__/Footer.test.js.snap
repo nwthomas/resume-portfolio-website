@@ -3,7 +3,7 @@
 exports[`<Footer /> should match the snapshot of Footer 1`] = `
 Array [
   <div
-    className="sc-bdVaJa eVrHWl"
+    className="sc-AykKC ZICuv"
   >
     <div>
       <p>
@@ -17,7 +17,7 @@ Array [
       </a>
     </div>
     <div
-      className="sc-bwzfXH gNKkdR"
+      className="sc-AykKD fMrFOE"
     >
       <a
         href="https://github.com/nwthomas"
@@ -53,7 +53,7 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-htpNat kkOYog"
+    className="sc-AykKE gHKFZd"
   >
     <h4>
       Copyright © 2019 Nathan Thomas

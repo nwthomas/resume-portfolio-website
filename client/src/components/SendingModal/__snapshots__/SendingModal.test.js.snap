@@ -2,20 +2,20 @@
 
 exports[`<SendingModal /> should match the snapshot of SendingModal 1`] = `
 <div
-  className="sc-bdVaJa beyHxW"
+  className="sc-AykKC jRUWhM"
 >
   <div>
     <div
-      className="sc-bwzfXH fIAauJ"
+      className="sc-AykKD dXsVUQ"
     />
     <div
-      className="sc-htpNat kwGggQ"
+      className="sc-AykKE dzgBFK"
     />
     <div
-      className="sc-bxivhb kMnXOu"
+      className="sc-AykKF hmgoQC"
     />
     <div
-      className="sc-ifAKCX gYgLJU"
+      className="sc-AykKG iexOPT"
     />
   </div>
   <p>

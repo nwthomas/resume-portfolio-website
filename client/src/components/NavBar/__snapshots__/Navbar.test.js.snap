@@ -2,17 +2,17 @@
 
 exports[`<NavbarContainer /> matches the snapshot of NavbarContainer component 1`] = `
 <div
-  className="sc-ifAKCX iSFgrr"
+  className="sc-AykKG dBglLC"
 >
   <div
-    className="sc-bwzfXH hyjEOv"
+    className="sc-AykKD etFgRM"
   >
     <a
       href="/"
       onClick={[Function]}
     >
       <div
-        className="sc-bdVaJa istZpN"
+        className="sc-AykKC fhSaEQ"
       >
         <div>
           <p>
@@ -22,10 +22,10 @@ exports[`<NavbarContainer /> matches the snapshot of NavbarContainer component 1
       </div>
     </a>
     <nav
-      className="sc-htpNat jYdygF"
+      className="sc-AykKE kICkQy"
     >
       <div
-        className="sc-bxivhb NNymt"
+        className="sc-AykKF UbpaU"
         data-testid="darkmodeTab"
         onClick={[Function]}
       >

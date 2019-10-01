@@ -10,10 +10,7 @@ import { ContactForm } from "./components/ContactForm";
 import { EmailModal } from "./components/EmailModal";
 import { SendingModal } from "./components/SendingModal";
 import { InvalidEmailModal } from "./components/InvalidEmailModal";
-import { darkContext } from "./store/contexts";
-import { StateProvider } from "react-conflux";
-import { formContext } from "./store/contexts";
-import { formReducer } from "./store/reducers/formReducer";
+import { globalContext } from "./store/reducers/globalReducer";
 
 const AppDiv = styled.div`
   width: 100%;
@@ -37,7 +34,7 @@ const AppDiv = styled.div`
 `;
 
 const App = props => {
-  const [state] = useStateValue(darkContext);
+  const [state] = useStateValue(globalContext);
   const { darkmode } = state;
   const [invalidEmailModal, setInvalidEmailModal] = useState(false);
   const [emailValues, setEmailValues] = useState({
@@ -83,15 +80,13 @@ const App = props => {
           <Route
             path="/contact"
             render={props => (
-              <StateProvider reducer={formReducer} stateContext={formContext}>
-                <ContactForm
-                  {...props}
-                  darkmode={darkmode}
-                  emailValues={emailValues}
-                  setEmailValues={setEmailValues}
-                  setInvalidEmailModal={setInvalidEmailModal}
-                />
-              </StateProvider>
+              <ContactForm
+                {...props}
+                darkmode={darkmode}
+                emailValues={emailValues}
+                setEmailValues={setEmailValues}
+                setInvalidEmailModal={setInvalidEmailModal}
+              />
             )}
           />
         </div>

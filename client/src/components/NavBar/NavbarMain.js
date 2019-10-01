@@ -6,8 +6,10 @@ import { Logo } from "../Logo";
 import moon from "../../images/moon.svg";
 import sun from "../../images/sun.svg";
 import PropTypes from "prop-types";
-import { darkContext } from "../../store/contexts";
-import { CHANGE_THEME } from "../../store/reducers/globalReducer";
+import {
+  CHANGE_THEME,
+  globalContext
+} from "../../store/reducers/globalReducer";
 
 const hoverLink = keyframes`
   0% {
@@ -131,7 +133,7 @@ const DarkModeTab = styled.div`
 `;
 
 const NavbarMain = props => {
-  const [, dispatch] = useStateValue(darkContext);
+  const [, dispatch] = useStateValue(globalContext);
   const setDarkMode = e => {
     e.preventDefault();
     dispatch({ type: CHANGE_THEME });

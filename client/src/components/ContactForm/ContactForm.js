@@ -4,8 +4,10 @@ import styled, { css, keyframes } from "styled-components";
 import axios from "axios";
 import validator from "email-validator";
 import { useStateValue } from "react-conflux";
-import { formContext } from "../../store/contexts";
-import { HANDLE_FORM_CHANGE } from "../../store/reducers/formReducer";
+import {
+  HANDLE_FORM_CHANGE,
+  globalContext
+} from "../../store/reducers/globalReducer";
 
 const serverURL =
   process.env.SERVER_URL || "https://nathan-portfolio-backend.herokuapp.com/";
@@ -158,7 +160,7 @@ const EmailValidation = styled.p`
 `;
 
 const ContactForm = props => {
-  const [state, dispatch] = useStateValue(formContext);
+  const [state, dispatch] = useStateValue(globalContext);
   const {
     contactName,
     contactEmail,

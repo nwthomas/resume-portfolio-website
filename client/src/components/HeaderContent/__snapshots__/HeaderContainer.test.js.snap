@@ -2,7 +2,7 @@
 
 exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = `
 <div
-  className="sc-bdVaJa cXGtYS"
+  className="sc-AykKC gvFiiQ"
 >
   <p>
     I'm Nathan Thomas, a
@@ -31,7 +31,7 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
     .
   </p>
   <div
-    className="sc-bwzfXH dunKYn"
+    className="sc-AykKD bZWOgB"
   >
     <div>
       <h4>

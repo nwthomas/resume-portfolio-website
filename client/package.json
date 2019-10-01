@@ -13,8 +13,7 @@
     "react": "^16.8.0",
     "react-conflux": "^0.0.2-beta.6",
     "react-dom": "^16.8.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "2.1.8",
     "styled-components": "^5.0.0-beta.0"
   },
@@ -42,9 +41,9 @@
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-flow": "^7.0.0",
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.2.0",
     "flow-bin": "^0.108.0",
-    "jest-dom": "^3.1.2",
-    "react-test-renderer": "^16.8.4",
-    "react-testing-library": "^6.0.0"
+    "react-test-renderer": "^16.8.4"
   }
 }
