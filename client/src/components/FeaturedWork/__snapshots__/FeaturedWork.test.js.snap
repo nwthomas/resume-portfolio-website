@@ -2,7 +2,7 @@
 
 exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkContainer 1`] = `
 <div
-  className="sc-AykKC cWlXST"
+  className="sc-bdVaJa ckjWSq"
 >
   <p
     id="featured-work"

@@ -83,7 +83,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
           .
         </p>
         <div
-          className="sc-bZQynM kIarEe"
+          className="sc-bZQynM iQRAjo"
         >
           <div>
             <h4>
@@ -91,12 +91,13 @@ exports[`<App /> matches the snapshot of App 1`] = `
             </h4>
             <div>
               <a
+                className="twitter-logo"
                 href="https://twitter.com/"
               >
                 <img
                   alt="Twitter logo"
                   data-testid="twitterLogo"
-                  src="twitter-logo-white.svg"
+                  src="twitter-logo-white.png"
                 />
               </a>
             </div>

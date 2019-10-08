@@ -28,7 +28,7 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
     .
   </p>
   <div
-    className="sc-bwzfXH dunKYn"
+    className="sc-bwzfXH kLAFPo"
   >
     <div>
       <h4>
@@ -36,12 +36,13 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
       </h4>
       <div>
         <a
+          className="twitter-logo"
           href="https://twitter.com/"
         >
           <img
             alt="Twitter logo"
             data-testid="twitterLogo"
-            src="twitter-logo-white.svg"
+            src="twitter-logo-white.png"
           />
         </a>
       </div>
