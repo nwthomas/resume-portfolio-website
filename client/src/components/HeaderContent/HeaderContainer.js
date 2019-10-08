@@ -2,8 +2,8 @@ import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import lambdaLogo from "../../images/lambda-logo.png";
 import lambdaLogoWhite from "../../images/lambda-logo-white.png";
-import twitterLogo from "../../images/twitter-logo-blue.png";
-import twitterLogoWhite from "../../images/twitter-logo-white.png";
+import twitterLogo from "../../images/twitter-logo-blues.png";
+import twitterLogoWhite from "../../images/twitter-logo-whites.png";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
