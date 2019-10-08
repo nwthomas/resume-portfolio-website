@@ -43,6 +43,8 @@
     "@babel/preset-flow": "^7.0.0",
     "@testing-library/jest-dom": "^4.1.0",
     "@testing-library/react": "^9.2.0",
+    "flow-bin": "^0.109.0",
+    "flow-typed": "^2.6.1",
     "react-test-renderer": "^16.8.4"
   }
 }
