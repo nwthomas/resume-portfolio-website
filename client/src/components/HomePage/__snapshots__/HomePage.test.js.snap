@@ -3,7 +3,7 @@
 exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`] = `
 <div>
   <div
-    className="sc-AykKC gvFiiQ"
+    className="sc-bdVaJa jKTdSj"
   >
     <p>
       I'm Nathan Thomas, a
@@ -11,18 +11,15 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       <a
         href="https://github.com/nwthomas"
       >
-        full stack software engineer
+        software engineer
       </a>
-       
-      living in the Napa Valley and currently attending
-       
+       living in San Francisco and working at 
       <a
-        href="https://lambdaschool.com/"
+        href="https://twitter.com/"
       >
-        Lambda School
+        Twitter
       </a>
-      . Let's
-       
+      . Let's 
       <a
         href="/contact"
         onClick={[Function]}
@@ -32,11 +29,27 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       .
     </p>
     <div
-      className="sc-AykKD bZWOgB"
+      className="sc-bwzfXH dunKYn"
     >
       <div>
         <h4>
-          Current Student:
+          Currently:
+        </h4>
+        <div>
+          <a
+            href="https://twitter.com/"
+          >
+            <img
+              alt="Twitter logo"
+              data-testid="twitterLogo"
+              src="twitter-logo-white.svg"
+            />
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>
+          Previously:
         </h4>
         <div>
           <a
@@ -50,26 +63,10 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
           </a>
         </div>
       </div>
-      <div>
-        <h4>
-          Previously:
-        </h4>
-        <div>
-          <a
-            href="https://www.adventisthealth.org/"
-          >
-            <img
-              alt="Former employer logo"
-              data-testid="workLogo"
-              src="ah-logo-white.png"
-            />
-          </a>
-        </div>
-      </div>
     </div>
   </div>
   <div
-    className="sc-AykKE iHfZmp"
+    className="sc-htpNat eVjSDE"
   >
     <p
       id="featured-work"
@@ -160,7 +157,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-AykKF joCMMf"
+    className="sc-bxivhb gNPtEY"
   >
     <div>
       <p>
@@ -174,7 +171,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
       </a>
     </div>
     <div
-      className="sc-AykKG bjsjyh"
+      className="sc-ifAKCX buOxay"
     >
       <a
         href="https://github.com/nwthomas"
@@ -210,7 +207,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-AykKH cDjEel"
+    className="sc-EHOje eXingz"
   >
     <h4>
       Copyright © 2019 Nathan Thomas

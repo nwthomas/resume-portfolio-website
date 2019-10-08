@@ -2,21 +2,21 @@
 
 exports[`<App /> matches the snapshot of App 1`] = `
 <div
-  className="sc-fzXfMw bOiJJp"
+  className="sc-kgoBCf fkMpKB"
 >
   <div>
     <div
-      className="sc-AykKG dBglLC"
+      className="sc-ifAKCX iSFgrr"
     >
       <div
-        className="sc-AykKD etFgRM"
+        className="sc-bwzfXH hyjEOv"
       >
         <a
           href="/"
           onClick={[Function]}
         >
           <div
-            className="sc-AykKC cyzyoD"
+            className="sc-bdVaJa iWTplj"
           >
             <div>
               <p>
@@ -26,10 +26,10 @@ exports[`<App /> matches the snapshot of App 1`] = `
           </div>
         </a>
         <nav
-          className="sc-AykKE jttJbe"
+          className="sc-htpNat kGyCMw"
         >
           <div
-            className="sc-AykKF bsVgCa"
+            className="sc-bxivhb ddVSCd"
             data-testid="darkmodeTab"
             onClick={[Function]}
           >
@@ -57,7 +57,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
     </div>
     <div>
       <div
-        className="sc-AykKH hzIWFd"
+        className="sc-EHOje fJkgFb"
       >
         <p>
           I'm Nathan Thomas, a
@@ -65,18 +65,15 @@ exports[`<App /> matches the snapshot of App 1`] = `
           <a
             href="https://github.com/nwthomas"
           >
-            full stack software engineer
+            software engineer
           </a>
-           
-          living in the Napa Valley and currently attending
-           
+           living in San Francisco and working at 
           <a
-            href="https://lambdaschool.com/"
+            href="https://twitter.com/"
           >
-            Lambda School
+            Twitter
           </a>
-          . Let's
-           
+          . Let's 
           <a
             href="/contact"
             onClick={[Function]}
@@ -86,11 +83,27 @@ exports[`<App /> matches the snapshot of App 1`] = `
           .
         </p>
         <div
-          className="sc-AykKI doqohS"
+          className="sc-bZQynM kIarEe"
         >
           <div>
             <h4>
-              Current Student:
+              Currently:
+            </h4>
+            <div>
+              <a
+                href="https://twitter.com/"
+              >
+                <img
+                  alt="Twitter logo"
+                  data-testid="twitterLogo"
+                  src="twitter-logo-white.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4>
+              Previously:
             </h4>
             <div>
               <a
@@ -104,26 +117,10 @@ exports[`<App /> matches the snapshot of App 1`] = `
               </a>
             </div>
           </div>
-          <div>
-            <h4>
-              Previously:
-            </h4>
-            <div>
-              <a
-                href="https://www.adventisthealth.org/"
-              >
-                <img
-                  alt="Former employer logo"
-                  data-testid="workLogo"
-                  src="ah-logo-white.png"
-                />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
       <div
-        className="sc-AykKJ qzJLa"
+        className="sc-gzVnrw kjZwZE"
       >
         <p
           id="featured-work"
@@ -214,7 +211,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-AykKK lhiuFw"
+        className="sc-htoDjs cwvfja"
       >
         <div>
           <p>
@@ -228,7 +225,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
           </a>
         </div>
         <div
-          className="sc-fzXfLO iLqimj"
+          className="sc-dnqmqq hVOptj"
         >
           <a
             href="https://github.com/nwthomas"
@@ -264,7 +261,7 @@ exports[`<App /> matches the snapshot of App 1`] = `
         </div>
       </div>
       <div
-        className="sc-fzXfLP ctVCpX"
+        className="sc-iwsKbI fyGAOl"
       >
         <h4>
           Copyright © 2019 Nathan Thomas

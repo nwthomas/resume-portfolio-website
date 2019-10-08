@@ -2,7 +2,7 @@
 
 exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = `
 <div
-  className="sc-AykKC gvFiiQ"
+  className="sc-bdVaJa jKTdSj"
 >
   <p>
     I'm Nathan Thomas, a
@@ -10,18 +10,15 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
     <a
       href="https://github.com/nwthomas"
     >
-      full stack software engineer
+      software engineer
     </a>
-     
-    living in the Napa Valley and currently attending
-     
+     living in San Francisco and working at 
     <a
-      href="https://lambdaschool.com/"
+      href="https://twitter.com/"
     >
-      Lambda School
+      Twitter
     </a>
-    . Let's
-     
+    . Let's 
     <a
       href="/contact"
       onClick={[Function]}
@@ -31,20 +28,20 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
     .
   </p>
   <div
-    className="sc-AykKD bZWOgB"
+    className="sc-bwzfXH dunKYn"
   >
     <div>
       <h4>
-        Current Student:
+        Currently:
       </h4>
       <div>
         <a
-          href="https://lambdaschool.com/"
+          href="https://twitter.com/"
         >
           <img
-            alt="Current school logo"
-            data-testid="schoolLogo"
-            src="lambda-logo-white.png"
+            alt="Twitter logo"
+            data-testid="twitterLogo"
+            src="twitter-logo-white.svg"
           />
         </a>
       </div>
@@ -55,12 +52,12 @@ exports[`<HeaderContainer /> should match the snapshot of HeaderContainer 1`] = 
       </h4>
       <div>
         <a
-          href="https://www.adventisthealth.org/"
+          href="https://lambdaschool.com/"
         >
           <img
-            alt="Former employer logo"
-            data-testid="workLogo"
-            src="ah-logo-white.png"
+            alt="Current school logo"
+            data-testid="schoolLogo"
+            src="lambda-logo-white.png"
           />
         </a>
       </div>

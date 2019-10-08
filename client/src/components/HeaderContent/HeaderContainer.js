@@ -1,9 +1,9 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
-import ahLogo from "../../images/ah-logo.png";
-import ahLogoWhite from "../../images/ah-logo-white.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 import lambdaLogoWhite from "../../images/lambda-logo-white.png";
+import twitterLogo from "../../images/twitter-logo-blue.png";
+import twitterLogoWhite from "../../images/twitter-logo-white.png";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const HeaderContainerDiv = styled.div`
 
   p {
     max-width: 1000px;
-    width: 100%;
+    width: 90%;
 
     a {
       font-size: 3rem;
@@ -115,6 +115,12 @@ const CurrentPreviousWork = styled.div`
   }
 
   div:first-child {
+    width: 25%;
+
+    a > img {
+      width: 108px;
+    }
+
     @media (min-width: 500px) {
       padding-right: 5%;
     }
@@ -130,20 +136,19 @@ const HeaderContainer = props => {
     <HeaderContainerDiv darkmode={props.darkmode}>
       <p>
         I'm Nathan Thomas, a{" "}
-        <a href="https://github.com/nwthomas">full stack software engineer</a>{" "}
-        living in the Napa Valley and currently attending{" "}
-        <a href="https://lambdaschool.com/">Lambda School</a>. Let's{" "}
-        <Link to="/contact">talk</Link>.
+        <a href="https://github.com/nwthomas">software engineer</a> living in
+        San Francisco and working at <a href="https://twitter.com/">Twitter</a>.
+        Let's <Link to="/contact">talk</Link>.
       </p>
       <CurrentPreviousWork>
         <div>
-          <h4>Current Student:</h4>
+          <h4>Currently:</h4>
           <div>
-            <a href="https://lambdaschool.com/">
+            <a className="twitter-logo" href="https://twitter.com/">
               <img
-                data-testid="schoolLogo"
-                src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
-                alt="Current school logo"
+                data-testid="twitterLogo"
+                src={props.darkmode ? twitterLogoWhite : twitterLogo}
+                alt="Twitter logo"
               />
             </a>
           </div>
@@ -151,11 +156,11 @@ const HeaderContainer = props => {
         <div>
           <h4>Previously:</h4>
           <div>
-            <a href="https://www.adventisthealth.org/">
+            <a href="https://lambdaschool.com/">
               <img
-                data-testid="workLogo"
-                src={props.darkmode ? ahLogoWhite : ahLogo}
-                alt="Former employer logo"
+                data-testid="schoolLogo"
+                src={props.darkmode ? lambdaLogoWhite : lambdaLogo}
+                alt="Current school logo"
               />
             </a>
           </div>

@@ -24,6 +24,6 @@ describe("<HeaderContainer />", () => {
       <HeaderContainer darkmode={true} />
     );
     expect(getByTestId("schoolLogo")).toBeDefined();
-    expect(getByTestId("workLogo")).toBeDefined();
+    expect(getByTestId("twitterLogo")).toBeDefined();
   });
 });
