@@ -5,6 +5,7 @@ import tipprSample from "../../images/tippr-macbook.png";
 import huddleSample from "../../images/huddle-landing-page.png";
 import weightLiftingSample from "../../images/weight-lifting-journal-app.png";
 import confluxSample from "../../images/conflux-logo.png";
+import stampdSample from "../../images/stampd-macbook.png";
 import PropTypes from "prop-types";
 
 const FeaturedWorkContainerDiv = styled.div`
@@ -74,6 +75,18 @@ const FeaturedWorkContainer = props => {
     <FeaturedWorkContainerDiv darkmode={props.darkmode}>
       <p id="featured-work">Featured Projects</p>
       <div>
+        <div>
+          <div>
+            <a href="https://github.com/labs14-stampd">
+              <img
+                data-testid="stampdPicture"
+                src={stampdSample}
+                alt="Stampd DApp sample"
+              />
+            </a>
+            <h4>Stampd Blockchain Credentialing</h4>
+          </div>
+        </div>
         <div>
           <div>
             <a href="https://github.com/dustinmyers/react-conflux">

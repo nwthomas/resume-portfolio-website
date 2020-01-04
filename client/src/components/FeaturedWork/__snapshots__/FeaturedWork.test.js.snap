@@ -13,6 +13,22 @@ exports[`<FeaturedWorkContainer /> should match the snapshot of FeaturedWorkCont
     <div>
       <div>
         <a
+          href="https://github.com/labs14-stampd"
+        >
+          <img
+            alt="Stampd DApp sample"
+            data-testid="stampdPicture"
+            src="stampd-macbook.png"
+          />
+        </a>
+        <h4>
+          Stampd Blockchain Credentialing
+        </h4>
+      </div>
+    </div>
+    <div>
+      <div>
+        <a
           href="https://github.com/dustinmyers/react-conflux"
         >
           <img

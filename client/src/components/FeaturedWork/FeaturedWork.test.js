@@ -6,9 +6,7 @@ import FeaturedWorkContainer from "./FeaturedWorkContainer";
 
 describe("<FeaturedWorkContainer />", () => {
   it("should render the FeaturedWorkContainer component without crashing", () => {
-    const helpers = renderWithRouter(
-      <FeaturedWorkContainer darkmode={false} />
-    );
+    renderWithRouter(<FeaturedWorkContainer darkmode={false} />);
   });
 
   it("should match the snapshot of FeaturedWorkContainer", () => {
@@ -31,5 +29,8 @@ describe("<FeaturedWorkContainer />", () => {
     expect(getByTestId("tipprPicture")).toBeDefined();
     expect(getByTestId("instagramPicture")).toBeDefined();
     expect(getByTestId("huddlePicture")).toBeDefined();
+    expect(getByTestId("confluxPicture")).toBeDefined();
+    expect(getByTestId("stampdPicture")).toBeDefined();
+    expect(getByTestId("weightLiftingJournalPicture")).toBeDefined();
   });
 });
