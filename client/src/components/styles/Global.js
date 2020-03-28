@@ -5,6 +5,11 @@ export const Global = css`
     box-sizing: border-box;
   }
   html {
+    ${props =>
+      props.darkmode &&
+      css`
+        background: #1b2331;
+      `}
     font-size: 62.5%;
     scroll-behavior: smooth;
   }

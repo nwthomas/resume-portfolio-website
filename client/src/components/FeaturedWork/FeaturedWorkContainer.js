@@ -60,6 +60,7 @@ const FeaturedWorkContainerDiv = styled.div`
 
         h4 {
           width: 100%;
+          line-height: 2;
           text-align: center;
           display: block;
           letter-spacing: 4px;

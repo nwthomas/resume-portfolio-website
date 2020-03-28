@@ -46,7 +46,7 @@ const App = props => {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle darkmode={darkmode} />
       <AppDiv
         darkmode={darkmode}
         sending={emailValues.sending}
