@@ -1,9 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import instaSample from "../../images/instagram-macbook.png";
-import tipprSample from "../../images/tippr-macbook.png";
 import huddleSample from "../../images/huddle-landing-page.png";
-import weightLiftingSample from "../../images/weight-lifting-journal-app.png";
 import confluxSample from "../../images/conflux-logo.png";
 import stampdSample from "../../images/stampd-macbook.png";
 import PropTypes from "prop-types";
@@ -13,7 +11,7 @@ const FeaturedWorkContainerDiv = styled.div`
   max-width: 1200px;
   margin: 60px auto 60px;
 
-  ${props =>
+  ${(props) =>
     props.darkmode &&
     css`
       color: white;
@@ -71,7 +69,7 @@ const FeaturedWorkContainerDiv = styled.div`
   }
 `;
 
-const FeaturedWorkContainer = props => {
+const FeaturedWorkContainer = (props) => {
   return (
     <FeaturedWorkContainerDiv darkmode={props.darkmode}>
       <p id="featured-work">Featured Projects</p>
@@ -98,30 +96,6 @@ const FeaturedWorkContainer = props => {
               />
             </a>
             <h4>Conflux State Management</h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <a href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas">
-              <img
-                data-testid="weightLiftingJournalPicture"
-                src={weightLiftingSample}
-                alt="weight lifting journal sample"
-              />
-            </a>
-            <h4>Weight Lifting Journal</h4>
-          </div>
-        </div>
-        <div>
-          <div>
-            <a href="https://github.com/nwthomas/tippr">
-              <img
-                data-testid="tipprPicture"
-                src={tipprSample}
-                alt="tippr portfolio sample"
-              />
-            </a>
-            <h4>tippr payment app</h4>
           </div>
         </div>
         <div>
@@ -154,7 +128,7 @@ const FeaturedWorkContainer = props => {
 };
 
 FeaturedWorkContainer.propTypes = {
-  darkmode: PropTypes.bool.isRequired
+  darkmode: PropTypes.bool.isRequired,
 };
 
 export default FeaturedWorkContainer;
