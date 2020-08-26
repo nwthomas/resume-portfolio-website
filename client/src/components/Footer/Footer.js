@@ -47,7 +47,7 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${props =>
+  ${(props) =>
     props.darkmode &&
     css`
       color: white;
@@ -73,14 +73,14 @@ const FooterContainer = styled.div`
         margin: 20px 10px 0;
       }
 
-      ${props =>
+      ${(props) =>
         props.darkmode &&
         css`
           color: #1a97f0;
         `}
 
       &:hover {
-        ${props =>
+        ${(props) =>
           props.darkmode
             ? css`
                 animation: ${contactHoverDarkmode} 0.5s forwards;
@@ -91,7 +91,7 @@ const FooterContainer = styled.div`
       }
 
       &:active {
-        ${props =>
+        ${(props) =>
           props.darkmode
             ? css`
                 color: #b6465f;
@@ -122,14 +122,14 @@ const DesktopLinks = styled.div`
       margin: 50px 3% 120px 0;
     }
 
-    ${props =>
+    ${(props) =>
       props.darkmode &&
       css`
         color: white;
       `}
 
     &:hover {
-      ${props =>
+      ${(props) =>
         props.darkmode
           ? css`
               animation: ${hoverLinkDarkmode} 0.2s forwards;
@@ -165,7 +165,7 @@ const Copyright = styled.div`
       font-size: 1.6rem;
     }
 
-    ${props =>
+    ${(props) =>
       props.darkmode &&
       css`
         color: white;
@@ -173,7 +173,7 @@ const Copyright = styled.div`
   }
 `;
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <>
       <FooterContainer darkmode={props.darkmode}>
@@ -183,7 +183,7 @@ const Footer = props => {
         </div>
         <DesktopLinks darkmode={props.darkmode}>
           <a href="https://github.com/nwthomas">GitHub</a>
-          <a href="https://www.linkedin.com/in/nwthomas-profile/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/nwthomas-dev/">LinkedIn</a>
           <a href="https://medium.com/@nwthomas">Medium</a>
           <a href="https://twitter.com/nwthomas_">Twitter</a>
           <a href="https://www.instagram.com/nwthomas/">Instagram</a>
@@ -198,7 +198,7 @@ const Footer = props => {
 };
 
 Footer.propTypes = {
-  darkmode: PropTypes.bool.isRequired
+  darkmode: PropTypes.bool.isRequired,
 };
 
 export default Footer;

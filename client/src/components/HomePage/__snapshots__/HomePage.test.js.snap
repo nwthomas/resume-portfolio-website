@@ -67,7 +67,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
     </div>
   </div>
   <div
-    className="sc-htpNat eVjSDE"
+    className="sc-htpNat hBAiWK"
   >
     <p
       id="featured-work"
@@ -104,38 +104,6 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
           </a>
           <h4>
             Conflux State Management
-          </h4>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a
-            href="https://github.com/weight-lifting-journal-bw-team/back-end-nathan-thomas"
-          >
-            <img
-              alt="weight lifting journal sample"
-              data-testid="weightLiftingJournalPicture"
-              src="weight-lifting-journal-app.png"
-            />
-          </a>
-          <h4>
-            Weight Lifting Journal
-          </h4>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a
-            href="https://github.com/nwthomas/tippr"
-          >
-            <img
-              alt="tippr portfolio sample"
-              data-testid="tipprPicture"
-              src="tippr-macbook.png"
-            />
-          </a>
-          <h4>
-            tippr payment app
           </h4>
         </div>
       </div>
@@ -196,7 +164,7 @@ exports[`<HomePageContainer /> should match the snapshot of HomePageContainer 1`
         GitHub
       </a>
       <a
-        href="https://www.linkedin.com/in/nwthomas-profile/"
+        href="https://www.linkedin.com/in/nwthomas-dev/"
       >
         LinkedIn
       </a>
