@@ -174,6 +174,7 @@ const Copyright = styled.div`
 `;
 
 const Footer = (props) => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <FooterContainer darkmode={props.darkmode}>
@@ -191,7 +192,7 @@ const Footer = (props) => {
         </DesktopLinks>
       </FooterContainer>
       <Copyright darkmode={props.darkmode}>
-        <h4>Copyright © 2019 Nathan Thomas</h4>
+        <h4>{`Copyright © ${currentYear} Nathan Thomas`}</h4>
       </Copyright>
     </>
   );
