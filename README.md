@@ -5,8 +5,6 @@
 This site has been deprecated and will soon be swapped out here in my pinned items to include my new V2 personal site (which is currently a private repository).
 ---
 
-#
-
 <h1 align="center"><img src="./assets/readme-title.png" /></h1>
 
 # Personal Portfolio Website
