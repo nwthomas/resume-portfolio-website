@@ -1,5 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/727fcefd-6800-42a4-9363-af9f0fb48bad/deploy-status)](https://app.netlify.com/sites/compassionate-meninsky-4f3d6c/deploys)
 
+---
+**NOTE**
+This site has been deprecated and will soon be swapped out here in my pinned items to include my new V2 personal site (which is currently a private repository).
+---
+
 #
 
 <h1 align="center"><img src="./assets/readme-title.png" /></h1>
