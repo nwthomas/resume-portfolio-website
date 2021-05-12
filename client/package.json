@@ -8,7 +8,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.0.0",
     "email-validator": "^2.0.4",
-    "nodemailer": "^5.1.1",
+    "nodemailer": "^6.4.16",
     "react": "^16.8.0",
     "react-conflux": "^0.0.2-beta.6",
     "react-dom": "^16.8.0",
